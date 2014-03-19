@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/light_bg"
+    android:id="@+id/mai"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header"
+        android:orientation="vertical" >
+        <include layout="@layout/header" />
+        <include layout="@layout/blank_space" />
+        <include layout="@layout/header_title" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/AcademicProfileNameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/header_panel"
+        android:layout_marginLeft="19dip"
+        android:layout_marginRight="19dip"
+        android:layout_marginTop="5dip"
+        android:orientation="vertical" >
+    <include
+        android:id="@+id/dialogprogress"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/header_panel"
+        layout="@layout/dialogprogress"
+        android:visibility="gone" />
+            <TextView
+                android:id="@+id/AcademicProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="19sp" >
+            </TextView>
+    </LinearLayout>
+    <ImageView
+            android:id="@+id/img_head"
+            android:background="@drawable/academic_profile_head"
+            android:layout_width="74dip"
+            android:layout_height="80dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="19dip"
+            android:layout_alignTop="@id/AcademicProfileNameLayout" />
+    <RelativeLayout
+        android:id="@+id/AcademicProfileCoauthorLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/AcademicProfileNameLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@id/AcademicProfileNameLayout"
+        android:layout_marginBottom="10dip"
+        android:gravity="center_vertical"
+        android:background="@drawable/button_action" >
+        <ImageView
+            android:id="@+id/AcademicProfileWrittenImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="4dip"
+            android:background="@drawable/academic_profile_arrow" >
+        </ImageView>
+        <TextView
+            android:id="@+id/AcademicProfileCoauthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="19dip"
+            android:layout_toLeftOf="@id/AcademicProfileWrittenImage"
+            android:text="@string/nodata"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" >
+        </TextView>
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/AcademicProfileCoauthor"
+            android:gravity="center" >
+            <TextView
+                android:id="@+id/AcademicProfileCoauthorTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:text="@string/coauthor"
+                android:textStyle="bold" >
+            </TextView>
+        </LinearLayout> 
+    </RelativeLayout>
+ <RelativeLayout
+        android:id="@+id/AcademicProfileWrittenLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/AcademicProfileNameLayout"
+        android:layout_above="@id/AcademicProfileCoauthorLayout"
+        android:layout_alignRight="@id/AcademicProfileNameLayout"
+        android:layout_marginBottom="10dip"
+        android:gravity="center_vertical"
+        android:background="@drawable/button_action" >
+        <ImageView
+            android:id="@+id/AcademicProfileWrittenImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="4dip"
+            android:background="@drawable/academic_profile_arrow" >
+        </ImageView>
+        <TextView
+            android:id="@+id/AcademicProfileWritten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="19dip"
+            android:gravity="center_vertical"
+            android:layout_toLeftOf="@id/AcademicProfileWrittenImage"
+            android:text="@string/nodata"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" >
+        </TextView>
+         <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/AcademicProfileWritten"
+            android:gravity="center" >
+            <TextView
+                android:id="@+id/AcademicProfileWrittenTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                android:text="@string/articles_written_by"
+                android:textStyle="bold" >
+            </TextView>
+        </LinearLayout> 
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/AcademicProfileBodyScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/AcademicProfileWrittenLayout"
+        android:layout_below="@id/img_head"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dip"
+        android:background="@drawable/academic_profile_content" >
+
+        <LinearLayout
+            android:id="@+id/AcademicProfileLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/AcademicProfileHospitalLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp" >
+                <TextView
+                    android:id="@+id/AcademicProfileHospitalTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:gravity="center_vertical" >
+                </TextView>
+                <TextView
+                    android:id="@+id/AcademicProfileHospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/AcademicProfileSpecialtyLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp" >
+                <TextView
+                    android:id="@+id/AcademicProfileSpecialtyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/AcademicProfileSpecialty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/AcademicProfileSubSpecialtyLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp" >
+
+                <TextView
+                    android:id="@+id/AcademicProfileSubSpecialtyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/AcademicProfileSubSpecialty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" >
+                </TextView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/AcademicProfileAcademicStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/academic_status"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:paddingLeft="10sp"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="10sp"
+                android:textSize="19sp" 
+                android:visibility="gone"
+                android:textStyle="bold">
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/AcademicProfileFiveKeyWordsLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10sp"
+                android:gravity="center_vertical"
+                android:paddingRight="10sp" >
+
+                <TextView
+                    android:id="@+id/AcademicProfileFiveKeyWordsTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="19sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/AcademicProfileFiveKeyWords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/nodata"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" >
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

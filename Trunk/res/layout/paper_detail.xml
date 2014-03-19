@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jibo="http://schemas.android.com/apk/res/com.api.android.GBApp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/mai"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/light_bg"
+        android:orientation="vertical" >
+
+        <!-- 头部layout -->
+
+        <LinearLayout
+            android:id="@+id/header_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header"
+            android:orientation="vertical" >
+
+            <include layout="@layout/header" />
+
+            <include layout="@layout/blank_space" />
+
+            <LinearLayout
+                android:id="@+id/header_f"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <include layout="@layout/header_title" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 药物通用信息 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+		<!-- <com.aphidmobile.flip.FlipViewController 
+		    android:id="@+id/filpview"
+		    android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+		    >
+		</com.aphidmobile.flip.FlipViewController> -->
+		<WebView 
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:id="@+id/webview"
+		    android:visibility="gone"/>
+		<include layout="@layout/flipprogress"
+		     android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:id="@+id/progress"
+		    />
+		
+		    
+            <RelativeLayout
+                android:id="@+id/pagebar"
+                android:layout_width="fill_parent"
+                android:layout_height="30dip"
+                android:layout_alignParentBottom="true"
+                android:background="@color/lightblue"
+                android:visibility="gone"
+                android:gravity="center_vertical"
+                >
+
+                <TextView
+                    android:id="@+id/prepage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="@string/prepage"
+                    android:textSize="15dip" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/currpage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:textSize="15dip" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/nextpage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center"
+                    android:clickable="true"
+                    android:textColor="@color/black"
+                    android:text="@string/nextpage"
+                    android:textSize="15dip" >
+                </TextView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+       <!--  <include
+            android:id="@+id/dialogprogress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            layout="@layout/dialogprogress" /> -->
+        <LinearLayout
+            android:id="@+id/counterfeitContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/bottom_bg" >
+			
+            <LinearLayout
+                android:id="@+id/menu_btn_layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/menu_backgroud"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <ToggleButton
+                    android:id="@+id/btn_1st"
+                    android:layout_width="89dip"
+                    android:layout_height="50dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_download1" 
+                    android:textOff=""
+                    android:textOn="">
+                </ToggleButton>
+            </LinearLayout><LinearLayout
+                android:id="@+id/menu_btn_layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/menu_backgroud"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <ToggleButton
+                    android:id="@+id/tgbtn_2nd"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_favorite"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/menu_btn_layout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/menu_backgroud"
+                android:clickable="true"
+                android:gravity="center" >
+
+               <Button
+                    android:id="@+id/btn_3rd"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/menu_fonts" />
+            </LinearLayout>
+
+            <!-- share -->
+
+            <LinearLayout
+                android:id="@+id/menu_btn_layout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/menu_backgroud"
+                android:clickable="true"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/btn_share"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_gravity="center"
+                    android:background="@drawable/menu_share_btn2" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+<!-- <com.jibo.util.tips.Mask
+  
+        android:id="@+id/mask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:background="#CC000000"
+        android:visibility="gone" />
+    
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/close_tips"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:id="@+id/closeTips"/>
+
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+         android:layout_marginBottom="120dp"
+         android:layout_marginLeft="30dp"
+         android:layout_alignParentBottom="true"
+        android:id="@+id/leftArrow"
+        android:src="@drawable/left_arrow"
+        />
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+         android:layout_marginBottom="120dp"
+         android:layout_marginRight="30dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+        android:id="@+id/rightArrow"
+        android:src="@drawable/right_arrow_tips"
+        />
+    
+  <RelativeLayout
+        android:id="@+id/rippleView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    
+	    <ImageView
+	        android:id="@+id/rippleImage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/light5"
+	        android:layout_centerInParent="true" />
+	
+	    <ImageView
+	        android:id="@+id/handImage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/rippleImage"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/hand" />
+	</RelativeLayout>  
+	
+   <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rippleTips"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="270px"
+        android:textColor="#005684"
+        android:textSize="18dip"
+        android:gravity="center_vertical"
+        android:text="@string/drag_switching"
+        android:layout_above="@id/rippleView"
+        android:layout_toRightOf="@id/leftArrow"
+        android:background="@drawable/b03"/> -->
+</RelativeLayout>

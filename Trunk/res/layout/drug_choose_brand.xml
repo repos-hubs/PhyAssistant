@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mai"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/light_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header"
+        android:orientation="vertical" >
+
+        <include layout="@layout/header" />
+
+        <include layout="@layout/blank_space" />
+
+        <include layout="@layout/header_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_panel"
+        android:orientation="vertical" >
+        
+        <TextView 
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:id="@+id/drug_choose_brand_title"
+			android:textColor="#000000"
+			android:textSize="18dp"
+			android:paddingLeft="20px" android:paddingRight="20px"
+			android:layout_marginTop="20dp" android:layout_marginBottom="5dp" />
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_drug_choose_brand"
+            android:layout_marginTop="30px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px" >
+            <ListView
+                android:id="@+id/lst_item"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/cutting_line"
+                android:listSelector="@drawable/gba_list_item"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,477 @@
+
+D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk>set MAVEN_OPTS= -Xms128m -Xmx512m 
+[INFO] Error stacktraces are turned on.
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for com.api.android.GBApp:JiBo:apk:13.05.17-SNAPSHOT
+[WARNING] 'build.plugins.plugin.version' for com.jayway.maven.plugins.android.generation2:maven-android-plugin is missing. @ line 196, column 14
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building JiBo 13.05.17-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.4.1:clean (default-clean) @ JiBo ---
+[INFO] Deleting D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\target
+[INFO] 
+[INFO] --- android-maven-plugin:3.4.0:generate-sources (default-generate-sources) @ JiBo ---
+[INFO] ANDROID-904-002: Found aidl files: Count = 2
+[INFO] ANDROID-904-002: Found aidl files: Count = 0
+[INFO] Manifest merging disabled. Using project manifest only
+[INFO] D:\Tools\sdk\platform-tools\aapt.exe [package, -m, -J, D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\target\generated-sources\r, -M, D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\AndroidManifest.xml, -S, D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\res, --auto-add-overlay, -A, D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\assets, -I, D:\Tools\sdk\platforms\android-8\android.jar]
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ JiBo ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\src\main\resources
+[INFO] skip non existing resourceDirectory D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\target\generated-sources\extracted-dependencies\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:compile (default-compile) @ JiBo ---
+[INFO] Compiling 637 source files to D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\target\classes
+[INFO] 
+[INFO] --- android-maven-plugin:3.4.0:proguard (default-proguard) @ JiBo ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ JiBo ---
+[INFO] Using 'iso-8859-1' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.5.1:testCompile (default-testCompile) @ JiBo ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.15:test (default-test) @ JiBo ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- android-maven-plugin:3.4.0:emma (default-emma) @ JiBo ---
+[INFO] 
+[INFO] --- android-maven-plugin:3.4.0:dex (default-dex) @ JiBo ---
+[INFO] C:\Java\jdk1.6.0_07\jre\bin\java [-Xmx1024M, -jar, D:\Tools\sdk\platform-tools\lib\dx.jar, --dex, --output=D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\target\classes.dex, D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\target\classes, c:\java\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar, c:\java\repository\com\google\android\support-v4\r6\support-v4-r6.jar, c:\java\repository\org\apache\httpcomponents\httpmime\4.1.1\httpmime-4.1.1.jar, c:\java\repository\net\sourceforge\pinyin4j\pinyin4j\2.5.0\pinyin4j-2.5.0.jar, c:\java\repository\net\lingala\zip4j\zip4j\1.3.1\zip4j-1.3.1.jar, c:\java\repository\com\umeng\umeng_sdk\1.6.0_32-b05\umeng_sdk-1.6.0_32-b05.jar, c:\java\repository\com\tencent\mm\sdk\openapi\weixin-sdk\1.0\weixin-sdk-1.0.jar, c:\java\repository\org\apache\httpcomponents\httpcore\4.1\httpcore-4.1.jar, c:\java\repository\com\google\code\ksoap2-android\ksoap2-android\2.4\ksoap2-android-2.4.jar, c:\java\repository\junit\junit\4.8.1\junit-4.8.1.jar, c:\java\repository\com\googlecode\json-simple\json-simple\1.1\json-simple-1.1.jar, c:\java\repository\com\umeng\api\umeng-sns\1.0\umeng-sns-1.0.jar, c:\java\repository\com\google\code\gson\gson\2.2.2\gson-2.2.2.jar, c:\java\repository\de\greenrobot\dao\greendao-api\1.0\greendao-api-1.0.jar]
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (org.apache.commons.logging.impl.LogFactoryImpl$1) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (org.apache.commons.logging.impl.LogFactoryImpl$2) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (org.apache.commons.logging.impl.LogFactoryImpl$3) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (org.apache.commons.logging.impl.SimpleLog$1) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (org.apache.commons.logging.impl.WeakHashtable$1) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (org.apache.commons.logging.LogFactory$1) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (org.apache.commons.logging.LogFactory$2) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (org.apache.commons.logging.LogFactory$3) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (org.apache.commons.logging.LogFactory$4) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (org.apache.commons.logging.LogFactory$5) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (org.apache.commons.logging.LogFactory$6) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.hp.hpl.sparta.Node$1) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.hp.hpl.sparta.Sparta$1) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.hp.hpl.sparta.Sparta$2) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.analytics.c) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.common.net.b) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.common.net.d) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.common.net.e) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.common.net.f) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.common.net.g) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.common.net.h) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.common.net.i) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.common.net.j) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.common.net.q) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.fb.c) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.fb.d) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.fb.e) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.fb.ui.a) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.fb.ui.c) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.fb.ui.e) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.update.a) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.update.b) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.update.c) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.update.d) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.umeng.update.e) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.tencent.mm.algorithm.LRUMap$1) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.tencent.mm.sdk.platformtools.CharSequences$1) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.tencent.mm.sdk.platformtools.CharSequences$2) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.tencent.mm.sdk.platformtools.LBSManager$1) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.tencent.mm.sdk.platformtools.PhoneUtil16Impl$1) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.tencent.mm.sdk.platformtools.PhoneUtil20Impl$1) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.tencent.mm.sdk.platformtools.SyncTask$1) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.tencent.mm.sdk.platformtools.Util$1) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.tencent.mm.sdk.platformtools.Util$2) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.tencent.mm.sdk.plugin.MMPluginOAuth$1) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.tencent.mm.sdk.plugin.MMPluginOAuth$Receiver$1) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.tencent.mm.sdk.storage.MStorage$1) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.tencent.mm.sdk.storage.MStorage$2) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] warning: Ignoring InnerClasses attribute for an anonymous inner class
+[INFO] (com.tencent.mm.sdk.storage.MStorageEvent$1) that doesn't come with an
+[INFO] associated EnclosingMethod attribute. This class was probably produced by a
+[INFO] compiler that did not target the modern .class file format. The recommended
+[INFO] solution is to recompile the class from source, using an up-to-date compiler
+[INFO] and without specifying any "-target" type options. The consequence of ignoring
+[INFO] this warning is that reflective operations on this class will incorrectly
+[INFO] indicate that it is *not* an inner class.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ JiBo ---
+[INFO] Building jar: D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\target\JiBo.jar
+[INFO] 
+[INFO] --- android-maven-plugin:3.4.0:apk (default-apk) @ JiBo ---
+[INFO] Copying local assets files to combined assets directory.
+[INFO] D:\Tools\sdk\platform-tools\aapt.exe [package, -f, -M, D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\AndroidManifest.xml, -S, D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\res, --auto-add-overlay, -A, D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\target\generated-sources\combined-assets\assets, -I, D:\Tools\sdk\platforms\android-8\android.jar, -F, D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\target\JiBo.ap_]
+[INFO] Add native libraries from D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\libs
+[INFO] 
+[INFO] --- maven-jarsigner-plugin:1.2:sign (signing) @ JiBo ---
+[INFO] 2 archive(s) processed
+[INFO] 
+[INFO] --- android-maven-plugin:3.0.0-alpha-11:zipalign (alignApk) @ JiBo ---
+[INFO] Running command: D:\Tools\sdk\tools\zipalign.exe
+[INFO] with parameters: [-f, 4, D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\target\JiBo.apk, D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\target\JiBo-aligned.apk]
+[INFO] Attach D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\target\JiBo-aligned.apk to the project
+[INFO] 
+[INFO] --- android-maven-plugin:3.4.0:internal-pre-integration-test (default-internal-pre-integration-test) @ JiBo ---
+[INFO] No InstrumentationRunner found - skipping tests
+[INFO] 
+[INFO] --- android-maven-plugin:3.4.0:internal-integration-test (default-internal-integration-test) @ JiBo ---
+[INFO] No InstrumentationRunner found - skipping tests
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ JiBo ---
+[INFO] Installing D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\target\JiBo.apk to c:\java\repository\com\api\android\GBApp\JiBo\13.05.17-SNAPSHOT\JiBo-13.05.17-SNAPSHOT.apk
+[INFO] Installing D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\pom.xml to c:\java\repository\com\api\android\GBApp\JiBo\13.05.17-SNAPSHOT\JiBo-13.05.17-SNAPSHOT.pom
+[INFO] Installing D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\target\JiBo.jar to c:\java\repository\com\api\android\GBApp\JiBo\13.05.17-SNAPSHOT\JiBo-13.05.17-SNAPSHOT.jar
+[INFO] Installing D:\workspace\pre_release\jbyd_android_2.2\jbyd_android\Trunk\target\JiBo-aligned.apk to c:\java\repository\com\api\android\GBApp\JiBo\13.05.17-SNAPSHOT\JiBo-13.05.17-SNAPSHOT-aligned.apk
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 2:31.031s
+[INFO] Finished at: Thu Jul 04 15:44:10 CST 2013
+[INFO] Final Memory: 18M/127M
+[INFO] ------------------------------------------------------------------------

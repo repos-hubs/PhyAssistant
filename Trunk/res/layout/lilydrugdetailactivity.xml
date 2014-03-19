@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:background="@drawable/light_bg"
+  >
+ <LinearLayout 
+	android:id="@+id/header_panel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/header"
+    android:layout_alignParentTop="true" >
+        <include layout="@layout/header" />
+		<include layout="@layout/blank_space" />
+		<include layout="@layout/header_title" />
+	</LinearLayout>
+
+ 	<WebView
+ 		android:id="@+id/webview"
+ 		android:layout_width="wrap_content"
+ 		android:layout_height="fill_parent"
+        android:focusable="true"
+ 		/>
+</LinearLayout>

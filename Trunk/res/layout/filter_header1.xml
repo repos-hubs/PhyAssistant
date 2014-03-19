@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+
+        <LinearLayout
+            android:id="@+id/source_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.jibo.ui.ButtonGroup
+                android:id="@+id/source"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/research_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/source_layout"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.jibo.ui.ButtonGroup
+                android:id="@+id/research"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/clinical_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/research_layout"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.jibo.ui.ButtonGroup
+                android:id="@+id/clinical"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/if_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clinical_layout"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <com.jibo.ui.MySeek
+                android:id="@+id/seek_layout"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/browse_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/if_layout"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/reduce_layout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <include layout="@layout/filter_and_or" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reduce_layout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <include layout="@layout/filter_and_or" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reduce_layout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <include layout="@layout/filter_and_or" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/kw1_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/browse_layout"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/add"
+                android:layout_width="40dip"
+                android:layout_height="38dip"
+                android:layout_marginTop="1dip"
+                android:paddingTop="2dp"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/filter_spinner" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/submit_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kw1_layout"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/register_cancel"
+                android:layout_width="120dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/login_btn_bg"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="19dip" />
+
+            <Button
+                android:id="@+id/register_submit"
+                android:layout_width="120dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/login_btn_bg"
+                android:gravity="center"
+                android:text="@string/filter_save"
+                android:textColor="@color/white"
+                android:textSize="19dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

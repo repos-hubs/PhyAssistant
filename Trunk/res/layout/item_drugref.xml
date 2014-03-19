@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txt_city"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="上海"
+    android:textSize="17sp" 
+    android:textColor="@color/white" 
+    android:padding="4dp"
+    android:background="@drawable/btn_bg"
+    android:drawableRight="@drawable/right_arrow">
+
+</TextView>

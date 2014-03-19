@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mai"
+    android:background="@drawable/light_bg">
+			<LinearLayout 
+	android:id="@+id/header_panel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/header"
+    android:layout_alignParentTop="true" >
+        <include layout="@layout/header" />
+		<include layout="@layout/blank_space" />
+    <include layout="@layout/header_title"  />
+    </LinearLayout>
+
+    <LinearLayout 
+        android:id="@+id/NetworkBodyLayout" 
+        android:orientation="vertical" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="7dp" 
+        android:layout_marginLeft="7dp" 
+        android:layout_marginRight="7dp" 
+       >
+        <TextView 
+            android:id="@+id/NetworkSubTitle" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="7dp" 
+            android:layout_marginLeft="20dp" 
+            android:text="@string/channels" 
+            android:textStyle="bold" 
+            android:textSize="17sp" 
+            android:textColor="@color/black"></TextView>
+        <ImageView 
+            android:id="@+id/NetworkSubTitleCuttingLine" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="7dp" 
+            android:layout_gravity="center_horizontal" 
+            android:background="@drawable/cutting_line"></ImageView>
+        <ListView 
+            android:id="@+id/NetworkList" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:divider="@drawable/cutting_line" 
+            android:listSelector="@drawable/gba_list_item" 
+            android:cacheColorHint="#0000"></ListView>
+    </LinearLayout>
+</LinearLayout>

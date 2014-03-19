@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/light_bg">
+		<LinearLayout 
+	android:id="@+id/header_panel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/header"
+    android:layout_alignParentTop="true" >
+        <include layout="@layout/header" />
+		<include layout="@layout/blank_space" />
+<LinearLayout 
+	android:id="@+id/header_f"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
+    <include layout="@layout/header_title"  />
+
+	    		
+		</LinearLayout>	
+	</LinearLayout>
+    <LinearLayout 
+        android:id="@+id/DrugReferDetailsLayout" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:layout_weight="1" 
+        android:layout_marginTop="4dp" 
+        android:layout_marginLeft="7dp" 
+        android:layout_marginRight="7dp">
+        <LinearLayout 
+            android:id="@+id/DrugReferDetailsTextLayout" 
+            android:orientation="vertical" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:layout_gravity="center_horizontal">
+            <LinearLayout 
+                android:id="@+id/DrugReferDetailsDrugNameLayout" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="7dp"
+                android:orientation="vertical">
+                <TextView 
+                        android:id="@+id/DrugReferDetailsDrugNameCn" 
+                        android:layout_width="fill_parent" 
+                        android:layout_height="wrap_content" 
+                        android:layout_marginLeft="7dp" 
+                        android:textSize="17sp" 
+                        android:textStyle="bold" 
+                        android:textColor="@color/black"
+                        android:gravity="center_horizontal"/>
+                         <!--<ImageView 
+			            android:layout_width="wrap_content" 
+			            android:layout_height="wrap_content" 
+			            android:layout_marginTop="7dp" 
+			            android:layout_gravity="center_horizontal" 
+			            android:background="@drawable/cutting_line"/>
+                  <TextView 
+                        android:id="@+id/DrugReferDetailsDrugNameEn" 
+                        android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:layout_marginLeft="20px" 
+                        android:textSize="17sp" 
+                        android:textStyle="bold" 
+                        android:textColor="@color/white"></TextView>    
+                      <TextView
+		            	android:id="@+id/header2"
+		            	android:layout_width="fill_parent"
+		            	android:layout_height="wrap_content"
+		            	android:gravity="center" 
+                        android:textSize="17sp" 
+		            	android:textStyle="bold"
+		            	android:textColor="@color/black"
+		            	android:text="@string/academic_activity"
+            			/>
+            --></LinearLayout>
+            <ImageView 
+                android:id="@+id/DrugReferDetailsDrugNameCuttingLine" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="7dp" 
+                android:background="@drawable/cutting_line"></ImageView>
+            <!-- prime 2011-6-14 begin.-->    
+                <!-- prime 2011-6-14 end.-->
+            <ListView 
+                android:id="@+id/AcademicActivityList" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent" 
+                android:divider="@drawable/cutting_line" 
+                android:listSelector="@drawable/gba_list_item" 
+                android:cacheColorHint="#00000000"></ListView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

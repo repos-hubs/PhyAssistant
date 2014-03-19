@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gb="http://schemas.android.com/apk/res/com.api.android.GBApp"
+    android:id="@+id/mai"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/light_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llt_main_header"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header"
+        android:orientation="vertical" >
+
+        <include layout="@layout/header" />
+
+        <include layout="@layout/blank_space" />
+
+        <LinearLayout
+            android:id="@+id/MainPageRollTitlesLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            >
+
+            <TextView
+                android:id="@+id/MainPageRollTitles"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:scrollbars="none"
+                android:singleLine="false"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llt_main_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_horizontal"
+        android:background="#0000"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/root_homePage_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/llt_main_bottom"
+        android:layout_below="@id/llt_main_header"
+        android:orientation="horizontal" >
+
+        <com.jibo.ui.HomePageLayout
+            android:id="@+id/root_homePage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/llt_main_header"
+            android:layout_marginTop="42dip"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/menuopentint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dip"
+        android:layout_marginTop="410dip"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/menutint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/shortcutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/menutint"
+            android:layout_below="@id/menutint"
+            android:layout_marginLeft="18dip"
+            android:src="@drawable/triangle" />
+    </RelativeLayout>
+
+    <com.jibo.util.tips.Mask
+        android:id="@+id/mask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/mask"
+        android:visibility="gone" />
+    
+    <TextView
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/left"
+       android:gravity="center_vertical"
+        android:text="@string/gossip_home_left"
+        android:textColor="#005684"
+        android:visibility="gone" 
+        android:textSize="18dip"
+        />
+
+    <TextView
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dip"
+        android:background="@drawable/b01"
+        android:visibility="gone" 
+        android:gravity="center_vertical"
+        android:text="@string/gossip_home_right"
+        android:textColor="#005684"
+        android:textSize="18dip"
+        />
+    <com.jibo.ui.RippleView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" 
+        android:id="@+id/rippleView"/>
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginBottom="120dp"
+         android:layout_marginLeft="30dp"
+         android:layout_alignParentBottom="true"
+         android:visibility="gone" 
+        android:id="@+id/leftArrow"
+        android:src="@drawable/left_arrow"
+        />
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/close_tips"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:id="@+id/closeTips"/>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rippleTips"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        android:textColor="#005684"
+        android:textSize="18dip"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:text="@string/drag_switching"
+        android:layout_above="@id/rippleView"
+        android:layout_toRightOf="@id/leftArrow"
+        android:background="@drawable/b03"/>
+    
+    <include layout="@layout/showversion" android:id="@+id/showversion"/>
+</RelativeLayout>

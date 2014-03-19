@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mai"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/light_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header"
+        android:orientation="vertical" >
+
+        <include layout="@layout/header" />
+
+        <include layout="@layout/blank_space" />
+
+        <include layout="@layout/header_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header_panel"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llt_survey_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_panel"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llt_bottom_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bottom_bg"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_survey_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/survey_list_press"
+                android:gravity="center" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_split" />
+
+            <Button
+                android:id="@+id/btn_survey_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/survey_mine_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_split" />
+
+            <Button
+                android:id="@+id/btn_survey_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/survey_payment_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bottom_split" />
+
+            <Button
+                android:id="@+id/btn_survey_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/survey_intro_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.jibo.util.tips.Mask
+        android:id="@+id/mask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:background="#CC000000"
+        android:visibility="gone" />
+    
+    <ImageView 
+        android:id="@+id/tip_item"
+        android:layout_below="@id/header_panel"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/survey_new_normal"/>
+
+    <TextView
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tip_item"
+        android:layout_marginTop="-50dp"
+        android:background="@drawable/left"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:text="@string/tip_questionnaire"
+        android:textColor="#005684"
+        android:textSize="18dip"
+         />
+    
+    <TextView
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="39dip"
+        android:layout_marginLeft="89dip"
+        android:background="@drawable/b03"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:text="@string/tip_state"
+        android:textColor="#005684"
+        android:textSize="18dip"
+         />
+    
+    <TextView
+        android:id="@+id/right_gathering"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="99dip"
+        android:layout_marginBottom="39dip"
+        android:background="@drawable/b04"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:text="@string/tip_gathering"
+        android:textColor="#005684"
+        android:textSize="18dip"
+        />
+    
+    <TextView
+        android:id="@+id/right_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="39dip"
+         android:layout_marginRight="15dip"
+        android:background="@drawable/b04"
+        android:paddingBottom="8dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="18dip"
+        android:visibility="gone"
+        android:text="@string/survey_tip_getmoney"
+        android:textColor="#005684"
+        android:textSize="18dip"
+        />
+    
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/close_tips"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:id="@+id/closeTips"/>
+
+</RelativeLayout>

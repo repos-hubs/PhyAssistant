@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/mai"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/light_bg"
+        android:orientation="vertical" >
+
+        <!-- 头部layout -->
+        <LinearLayout
+            android:id="@+id/header_panel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header"
+            android:orientation="vertical" >
+
+            <include layout="@layout/header" />
+
+            <include layout="@layout/blank_space" />
+
+            <LinearLayout
+                android:id="@+id/header_f"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <include layout="@layout/header_title" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+	        <ImageView android:layout_width="fill_parent"
+	            android:id="@+id/img_logo"
+		        android:layout_height="wrap_content"
+		        android:adjustViewBounds="true"
+		        android:background="@color/white"
+		        />
+	        
+	        <ListView android:layout_width="fill_parent"
+	            android:id="@+id/special_list"
+	            android:layout_below="@id/img_logo"
+	            android:layout_height="wrap_content"
+	            android:cacheColorHint="#00000000"
+		        android:divider="@color/list_divider"
+		        android:dividerHeight="1px"
+		        android:fadingEdge="none"
+		        android:fastScrollEnabled="true"
+		        android:footerDividersEnabled="true"
+		        android:headerDividersEnabled="true"
+	            android:paddingBottom="5dp"></ListView>
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+    
+</RelativeLayout>

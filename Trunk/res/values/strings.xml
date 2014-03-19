@@ -1,0 +1,994 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="browse">Browse</string>
+    <string name="collection">Care</string>
+    <string name="app_name">"JiBo"</string>
+    <string name="version">"JiBo Ver. 2.2"</string>
+    <!-- Item Names -->
+    <string name="drug">Drugs</string>
+    <string name="drug_hint">\tDrugs</string>
+    <string name="event">Event</string>
+    <string name="research">Research</string>
+    <string name="tool">Tools</string>
+    <string name="news">News</string>
+    <string name="calculator">Calculators</string>
+    <string name="academic_profile">Profile</string>
+    <string name="network">Network</string>
+    <string name="survey">Survey</string>
+    <string name="market">Tool Market</string>
+    <string name="drugalert">Safety Alerts</string>
+    <string name="loading">Loading data, please waiting...</string>
+    <string name="menu">"Try Menu Button"</string>
+    <string name="drug_note">Note</string>
+    <string name="set_up">Setting</string>
+    <string name="difference_version">专家版用户可拥有更多额外服务，目前包括美国医院处方服务（AHFS）药品数据的完整版信息，标准版用户目前只提供精简版信息。
+	\n\n注：AHFS数据是由美国卫生系统药师协会 (ASHP) 编写，已有50余年历史，是最稳固可靠循证医学的药品信息来源，由世界顶级的药学专家根据临床数据编写和审核，完全独立于任何制药企业。</string>
+    <string name="standard_version">Standard version is currently in use, please input the invitation code for expert version upgrade .</string>
+    <string name="premium_version">Expert version is currently in use，additional service has been included.</string>
+    <string name="update_version_dlg">Please input the invitation code</string>
+    <string name="update_version_fail">Upgrade failure，invitation code is invalid or used</string>
+    <string name="update_version_success">Upgrade successfully</string>
+    <string name="set_up_version">Invatation Code</string>
+    <!-- InitializeActivity -->
+    <string name="slogan1">"A daily resource for healthcare professionals"</string>
+    <string name="slogan2">"with the most comprehensive, accurate and up-to-date"</string>
+    <string name="slogan3">"medical information, anytime, anywhere."</string>
+    <string name="checkdbversion">"Checking the data version..."</string>
+    <string name="market_associate">Relevant to your specialty</string>
+    <string name="market_unassociate">Other people are also using</string>
+    <string name="survey_target_place">Target region</string>
+    <string name="survey_target_dpt">Target department</string>
+    <string name="survey_target_hospital">Target hospital level</string>
+    <string name="survey_recheck_letter">This survey will require extra filter process, please take the filter question first.</string>
+    <string name="survey_recheck_error">Sorry, you are not in the target scope of this survey. Thank you for your participation!</string>
+
+    <!-- Header Search Panel -->
+    <string name="select_dialog">Search in</string>
+    <string name="title">Title</string>
+    <string name="author">Author</string>
+    <string name="entity">Entity</string>
+    <string name="publish_date">Publish Date</string>
+    <string name="keyword">Keyword</string>
+    <string name="str_split">"ぁ"</string>
+
+    <!-- Event -->
+    <string name="region">Region</string>
+    <string name="Organizer">Organizer</string>
+    <string name="category">Category</string>
+    <string name="survey_intro_content">集博付费调查规则介绍（暂行版）\n
+
+1.	调查相关规则\n
+a)	每份调查问卷每个用户仅限回答一次，付费调查对象目前仅限具有特定资格的医师，如执业医师资格。\n
+b)	如有附加筛选条件，需要在正式问卷前进行回答预筛选问卷。符合条件，可以继续。不符合条件，则无法进行该次调查。\n
+c)	问卷会不定期地通过系统更新，各项问卷会依据您事先注册的资料，尽可能发送给符合调查目的的用户。\n
+d)	用户可以暂时中断正式问卷的回答，在问卷有效时间内可以继续。\n
+e)	完成调查后，需要进行调查后的内容验证，用户可在历史问卷页面查看问卷状态。\n
+2.	用户资料相关规则\n\n
+a)	目前仅供信息真实完整的用户参与调查，包括真实姓名、所在地区、城市、医院、科室、联系电话。我们会通过电话验证等多种手段，积极进行真实性的验证。\n
+b)	任何相关用户信息的改变，都需要进行验证，状态将改为“未验证”，包括支付方式的改变。\n
+c)	只有状态显示为“已验证”的用户，才能获得相应酬金的支付。\n
+d)	用户资料和信息将完全受到保护，请参看集博的隐私和免责声明。\n
+3.	付费调查酬金相关规则\n\n
+a)	完成调查后，需要进行调查后的内容验证，酬金将在有效问卷验证完成后再发放。\n
+b)	酬金将通过支付宝或者手机卡充值的方式进行支付。\n
+4.	其他\n\n
+a)	其他未尽事宜，以官方通知和解释为准。\n</string>
+    <string name="survey_intro_fb">        Please feel free to contact with us for any time any feedback</string>
+
+    <!-- Dialog Content -->
+    <string name="generalprompt">"Notification"</string>
+    <string name="chooseMenu">Choose Sharing Way</string>
+    <string name="networknotavailable">Network unavailable, please connect network!</string>
+    <string name="waiting">Please Wait...</string>
+    <string name="updating">Checking updates, please wait...</string>
+    <string name="losedownload">Internet connection is not stable, please try again later!</string>
+    <string name="gbaerror">Error Notification</string>
+    <string name="networktitle">Network Status Prompt</string>
+    <string name="stopdownload">"Stop"</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="quitprompt">"Please choose..."</string>
+    <string name="switchacc">"Change account"</string>
+    <string name="exit">"Exit"</string>
+    <string name="unziping">"Unzipping the data..."</string>
+    <string name="downloadagain">"Downloading again"</string>
+    <string name="downloading">"Downloading the latest data..."</string>
+    <string name="networkNotReachable">Failure to download the data, please try it again!</string>
+    <string name="selectshortcut">"Go to"</string>
+    <string name="newscategory0">"The latest"</string>
+    <string name="newscategory1">"Internal medicine"</string>
+    <string name="newscategory2">"Surgical"</string>
+    <string name="newscategory3">"Clinical specialty"</string>
+    <string name="newscategory4">"Medicine"</string>
+    <string name="newscategory5">"Ancillary dept.s"</string>
+    <string name="newscategory6">"Healthcare news"</string>
+    <string name="search_results">Search result</string>
+    <string name="link_to_source">Link to the source</string>
+    <string name="whole_body">Content</string>
+    <string name="registration">Registration</string>
+    <string name="emailhint">"Get informed"</string>
+    <string name="accounthint">"Email recommended"</string>
+    <string name="att2">"6+ digit/char"</string>
+    <string name="departmenthint">"Add to get customized services"</string>
+    <string name="filladvanceinfohint">"Add more to be an Advanced Member. We need to validate that you are a real doctor. Would you like to provide your name, and hospital or your mobile phone number?"</string>
+    <string name="note">"Notice"</string>
+    <string name="directreg">"Quick Register"</string>
+    <string name="advancereg">"Detailed Info"</string>
+    <string name="practiceinfo">"Practice Info"</string>
+    <string name="modify">"Edit"</string>
+    <string name="editsuccess">"Successfull!"</string>
+    <string name="userinfo">"User info"</string>
+    <string name="account">"Account"</string>
+    <string name="password2">"Password"</string>
+    <string name="oldpassword">"Current password"</string>
+    <string name="confirmnewpassword">"Confirm password"</string>
+    <string name="retrypassword">"Confirm"</string>
+    <string name="e_mail">Email</string>
+    <string name="departments">Dept</string>
+    <string name="send">"Submit"</string>
+    <string name="sending">"Submitting..."</string>
+    <string name="empty">" is empty"</string>
+    <string name="username">"UserName"</string>
+    <string name="password">"Password"</string>
+    <string name="update_info_success">"Update Information Success"</string>
+    <string name="passwordlen">"The length of PWD should be no less than 6 characters"</string>
+    <string name="verifypasserror">"Password is not right, try again!"</string>
+    <string name="newpassnot">"New password is inconsistent, try again!"</string>
+    <string name="passwordnot">"The PWD does not match!"</string>
+    <string name="regerror">"The user name has been taken, please Change another one."</string>
+    <string name="netexception">"Internet connection error"</string>
+    <string name="regerror_failed">"Failed to sign up your account due to the internet connection, please try it again later, or sign  up at www.jibo.cn"</string>
+    <string name="regprompt">"Your account has been created, please check your emailbox and verify email address to get more services."</string>
+    <string name="username1">"Account"</string>
+    <string name="password1">"Password"</string>
+    <string name="rememberpass">"Keep PWD"</string>
+    <string name="autologin">"Keep Login"</string>
+    <string name="login">"Log in"</string>
+    <string name="registration1">"Sign Up"</string>
+    <string name="relief">"Please read "</string>
+    <string name="relief_content">the disclaimer</string>
+    <string name="autologining">Automatically login</string>
+    <string name="logining">"Logging in..."</string>
+    <string name="errortint">Error hint</string>
+    <string name="nolicense">"We can't find your licensecurrently!"</string>
+    <string name="preting">"Incorrect password, please try again!"</string>
+    <string name="accountrule">Inappropriate characters in your username</string>
+    <string name="city">City</string>
+    <string name="star">"<font color="red">*</font>"</string>
+    <string name="number">Phone</string>
+    <string name="reg_name">Name</string>
+    <string name="regdepartment">Dept</string>
+    <string name="proftitle">"Prof. Title"</string>
+    <string name="att1">"Item with * is mandatory"</string>
+    <string name="prof_titles0">"Prof. Title"</string>
+    <string name="prof_titles1">"Interns"</string>
+    <string name="prof_titles2">"Residency"</string>
+    <string name="prof_titles3">"Physician"</string>
+    <string name="prof_titles4">"Deputy Chief Physician"</string>
+    <string name="prof_titles5">"Chief Physician"</string>
+    <string name="prof_title">Prof. title</string>
+    <string name="name">Name</string>
+    <string name="fillschoolname">"School name:"</string>
+    <string name="license_number">License #</string>
+    <string name="date_of_birth">Birthday</string>
+    <string name="subcategory">Sub-specialty</string>
+    <string name="medical_school">"Medical school "</string>
+    <string name="information">Information</string>
+    <string name="year_of_graduation">Year of Graduation</string>
+    <string name="reg2_region">Region</string>
+    <string name="reg2_city">City</string>
+    <string name="reg2_specialty">Specialty</string>
+    <string name="reg2_medical_school">Hospital</string>
+    <string name="licensehint">"In 15 digital NO."</string>
+    <string name="other">"other"</string>
+    <string name="gradyear">"1998"</string>
+    <string name="must_be_15">Must be 15 number</string>
+    <string name="year">Year</string>
+    <string name="checkUsername">Checking the username</string>
+    <string name="news_turnto_drug_alert">Safety Alert</string>
+    <string name="share_dialog_title_sina">Share to SinaWeibo</string>
+    <string name="share_dialog_title_qq">Share to QQWeibo</string>
+    <string name="shareitem0">"Message Sharing"</string>
+    <string name="shareitem1">"Sina Sharing"</string>
+    <string name="shareitem2">"Other Sharing"</string>
+    <string name="shareitem3">"share to renren"</string>
+    <string name="shareitem4">"Email Sharing"</string>
+    <string name="sdnotready">"SD card is not ready!"</string>
+    <string name="filenotexist">"Data file does not exsit, please download again!"</string>
+    <string name="canceldownload">"Stop downloading?"</string>
+    <string name="loadingin">"Loading..."</string>
+    <string name="dlg_sharing_title">Choose Sharing Way</string>
+    <string name="fillLicense">"Please enter Practice License NO. to get your profile!"</string>
+    <string name="fill">"Fill in"</string>
+    <string name="no_package_update">No new package available, what you have is the latest!</string>
+    <string name="input_error">please input valid value</string>
+    <string name="newDataAvailable">"New data package available"</string>
+    <string name="data_error">Data file is corrupted, please download again!</string>
+    <string name="update_dpt">aaaa</string>
+    <string name="pkg_installed">Installed</string>
+    <string name="pkg_to_install">Install</string>
+    <string name="pkg_to_upgrade">Upgrade</string>
+    <string name="pkg_to_uninstall">Uninstall</string>
+    <string name="dpt_title">Toolkit relevant with departments</string>
+    <string name="check_email_address">Please input valid email</string>
+    <string name="data_update_full">Please update a critical data package.</string>
+    <string name="cancel_install">Please update to the latest version to avoid instability!</string>
+    <string name="apk_need_install">Data package corrupted, you have to upgrade or reinstall.</string>
+    <string name="pckg_installing">Installing</string>
+    <string name="pckg_install_success">Success</string>
+    <string name="pckg_install_failure">Failure</string>
+    <string name="btn_save">save</string>
+    <string name="survey_submit_success">Submitted, thank you!</string>
+    <string name="survey_submit_error">Failed for some reasons, please try again!</string>
+    <string name="survey_submit_submitted">"Sorry, you've participated"</string>
+    <string name="survey_submit_full">Sorry, the participants exceeded the limitation.</string>
+    <string name="survey_not_complete">Please answer all the questions and then submit again.</string>
+    <string name="market_package_uninstalling">Uninstalling...</string>
+    <string name="market_no_invite_code">Expert version only，please input invitation code!</string>
+    <string name="download_count">\tdownloaded</string>
+    <string name="survey_data_lack">Prize questionnaire, please improve relevant information therefore we could better understand your needs.</string>
+    <string name="survey_data_lack_ok">To improve</string>
+    <string name="survey_data_lack_cancel">Cancel</string>
+    <string name="tools_goto_install">You are not to install this tool, please go to tools market to download</string>
+
+    <!-- account mgr -->
+    <string name="accountmanagement">"Account management"</string>
+    <string name="updatetime">"Last updated: "</string>
+    <string name="versioninfo">"Version: "</string>
+    <string name="checkdataupdate">"Check data version"</string>
+    <string name="defaultcategory">"Select default"</string>
+    <string name="notset">"Unset"</string>
+    <string name="set">"Set"</string>
+    <string name="personaltool">"Optional modules"</string>
+    <string name="editreginfo">"Change reg info"</string>
+    <string name="editpassword">"Change password"</string>
+    <string name="cardiovascular_sys">"Cardiovascular system"</string>
+    <string name="endocrine_metabolic_sys">"Endocrine/metabolic system"</string>
+    <string name="blood_sys">Blood system</string>
+    <string name="kidney_sys">Kidney system</string>
+    <string name="respiratory_sys">Respiratory system</string>
+    <string name="musculoskeletal_sys">Musculoskeletal system</string>
+    <string name="surgery">Surgery</string>
+    <string name="all">All</string>
+    <string name="btn_txt_calculate">"Calculate"</string>
+    <string name="btn_txt_clear">"Clear"</string>
+    <string name="data_update_success">Upgrade complete</string>
+
+    <!-- Tools -->
+    <string name="nccn_disease">Clinical Practicing Guidelines</string>
+    <string name="ecg">ECG for CVDs</string>
+    <string name="tnm">TNM tumor staging</string>
+    <string name="tumorCategory">"Clinical stage："</string>
+    <string name="tumorref">"Ref: AJCC Cancer Staging Manual (7th Edition)"</string>
+    <string name="series">"Series"</string>
+    <string name="or">" or "</string>
+    <string name="noranklevel">"Not available"</string>
+    <string name="nccn_comment">"Comment"</string>
+    <string name="sendSuccess">Successful!</string>
+    <string name="share_email">"Share"</string>
+
+    <!-- Account mgr -->
+    <string name="datanotset">"No data available, please download"</string>
+    <string name="accountcheck">"Check new version"</string>
+    <string name="accountselect">"Select default"</string>
+    <string name="accounttool">"Optional modules"</string>
+    <string name="accountregistration">"Change reg info"</string>
+    <string name="accountpassword">"Change password"</string>
+    <string name="notnull">"Coming soon"</string>
+    <string name="abtus">About JiBo</string>
+    <string name="setting">Setting</string>
+    <string name="lgout">Log out</string>
+    <string name="shrout">Share</string>
+
+    <!-- Academic Profile -->
+    <string name="academic_status">Academic status</string>
+    <string name="nodata">"No information available"</string>
+    <string name="colon">:</string>
+    <string name="hospital">Hospital</string>
+    <string name="hospital_percentile">Hospital ranking</string>
+    <string name="articles_written_by">Linked papers</string>
+    <string name="coauthor">Coauthor network</string>
+    <string name="sub_specialty">Sub-specialty</string>
+    <string name="specialty1">Specialty</string>
+    <string name="ca_hsp">Same hospital</string>
+    <string name="cao_hsp">Other hospitals</string>
+    <string name="five_key_words">5 keywords</string>
+
+    <!-- Survey -->
+    <string name="invitenxt">try next time</string>
+    <string name="invitefri">invite friends</string>
+    <string name="surveysave">Submit</string>
+    <string name="answerNone">Answers should be not empty</string>
+    <string name="existMsg">You had already participated in this survey!</string>
+    <string name="submitSuccess">Submit successfully</string>
+    <string name="fdbacksubmit">Feed back</string>
+    <string name="channels">Channels</string>
+    <string name="survey_estimateTime">Esimated time：</string>
+    <string name="survey_reward">Incentive：</string>
+    <string name="survey_personCount">Participants：</string>
+    <string name="survey_endTime">Expiration：</string>
+    <string name="survey_source">Sponsor：</string>
+    <string name="survey_question_intro">Introduce：</string>
+    <string name="survey_title_list">Survey sheets</string>
+    <string name="survey_title_history">Taken sheets</string>
+    <string name="survey_title_setup">Payment setting</string>
+    <string name="survey_title_intro">Introduction</string>
+    <string name="survey_payway">Choose one way to get paid</string>
+    <string name="survey_payway_zfb">AliPay</string>
+    <string name="survey_payway_mobile">Recharge</string>
+    <string name="survey_status_change">Status changed: </string>
+    <string name="survey_status_memo">Memo: </string>
+    <string name="survey_no_history">Check the status after completing the survey.</string>
+
+    <!-- Event -->
+    <string name="eventsAttend">To be an attendee?</string>
+    <string name="event_name">Event name</string>
+    <string name="event_date">Date</string>
+    <string name="venue">Addr.</string>
+    <string name="introduction">Intro.</string>
+    <string name="tel">Tel</string>
+    <string name="fax">Fax</string>
+    <string name="website_source">Website source</string>
+
+    <!-- Symbol -->
+    <string name="comma">,</string>
+    <string name="space">\u0020</string>
+
+    <!-- Research -->
+    <string name="categoryrea">category</string>
+    <string name="journal_name">Journal name</string>
+    <string name="data_and_volume">Publish Date</string>
+    <string name="abstracts">Abstract</string>
+    <string name="other_drugs_mentioned">Drugs mentioned</string>
+    <string name="webSearch">"Search on PubMed"</string>
+    <string name="articles_by_specialty">Articles by specialty</string>
+    <string name="according">By</string>
+    <string name="linked_papers">Linked Papers</string>
+    <string name="search_tips">The search content is: search drugs in both Chinese and English name, trade name general, pinyin initials</string>
+
+    <!-- history -->
+    <string name="his">History</string>
+    <string name="fav">Favorite</string>
+    <string name="vh_today">Today</string>
+    <string name="vh_yesterday">Yesterday</string>
+    <string name="vh_week">This Week</string>
+    <string name="vh_month">This Month</string>
+    <string name="vh_older">Earlier</string>
+    <string name="synchronize_title">Loading...</string>
+    <string name="synchronize_message">Please wait...</string>
+    <string name="my_history">My history</string>
+    <string name="my_favorite">My Favorite</string>
+    <string name="cancelFav">Canceled</string>
+    <string name="favorite">Successful!</string>
+    <string name="favfail">UnSuccessful,please try again!</string>
+    <string name="history_favorite">Favorites</string>
+
+    <!-- menu -->
+    <string name="mygbi">My JiBo</string>
+    <string name="myhelp">Help</string>
+    <string name="myhisfav">His_Fav</string>
+    <string name="myinfset">Feedback</string>
+    <string name="syncc">Sychronize</string>
+    <string name="senttoemail">Send To EmailAddress</string>
+    <string name="emailTitle">Title</string>
+    <string name="mail">Email</string>
+    <string name="feedback">We do appreciate your comments, please let us know and make JiBo perfect!Please input your suggestion.</string>
+
+    <!-- about -->
+    <string name="helpmsg">Help</string>
+    <string name="aboutuscontent1">集博专注于提供给医疗行业人士专业资讯及服务。\n\n我们的目标：为中国医师提供更加完善的医学资源、临床工具及沟通平台！\n\n我们的服务：为您带来每日更新的医学前沿资讯，提供药品信息、临床诊疗指南、医学文献、常用临床公式、医学会议信息....的便捷查询。\n\n目前提供服务平台有集博网页版、以及Android和iPhone版本的手机应用。</string>
+    <string name="aboutuscontent2">"JiBo website: "</string>
+    <string name="aboutus">About us</string>
+
+    <!-- help -->
+    <string name="col_research_assistant">Research Assistant</string>
+    <string name="col_profile_network">Academic Network</string>
+    <string name="col_tools">Medical tools</string>
+    <string name="col_news">Medical News</string>
+    <string name="col_favorite">My favorite</string>
+    <string name="col_calculator">Medical Calculator</string>
+    <string name="col_drug">Medications Information</string>
+    <string name="col_clinical_path">clinical pathway</string>
+    <string name="col_director">Guideline</string>
+    <string name="col_events">Medical Conference</string>
+    <string name="col_research">Medical Study</string>
+    <string name="col_ecg">Electrocardiogram</string>
+    <string name="ui_main">Helper</string>
+    <string name="ui_indro">界面的一些常见控件、按钮、图标的介绍</string>
+    <string name="menuhelp">点击安卓手机上的"menu"按钮,可以看到弹出的菜单如上图示
+  \n1、主界面菜单选项包括:账户设置、关于我们（使用帮助）、注销与切换账户、分享功能
+  \n2、二级界面菜单(1)包括:药品列表、计算机器列表、新闻列表、工具列表、文章列表、会议列表 \n菜单选项包括:注销与切换账户、我的"集博"、历史收藏、使用帮助
+  \n3、二级界面菜单(2)包括:我的主页、合著者列表、我的圈子 \n菜单选项包括:信息反馈、注销与切换账户、账户设置、使用帮助
+  \n4、三级界面菜单包括:药品详细、计算机器详细、新闻详细、文具详细、文章详细、会议详细 \n菜单选项包括:信息反馈、分享、账户设置、历史收藏  </string>
+    <string name="spinnerhelp">    如上图标是可点击的下拉列表,用于选择所属分类
+  \n药品信息、医学公司、医学新闻、医学研究、医学会议中均有此下拉列表</string>
+    <string name="favhelp">    如上图是可点击的收藏图标,收藏内容可以通过查看历史收藏获得</string>
+    <string name="drghelp">	提供国内常用的处方药2000多种通用名、7000多种商品名以及OTC药品和中成药的基本信息查询</string>
+    <string name="drghelpdtl">    1、药品信息包括： 适应症、药物相互作用、用法用量、禁忌症、不良反应报告、医保目录、剂型、规格、生产厂家等。
+    \n2、可通过商品名、通用名、拼音的首字母等迅速找到目标药。
+    \n3、按您的专业领域检索药物(包括:神经与精神疾病、呼吸系统疾病、消化系统疾病、心血管系统疾病、内分泌代谢疾病、肿瘤... ...20个治疗领域)。
+    \n4、可将您常用的药物添加到收藏夹列表，供以后重复查询。
+    \n5、无需网络连接，随时随地访问。</string>
+    <string name="calhelp">协助您做出临床决策的有用医学计算器
+    \n包括80个临床实践中有用的医学计算器。</string>
+    <string name="calhelpdtl">    1、可依据治疗领域查找计算公式，包括：心血管系统、内分泌代谢系统、血液系统、泌尿系统、呼吸系统、肌肉骨骼系统和外科，7个治疗领域的常用公式。
+    \n2、可将您常用的计算器添加到收藏夹列表，供以后快速访问。
+    \n3、无需网络连接，随时随地访问。   </string>
+    <string name="newshelp">阅读最新的医学新闻报道，内容每日更新，触及多种主题
+   \n新闻报道均来源于国内外有影响力的期刊、报纸及网站, 例如Medscape、首席医学网等。</string>
+    <string name="newshelpdtl">   1、新闻报道均来源于国内外有影响力的期刊、报纸及网站, 例如Medscape、首席医学网等。
+   \n2、最新动态为您带来最新行业新闻报道，内容每日更新。
+   \n3、选择您关注的主题浏览所有新闻，内容包括：内科、外科、临床专科、辅助科室、临床相关医学和行业动态（例如，政府医疗改革，政策和法规，医院管理... ...）。
+   \n4、可将您关注的新闻报道添加到收藏夹列表，供以后查阅。
+   \n5、通过微博、短信、邮件与人分享精彩的新闻报道。  </string>
+    <string name="toolhelp">    临床实践中必不可少的工具，协助您诊断、治疗或判断预后</string>
+    <string name="toolhelpdtl">    1、肿瘤临床实践指南： 肿瘤领域临床决策的标准，按类似决策树的路线图进行组织，便于临床医师方便快捷地找到正确的治疗路线。
+    \n2、TNM肿瘤分期工具： 采用TNM肿瘤分期系统，为各种肿瘤进行临床分期，指导治疗计划的制定。
+    \n3、典型异常心电图：收集了常见的异常心电图，35例优质的心电图实例加上详细的文字注解,是临床医师不可多得的学习工具。  </string>
+    <string name="acahelp">    一个专属您自己的学术成就展示平台
+   \n在我们超过300万篇文章和30万医生的数据库中为您建立个人学术档案，包括您发表的文章， 主要研究方向等。</string>
+    <string name="acahelpdtl">    1、在我们超过300万篇文章和30万医生的数据库中为您建立个人学术档案，包括您发表的文章， 主要研究方向等。
+    \n2、在档案中轻松浏览您及您的合著者发表文章概况，并提供链接到文章摘要或整篇文章（如果可以在Web 上免费浏览全文）。    </string>
+    <string name="reshelp">    即时显示搜索结果，保存和分享搜索的文章，更多......</string>
+    <string name="reshelpdtl">   1、提供多种检索方式，输入文章标题、发布日期、作者姓名、医院名称或文章关键词均可搜索文章，并提供链接到摘要或整篇文章（如果可以在Web 上免费浏览全文）。
+   \n2、选择您关注的治疗领域浏览文章(包括:神经与精神疾病、呼吸系统疾病、消化系统疾病、心血管系统疾病、内分泌代谢疾病、肿瘤... ... 20个领域)。
+   \n3、迅速显示搜索结果，全部结果以逆时间顺序排列（最新的文章排在最前面）。
+   \n4、提供PubMed数据库链接，点击进入PubMed数据检索系统。
+   \n5、可将您关注的文章添加到收藏夹列表，供以后重复查阅。
+   \n6、通过微博、短信、邮件与人分享有价值的文章。   </string>
+    <string name="eventhelp">   提供国内外医学类相关学术会议的基本资料</string>
+    <string name="eventhelpdtl">  1、囊括超过1,600个国际和国内医学医学类相关学术会议资料（2008年1月 - 10月2012年）。
+  \n2、所有会议被划分为即将发生的和往期的，以便查询。
+  \n3、可将您关注的会议添加到收藏夹列表。
+  \n4、通过微博、短信、邮件与人分享重要会议。</string>
+    <string name="surveyhelp">  每月参与简单的调查，将有积分或者礼品回馈。</string>
+    <string name="surveyhelpdtl"> 例如：
+  \n1、集博是否为您日常医务工作带来方便？
+        \n A.是
+        \n B.一般
+        \n C.否
+
+  \n2、您现在正在使用的医疗类应用软件是？
+      \n A.Epocrates
+      \n B.Medscape
+      \n C.MD
+      \n D.CalcultorRX
+      \n E.其它</string>
+    <string name="netwrkhelp">  查找业内伙伴并追踪他们的学术成果</string>
+    <string name="netwrkhelpdtl">  \n1、在我们超过300万篇文章和30万医生的数据库中查找您合著者的基本情况。
+  \n2、查找合著者已发表文章的概况，并提供链接到文章摘要或整篇文章（如果可以在Web 上免费浏览全文）。 </string>
+    <string name="hisfavhelp">  您的"历史记录列表"
+  \n您的"收藏夹"</string>
+    <string name="hisfavhelpdtl">    历史记录列表让您可以重新查阅最近查看过的主题，并按日期（今天，昨天，本周...)排列这些主题. 
+  \n收藏夹包含了您已保存，供以后参考的主题，并自动将其分类为：
+  \n 1.药品信息
+  \n 2.医学公式
+  \n 3.行业新闻
+  \n 4.医学研究和学术背景  
+  \n 5.医学会议 </string>
+    <string name="t01">"TA001"</string>
+    <string name="t02">"TA002"</string>
+    <string name="t03">"TA003"</string>
+    <string name="t04">"TA004"</string>
+    <string name="t05">"TA005"</string>
+    <string name="t06">"TA006"</string>
+    <string name="t07">"TA007"</string>
+    <string name="t08">"TA008"</string>
+    <string name="t09">"TA009"</string>
+    <string name="t10">"TA010"</string>
+    <string name="t11">"TA011"</string>
+    <string name="t12">"TA012"</string>
+    <string name="t13">"TA013"</string>
+    <string name="t14">"TA014"</string>
+    <string name="t15">"TA015"</string>
+    <string name="t16">"TA016"</string>
+    <string name="t17">"TA017"</string>
+    <string name="t18">"TA018"</string>
+    <string name="t19">"TA019"</string>
+    <string name="t20">"TA020"</string>
+    <string name="neu">"Neurology/Psychiatry"</string>
+    <string name="pul">"Pulmonology"</string>
+    <string name="gas">"Gastroenterology"</string>
+    <string name="car">"Cardiology"</string>
+    <string name="endo">"Endocrinology"</string>
+    <string name="hema">"Hematology"</string>
+    <string name="theu">"Rheumatology/Orthopedic"</string>
+    <string name="urol">"Urology"</string>
+    <string name="infe">"Infectious diseases"</string>
+    <string name="onco">"Oncology"</string>
+    <string name="nutr">"Nutrition"</string>
+    <string name="obst">"Obstetrics/Gynecology</string>
+    <string name="otol">"Otolaryngology"</string>
+    <string name="stom">"Stomatology"</string>
+    <string name="derm">"Dermatology"</string>
+    <string name="anes">"Anesthesia"</string>
+    <string name="immu">"Immunology/Vaccine"</string>
+    <string name="acut">"Acute poisoning treatment"</string>
+    <string name="diag">"Diagnosis"</string>
+
+    <!-- drug -->
+    <string name="drug_reference">Drugs</string>
+    <string name="formulation">Formulation</string>
+    <string name="interaction">Interaction</string>
+    <string name="importantNotice">Important Notice</string>
+    <string name="overDosage">Over Dosage</string>
+    <string name="pharmacological">Pharmacological</string>
+    <string name="pharmacokinetics">Pharmacokinetics</string>
+    <string name="national">National</string>
+    <string name="regional">Regional</string>
+    <string name="pediatric_use">"For children:"</string>
+    <string name="geriatric_use">"For the old:"</string>
+    <string name="pregnancydesc">"For women during pregnancy and lactation:"</string>
+    <string name="fda">"FDA pregnancy category:"</string>
+    <string name="fdaa">"Category A: Adequate and well-controlled human studies have failed to demonstrate a risk to the fetus in the first trimester of pregnancy (and there is no evidence of risk in later trimesters).\n\n"</string>
+    <string name="fdab">"Category B：Animal reproduction studies have failed to demonstrate a risk to the fetus and there are no adequate and well-controlled studies in pregnant women OR Animal studies have shown an adverse effect, but adequate and well-controlled studies in pregnant women have failed to demonstrate a risk to the fetus in any trimester.\n\n"</string>
+    <string name="fdac">"Category C：Animal reproduction studies have shown an adverse effect on the fetus and there are no adequate and well-controlled studies in humans, but potential benefits may warrant use of the drug in pregnant women despite potential risks.\n\n"</string>
+    <string name="fdad">"Category D：There is positive evidence of human fetal risk based on adverse reaction data from investigational or marketing experience or studies in humans, but potential benefits may warrant use of the drug in pregnant women despite potential risks.\n\n"</string>
+    <string name="fdax">"Category X：Studies in animals or humans have demonstrated fetal abnormalities and/or there is positive evidence of human fetal risk based on adverse reaction data from investigational or marketing experience, and the risks involved in use of the drug in pregnant women clearly outweigh potential benefits.\n"</string>
+    <string name="generic">Generic drug</string>
+    <string name="reimbursement_type">Reimbursement type</string>
+    <string name="category_of_use">Category of use</string>
+    <string name="pediatric_specific">use limits</string>
+    <string name="part">"Part"</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="rate">Rate</string>
+    <string name="edl_source">EDL source</string>
+    <string name="reimbursement_source">Reimbursement rates are not specific at the hospital level. Reimbursement status is according to policy number</string>
+    <string name="manufacturers">Drug Manufacturers</string>
+    <string name="brand_drug">Brand drug</string>
+    <string name="associated_brand_names">Brand names</string>
+    <string name="act_code_and_description">ATC code</string>
+    <string name="drug_item1">"Drug list (A-Z)"</string>
+    <string name="drug_item2">"Neurology/Psychiatry"</string>
+    <string name="drug_item3">"Pulmonology"</string>
+    <string name="drug_item4">"Gastroenterology"</string>
+    <string name="drug_item5">"Cardiology"</string>
+    <string name="drug_item6">"Endocrinology"</string>
+    <string name="drug_item7">"Hematology"</string>
+    <string name="drug_item8">"Rheumatology/Orthopedic"</string>
+    <string name="drug_item9">"Urology"</string>
+    <string name="drug_item10">"Infectious diseases"</string>
+    <string name="drug_item11">"Oncology"</string>
+    <string name="drug_item12">"Nutrition"</string>
+    <string name="drug_item13">"Obstetrics/Gynecology</string>
+    <string name="drug_item14">"Ophthalmology"</string>
+    <string name="drug_item15">"Otolaryngology"</string>
+    <string name="drug_item16">"Stomatology"</string>
+    <string name="drug_item17">"Dermatology"</string>
+    <string name="drug_item18">"Anesthesia"</string>
+    <string name="drug_item19">"Immunology/Vaccine"</string>
+    <string name="drug_item20">"Acute poisoning treatment"</string>
+    <string name="drug_item21">"Diagnosis"</string>
+    <string name="drug_item22">"Other"</string>
+    <string name="counterfeit">Counterfeit</string>
+    <string name="indication">"Indication"</string>
+    <string name="dosing">Dosing</string>
+    <string name="adrs">ADRs</string>
+    <string name="edl">EDL</string>
+    <string name="reimbursement">Reimbursement</string>
+    <string name="manufacturers_price">Manufacturers/Price</string>
+    <string name="academic_activity">Academic activity</string>
+    <string name="specuse">"Specific use"</string>
+    <string name="contraindication">"Contraindication"</string>
+    <string name="lawsuits">Lawsuits</string>
+    <string name="eventnow">"Coming events"</string>
+    <string name="eventpast">"Past events"</string>
+    <string name="friendshipjibo">follow successfully</string>
+    <string name="alreadyfollowed">Already followed.</string>
+    <string name="operationFaild">Operation Failure</string>
+    <string name="disclaimer_title">"The Disclaimer"</string>
+    <string name="disclaimer_prompt">"Please read it carefully:"</string>
+    <string name="disclaimer_content">"集博及内容提供商已经尽量合理地关注了产品相关信息的搜集和报告，有理由且有相关信息说明这些信息的可靠性。对于因信息的不断变化，以及任何错误、遗漏和不确切之处所引起的后果，集博及代理人概不承担任何责任。\n系统内信息仅供医学、药学相关专业人士使用，所发布的信息只作为参考和补充，并不能替代临床诊断，也并不能作为临床诊断治疗的唯一依据。所列的其他国家或地区的药物信息仅供用户参考，并不能作为当地用药信息的标准，反映的药品价格也不是具体要出售或购买的价格。特定药物或药物组合，如缺乏警告，不应该被理解成这种药物或药物组合对任何病人都是安全、有效或适当。\n集博发布原始信息，并不提供任何形式的担保（明确的或暗示的），包括软件和网站的使用，信息的准确与完整性，以及产品或网站的相关服务（相关法规也未要求任何网站提供这类担保）。集博及其信息提供者概不承担任何据称因使用本网站而遭受的损失，如果有人因使用了本软件所登载的信息或药物后出现不良反应、损伤、死亡或其他不良后果，无论是直接或间接引起的，我们概不负责。\n以上条款受中国相关法律的保护和制约，如有任何争议，您同意中国法庭对争议拥有专属的决断权。如果使用条款中的任何部分经有效法庭断定为无效、非法或不能强制执行，那么该内容以外的部分在法律允许范围以内仍将最大程度地发挥其效力和作用。\n    您使用集博应用程序就表明您同意以上声明，如果您不同意本责任限制的，我们将不会提供您服务或内容。"</string>
+    <string name="yuan">yuan</string>
+    <string name="no_update">You’ve already have the latest version.</string>
+    <string name="need_update">New version available, update now?</string>
+    <string name="isNotPhoneNumber">"Incorrect format phone"</string>
+    <string name="sendSuccessful">"Sent out"</string>
+    <string name="sendFailed">"Fail to send out"</string>
+    <string name="deleteUser">"Clear the account in the cache"</string>
+    <string name="isDeleteUser_Sure">"Are you sure"</string>
+    <string name="updatePasswordSuccess">"Password has been changed, please sign in again."</string>
+    <string name="newstitleMenu">JiBo News</string>
+    <string name="eventstitleMenu">JiBo Event</string>
+    <string name="regist_notify">Please complete your registration information.</string>
+    <string name="inviteCodeTitle">VIP Code</string>
+    <string name="contactMufacture">Contact Manufacturer</string>
+    <string name="productName">Name:</string>
+    <string name="productTitle">Name:</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="bandname">Brand</string>
+    <string name="manufucturename">Manufucturer:</string>
+    <string name="info">info:</string>
+    <string name="special">special</string>
+    <string name="drugdtl">Drug Reference</string>
+    <string name="phonecontent">13814801641</string>
+    <string name="emailcontent">kongjingjie89@126.com</string>
+    <string name="workingtime">workingtime:</string>
+    <string name="place">in charge place:</string>
+    <string name="telm">Telephone:</string>
+    <string name="spepos">Title:</string>
+    <string name="drug_choose_brand_title1">Please select the reference of (</string>
+    <string name="drug_choose_brand_title2">) as generic drug or brand drug provided by the manufacturer.</string>
+    <string name="inviteCode_is_error">InviteCode error</string>
+    <string name="createfriend_success">Followed success</string>
+    <string name="createfriend_failed">Followed failed</string>
+    <string name="Overdosage">Overdosage</string>
+    <string name="introduce">Original</string>
+    <string name="contact">Contact</string>
+    <string name="specification">SPEC</string>
+    <string name="repeat_content">Repeat content</string>
+    <string name="emailerror">Please set your email account</string>
+    <string name="contactproduct">Contact Product Specialist</string>
+    <string name="late">No,later</string>
+    <string name="share_tx">share to Tencent</string>
+    <string name="share_wx">share to WeiXin</string>
+    <string name="allandpart">"All/Part"</string>
+    <string name="notification_text">JiBo Medical Application</string>
+    <string name="drugchoose1">Alpha. Order</string>
+    <string name="drugchoose2">Medical Sys. Order</string>
+    <string name="evaluate">User Score</string>
+    <string name="gotonow">Go Now!</string>
+    <string name="ahsf_declaimer">        美国马里兰州贝塞斯达的美国卫生系统药师协会公司（American Society of Health-System Pharmacists, Inc.），拥有此处提供的部分或者全部的药品数据（AHFS DI Essentials）的版权。2012年版权所有。\n
+美国卫生系统药师协会公司，表示已以合理的谨慎标准，以及符合该领域的专业标准下，提供以下信息。\n
+美国卫生系统药师协会公司，不作任何陈述或保证、明示或暗示，包括但不限于关于商品性能和/或特定用途的适用性的任何隐含性的担保，关于这些信息明确声明所有这些保证和陈述。\n
+建议用户，在涉及药物治疗的复杂决定时，需要由合适的医疗卫生专业人士做出独立、明智的决定，此处所提供的信息仅供参考。\n
+任何有关药物的信息，应在深入了解药物的药理、用途、相互作用和副作用后仔细评价。\n
+美国卫生系统药师协会公司，不认可或不推荐任何特定药物的使用。提供的信息是无法代替医疗活动。\n\n\n
+Portions or all of the AHFS DI Essentials being provided are copyrighted by the American Society of Health-System Pharmacists, Inc.  Bethesda, Maryland, USA © 2012.  All Rights Reserved.\n\n
+
+The American Society of Health-System Pharmacists, Inc. represents that the information provided hereunder was formulated with a reasonable standard of care, and in conformity with professional standards in the field.  The American Society of Health-System Pharmacists, Inc. makes no representations or warranties, express or implied, including, but not limited to, any implied warranty of merchantability and/or fitness for a particular purpose, with respect to such information, and specifically disclaims all such warranties and representations.  Users are advised that decisions regarding drug therapy are complex medical decisions requiring the independent, informed decision of an appropriate health care professional, and the information is provided for informational purposes only.  Any information about a drug should be reviewed for a thorough understanding of the drug’s actions, uses, interactions and side effects.  The American Society of Health-System Pharmacists, Inc. does not endorse or recommend the use of any particular drug.  The information is not a substitute for medical care.
+\n\n</string>
+    <string name="chooseMarket">Please choose the market</string>
+    <string name="practiceInfo">Practice information</string>
+    <string name="magazine_to_source">The Journal:</string>
+    <string name="accounthint_new">"Set email as username"</string>
+    <string name="check_email_address_new">Username should be email</string>
+    <string name="hospital_is_illegal">Improper characters in hospital info</string>
+    <string name="jump_to">"Redirecting..."</string>
+    <string name="give_me_a_evaluate_title">Please rate us</string>
+    <string name="give_me_a_evaluate_content">If you find our application interesting, please give us your comment. Thank you very much for your support.</string>
+    <string name="ok_yes">Sure</string>
+    <string name="forgotpwdtext">Forget password?</string>
+    <string name="forgot_account_hint">Registered account</string>
+    <string name="findpwdPrompt">Please check the email which includes the password reset information.</string>
+    <string name="thirdlogin">3rd party login</string>
+    <string name="register_hospital_prompt">Please fill your hospital information, ito get better customized services.</string>
+    <string name="licenseNbPrompt">15 digits Practice License code</string>
+    <string name="share_prompt">Share the status about JiBo in my Weibo</string>
+    <string name="set1">Setting</string>
+    <string name="setdepartment_prompt">Fill the department to get customized service, align your specialty and push information in your area.</string>
+    <string name="agree">Agree</string>
+    <string name="umeng_share_shareto_top"> Share via</string>
+    <string name="disclaimer">Notice</string>
+    <string name="umeng_share_shareto_renr">RenRen</string>
+    <string name="umeng_share_shareto_sina">Sina Weibo</string>
+    <string name="umeng_share_shareto_tenc">Tencent Weibo</string>
+    <string name="umeng_share_update_edittext_hint">Say something...</string>
+    <string name="umeng_share_update_send">Send</string>
+    <string name="caution">Caution</string>
+    <string name="umeng_share_update_imgLoadFailed">Sorry，picture file failed to load!</string>
+    <string name="umeng_share_update_contentEmpty">Sorry，you has not entered any content!</string>
+    <string name="umeng_share_update_uneditTopic">Sorry，topic editing please!</string>
+    <string name="umeng_share_update_updated"> Send successfully! </string>
+    <string name="umeng_share_update_repeated"> Sorry，repetitive information! </string>
+    <string name="umeng_share_update_fileToLarge"> Sorry，picture over size! </string>
+    <string name="umeng_share_update_fileNotExist"> Sorry，the file is nonexistent! </string>
+    <string name="umeng_share_update_msgLengthExtendsLimit">Sorry，text limit exceeded!</string>
+    <string name="umeng_share_update_networkUnavailable">Sorry，network fault, please try later!</string>
+    <string name="umeng_share_update_extendsSendLimit">Sorry，maximun text limit exceeded in an hour, please try later!</string>
+    <string name="umeng_share_update_uidNotExist">Unbound or expired account, please rebind</string>
+    <string name="umeng_share_update_appBlocked">Sorry，the function has been non-use!</string>
+    <string name="umeng_share_oauth_linkserver">Authorised page loading，please wait...</string>
+    <string name="umeng_share_snsservice_linkServer">Connecting to server，please wait...</string>
+    <string name="umeng_share_snsservice_oauthSuccessed"> Authorise successfully！ </string>
+    <string name="umeng_share_snsservice_oauthFailed">Sorry，Authorise failed！</string>
+    <string name="umeng_share_snsservice_noNetwork">Sorry, network out of service！</string>
+    <string name="invite_notify">Upgrade Starter Edition to Advanced Edition, fill the invitation code to view the  detailed AHFS data.</string>
+    <string name="install_app">A new application needs to be installed, Do you wish to continue?</string>
+    <string name="update_userinfo_success">Modify user information success</string>
+    <string name="weibocannotupdatepassword">"Weibo account can not modify the password at present"</string>
+    <string name="updatePwdSuccess">Password changed successfully</string>
+    <string name="updatePwdFailed">Password changed failed</string>
+    <string name="usernamerule">The user name contains illegal characters.</string>
+    <string name="invicodePrompt">For Premium version</string>
+    <string name="hasnotnetworkcannotuse">This function needs use in network .</string>
+    <string name="emailIsNull">This Mail accounts is empty.</string>
+    <string name="accountIsNull">This account does not exist.</string>
+    <string name="generic_cn">"CN Insert"</string>
+    <string name="generic_us">"AHFS"</string>
+    <string name="brand">"Brand"</string>
+    <string name="errorlicense">"We can't find your license info now. We'll update once validated!"</string>
+    <string name="hospital_hint">Type in your hospital name</string>
+    <string name="favorite_hint">Click the \'Star\' button when \n you\'re looking at a drug to \n save it as a favorite</string>
+    <string name="calculator_hint">Click the \'Star\' button when \n you\'re using a calculator to \n save it as a favorite</string>
+    <string name="popular">Popular</string>
+    <string name="specialtys">Specialty</string>
+    <string name="favorites">Favorites</string>
+    <string name="invite_notify_image">Update Standard to Premium version</string>
+    <string name="the_latest">Latest</string>
+    <string name="specialty">Specialty</string>
+    <string name="industry_info">General</string>
+    <string name="survey_no_data">The are no surveys available for \nyou now.\n\nYou may want to click on the \nquestion mark button below to \nreview the survey rules and conditions.\n\nYou can also check your history and \npayment details</string>
+    <string name="gossip_home_left">点击快速返回\n主页面</string>
+    <string name="gossip_home_right">进入邀请码\n管理</string>
+    <string name="ahfs_title">美国医院处方服务（AHFS）药品信息</string>
+    <string name="ahfs_info">由美国卫生系统药师协会编写的《AHFS 药品信息2012》（AHFS Drug Information 2012），是综合性最强的基于循证医学的药品信息，由超过500位药学专家总结，包括治疗指南和适应症外使用。美国国会唯一指定的专业书籍，也是非营利性科学学会出版的唯一参考出版物。美国卫生系统药师协会 American Society of Health-System Pharmacists 成立于1942年，是美国唯一的医院和卫生系统药剂师的国家级组织。集博是ASHP在华的唯一一个合作伙伴。</string>
+    <string name="adminRouteInfo_title">Routes</string>
+    <string name="associated_brand_names1">Brands</string>
+    <string name="close_tips">关闭提示</string>
+    <string name="drag_switching">拖拽切换主界面区块</string>
+    <string name="tip_version_new_version_feature">新版本特性</string>
+    <string name="tip_version_para1">1. The latest from PubMed and Wanfang in Research</string>
+    <string name="tip_version_para2">2. Validation process for real doctors</string>
+    <string name="tip_version_para3">3. Overall controller for Push Notification</string>
+    <string name="tip_version_para4">4. More options for non-doctors in registration</string>
+    <string name="tip_version_button">开启提示系统</string>
+    <string name="gossip_drugref_left">支持中英文通用名,商品\n名以及拼音首字母。如阿\n拉伯糖可用AKBT,acar-\nbose，拜糖平等搜索，显\n示历史搜索。</string>
+    <string name="gossip_market_left">按照科室信息推荐合适工具。点击已安装的工具，可以直接进入使用 。</string>
+    <string name="tip_categoryname">支持显示默认科室，点击\n灰色条目返回上层目录</string>
+    <string name="tip_formula_search">支持关键词搜索，如脑、\n肺、肾</string>
+    <string name="tip_formula_category_name">支持显示默认科室，点击\n灰色条返回上层目录</string>
+    <string name="tip_navigate_one">用药信息来自公共来\n源采集的药品说明书</string>
+    <string name="tip_navigate_two">授权引入美国医院处方\n服务(AHFS)药品信\n息，来自美国医生系统\n药师协会，详情介绍见\n工具市场。</string>
+    <string name="tip_navigate_three">药品生产商提供并确认\n的最新原版说明书信息\n，灰色表示暂无。</string>
+    <string name="tip_news_drag">左右拖拽可以切换到\n前后一条新闻</string>
+    <string name="tip_tel">点击直接联系产品专员</string>
+    <string name="tip_questionnaire">根据您的科室、医院和地区信息\n，列示了合适的调查问卷，您也\n可以继续完成未完成的问卷</string>
+    <string name="tip_question">付费调查规则</string>
+    <string name="tip_gathering">设置收款方式</string>
+    <string name="tip_state">以往调查状态</string>
+    <string name="tip_si">默认国际单位（SI）\n，可切换至美制单\n位(US)</string>
+    <string name="sure">确定</string>
+    <string name="colleagues_invited">colleagues invited</string>
+    <string name="goinvite">Invite your colleagues!</string>
+    <string name="invite_success">邀请成功</string>
+    <string name="search_hint">输入药品</string>
+    <string name="invite_hint">输入名字,电话或email</string>
+    <string name="progress_wait_title">正在加载</string>
+    <string name="progress_wait">请稍等</string>
+    <string name="showversion">您的集博专业版邀请码: </string>
+    <string name="survey_tip">根据您的科室，医院和地区信息，列示了适合调查问卷。您也可以继续完成未完成的问卷。</string>
+    <string name="survey_tip_getmoney">设置收款方式</string>
+    <string name="empty_survey">目前没有适合您的问卷\n调查。请查看具体规则\n，确保您的相关信息准\n确。您也可以查看您的\n历史问卷记录和相应支\n付情况。</string>
+    <string name="empty_market_mine">您可在行医百宝箱选择安\n装，在本页管理升级和卸\n载。</string>
+    <string name="invite_tip_word">2. Invite 10 colleagues,get 6 months trial for free</string>
+    <string name="invite_collegues">Invite colleagues</string>
+    <string name="invite_whats_new_pro">What\'s JiBo Pro?</string>
+    <string name="invite_fill_code">1. Input VIP Voucher code</string>
+    <string name="invite_two_ways_get">Two ways to go Pro</string>
+    <string name="invite_u_r_using_std">Congratulations,you are using JiBo Pro version!</string>
+    <string name="invite_u_r_using_std1">You are now using standard version of JiBo!</string>
+    <string name="duedate">Your Pro status will expire on:</string>
+    <string name="invite_comeon">Professional version is really great,give it a try!</string>
+    <string name="continue_invite">You can also invite your colleagues now</string>
+    <string name="jibo_professional">What\'s JiBo Pro?</string>
+    <string name="fillnameBeforeSent">We will send the invitation to your colleague on the behalf of you,please add your name in your profile。</string>
+    <string name="send_with_ur_name">We will send the invitation to your colleague on the behalf of you as \"%s\", please revise your name in your profile if it is not correct.</string>
+    <string name="sendInstantly">Send Now</string>
+    <string name="modifyInfo">Update Info</string>
+    <string name="addInfo">Yes,go</string>
+    <string name="later">No,later</string>
+    <string name="special_jibotest">集博测试专用</string>
+    <string name="update_ahfs">Updated</string>
+    <string name="download_app">正在下载....</string>
+    <string name="download_app_success">下载完成,点击安装</string>
+    <string name="download_app_faild">下载失败,请重试</string>
+    <string name="background_downlowd">程序正在后台下载中，完成后点击安装</string>
+    <string name="app_need_install">老版本已经不能使用，请升级到最新版本</string>
+    <string name="tanslatefaild">No translation available now</string>
+    <string name="invitecode_title">JiBo Prefessional</string>
+    <string name="user_update">Change reg info</string>
+    <string name="save">Save</string>
+    <string name="normal_invite">目前你使用的是标准版,输入邀请码升级到专家版。\n\n</string>
+    <string name="professional_invite">目前你使用的是专家版,您拥有标准版以外的其他服务。\n\n</string>
+    <string name="ver_feature">New features</string>
+    <string name="pediatricUse_msg">儿童注意事项</string>
+    <string name="geriatricUse_msg">老年人注意事项</string>
+    <string name="pregnancy_msg">妊娠与哺乳期注意事项</string>
+    <string name="translate_head">以下翻译来自</string>
+    <string name="translate_foot">仅供参考！</string>
+    <string name="translate_original">原文如下:</string>
+    <string name="alert_all">全部</string>
+    <string name="go_to_install">去下载</string>
+    <string name="academic">学术</string>
+    <string name="industry_dynamics">行业动态</string>
+    <string name="share_url">http://www.jibo.cn/url.asp?p=</string>
+    <string name="loadingPeople">Contacts loading...</string>
+    <string name="install_tip">正在更新数据包，请稍等!</string>
+    <string name="install_done">完成</string>
+
+    <!-- filter -->
+    <string name="abstracts_info">Abstract</string>
+    <string name="source">来源</string>
+    <string name="source_all">All</string>
+    <string name="source_cnki">中文</string>
+    <string name="source_pubmed">En</string>
+    <string name="research_scope">研究范围</string>
+    <string name="research_all">All</string>
+    <string name="research_self">My dept.</string>
+    <string name="clinical_interrelation">临床相关</string>
+    <string name="clinical_all">All</string>
+    <string name="clinical_basic">Basic Res.</string>
+    <string name="clinical_aim">Clinical</string>
+    <string name="filter_if">Impact factor > </string>
+    <string name="filter_done">确认</string>
+    <string name="free_full_text">免费期刊：</string>
+    <string name="free_yes">是</string>
+    <string name="free_no">否</string>
+    <string name="abstract_yes">是</string>
+    <string name="abstract_no">否</string>
+    <string name="publication_date">出版日期：</string>
+    <string name="spinner_and_or">选择或者或并且</string>
+    <string name="spinner_filter_kw">选择搜索类型</string>
+    <string name="kw_title">Title</string>
+    <string name="kw_id">ID</string>
+    <string name="kw_magazine_name">具体期刊名</string>
+    <string name="kw_multiple">综合关键字</string>
+    <string name="kw_author">作者名</string>
+    <string name="kw_medcine">药品名</string>
+    <string name="kw_no_null">查询关键字不能为空！</string>
+    <string name="filter_and">And</string>
+    <string name="filter_or">Or</string>
+    <string name="filter_save">Save</string>
+    <!-- research collection -->
+    <string name="collection_favourit">Favorite articles</string>
+    <string name="collection_download">Downloaded papers</string>
+    <string name="download_state_pending">等待中</string>
+    <string name="collection_subscibe">Subscribed journals</string>
+    <!--
+    <string name="download_state_pending">等待中</string>
+	 <string name="download_state_requesting">请求中</string>
+	<string name="download_state_ready">可下载</string>
+	<string name="download_state_downloading">下载中</string>
+	<string name="download_state_read">可阅读</string>
+	<string name="paper_delete_title">delete</string>
+	<string name="paper_delete_content">确定要删除该条论文下载吗？</string>
+	<string name="paper_no_download">暂时无法提供该篇免费全文，敬请期待！</string>
+    -->
+    <string name="paper_downloading">Downloading full text in PDF. Check the pdf in "Downloaded papers" if successfully downloaded.</string>
+    <string name="journal">期刊</string>
+    <string name="drugname">药品</string>
+    <string name="meshterm">Keywords</string>
+    <string name="clc">CLC</string>
+    <string name="references">请确认阅读并同意相关免责申明</string>
+    <string name="accountisnotemail">用户名格式不正确,请输入正确的邮箱格式</string>
+    <string name="isAgree">请阅读并勾选免责申明</string>
+    <string name="job">I am a </string>
+    <string name="job_select">Please select</string>
+    <string name="job_doctor">doctor</string>
+    <string name="job_pharmacist">pharmacist</string>
+    <string name="job_teacherOrStudent">teacher or student</string>
+    <string name="job_medicalRelated">staff in medical-related field </string>
+    <string name="job_nonMedicalRelated">staff in non-medical-related field</string>
+    <string name="check_status">验证状态</string>
+    <string name="select_picture">From your album</string>
+    <string name="camera_picture">Camera</string>
+    <string name="take_photo_rule_title">规则说明：</string>
+    <string name="take_photo_rule">1.上传执业医师证照片，验证专业身份，参与特定活动，如可收取调查费用\n2.通过后，将以核实的证号绑定您的账号\n3.关于该信息的修改，将导致重启身份验证</string>
+    <string name="take_photo_explain">用户隐私信息说明:\n尽管我们会需要您注册关于您的医生身份的识别信息，不会要求您提供某些个人识别信息，例如您社会保险号码、信用卡号码等，但请注意，为了方便您获取我们提供的一些功能、参与活动以及使用我们的产品或服务，在本网站和软件的特定区域内，需要您提供某些个人资料，如个人联系方式等。\n
+个人资料和其它用户信息的收集：集博网站和软件仅会在进行一项或多项要求的功能或活动时，或为方便您使用我们的产品和服务，才会以自愿形式收集个人资料。我们收集信息将只采取合法和公正的方式。\n
+个人资料的转移：不是以任何上述“个人资料的使用与披露”部分中指明的内容为目的，集博网站和软件不会将您提供的个人资料转移（日常维护除外）给第三方；除非是：(a)有您的同意；(b)法律要求或法庭命令；或者(c)本公司确信其符合法律，受规划与合同的约束，支持公平处置与妥善保护个人资料的原则。\n
+安全性：虽然集博网站和软件无法杜绝非授权接入情况的发生，但请放心，集博网站和软件会采取有效措施，通过使用相应技术及内部手段，维护您个人资料的安全并防止非授权接入。 \n
+联络信息：如果您对我们所持个人资料或相关政策存有任何问题，请发电子邮件与我们联系。</string>
+    <string name="take_photo_explain_title">用户隐私信息说明</string>
+    <string name="waitsubmit">待提交</string>
+    <string name="feedback1">反馈</string>
+    <string name="evaluate1">评价</string>
+    <string name="push_lock_title">Push Notification</string>
+    <string name="push_lock_msg">JiBo will send you messages based on your profile and activities, e.g. papers you may be interested in, or new paid survey available.</string>
+    <string name="zh_cn_journal">Chinese Journals</string>
+    <string name="en_journal">English Journals</string>
+    <string name="none_page">NO full-text available now for this article. Please wait for the coming version!</string>
+    <string name="empty_result">Sorry, currently data is not available. Coming soon!</string>
+    <string name="care">Collection</string>
+    <string name="opht">"Ophthalmology"</string>
+    <string name="dept">Departments</string>
+    <string name="browse_dept">Departments</string>
+    <string name="empty_search">No paper found. Please check the terms you are searching.</string>
+    <string name="loading_for_you">loading for you...</string>
+    <string name="download_state_requesting">Data requesting</string>
+    <string name="lastest">Latest</string>
+    <string name="download_state_ready">Ready to download</string>
+    <string name="download_state_downloading">Downloading</string>
+    <string name="download_state_read">Ready to open</string>
+    <string name="paper_delete_title">Delete</string>
+    <string name="paper_delete_content">Are you sure to delete this paper?</string>
+    <string name="paper_no_download">Sorry, currently full-text paper is not available. Coming soon!</string>
+    <string name="paper_abstract">Abstract</string>
+    <string name="paper_read_more">Show more</string>
+    <string name="paper_fold">Show less</string>
+    <string name="paper_keywords">Keywords</string>
+    <string name="paper_author">Authors</string>
+    <string name="paper_domain">Departments</string>
+    <string name="paper_drug">Drugs</string>
+    <string name="paper_journal">Journal</string>
+    <string name="paper_channel">section</string>
+    <string name="paper_interlinking">Link:</string>
+    <string name="journal_subscribe">Successfully subscribed!</string>
+    <string name="journal_un_subscribe">Unsubscribed!</string>
+    <string name="paper_share_url">http://www.jibo.cn/ot/d.asp</string>
+    <string name="paper_detail_journal">Journal name</string>
+    <string name="paper_detail_publication_type">Publication type</string>
+    <string name="paper_detail_language">Language</string>
+    <string name="paper_detail_empty">Sorry, currently data is not available</string>
+    <string name="waitvalidate">To be validated</string>
+    <string name="wanfang">Wanfang</string>
+    <string name="validateSuccess">Validated</string>
+    <string name="study_range">Research area</string>
+    <string name="pubmed">PubMed</string>
+    <string name="notvalidate">Validation failed</string>
+    <string name="nodatainfo">"No data available for this category"</string>
+	<string name="loadn">Laoding next %s</string>
+    <string name="from">Source</string>
+    <string name="disease">Disease</string>
+    <string name="clinical">Clinical</string>
+    <string name="clinical_about">Clinical related</string>
+    <string name="favorite_empty"> You can tap  "star" button to put the paper into your favorites when you are reading it</string>
+    <!-- 2.2 peter -->
+    <string name="download_empty">Some papers can be downloaded with free full-text, tap the "download" button to view the full text offline</string>
+    <string name="subscription_empty"> You can tap the "subscription" button in the periodical information, then you can follow the journal closely</string>
+    <string name="seach_empty">No paper found.Please check the terms you are searching.</string>
+    <string name="office_empty">Sorry,currently data is not available.Coming soon!</string>
+    <string name="clear">clear</string>
+    <string name="drug_interaction">Drug Interaction</string>
+    <string name="no_interations">No Interations</string>
+    <string name="yes_interations">All Interactions</string>
+    <string name="retryweb">Timeout,reloading instantly</string>
+    <string name="wifi_down">你的图片较大，在2G网络下可能需要较长时间，建议您在wifi下上传</string>
+
+    <!-- 2.2 will -->
+    <string name="homepage_welcome">Thank you for using JiBo application!</string>
+    <string name="wifi_content">You are now using a mobile internet connection.  JiBo has extensive offline usage support, but this requires a 10 Mb download.  We suggest you download the tools package on a WiFi connection.</string>
+    <string name="wifi_ok">Download Now</string>
+    <string name="wifi_later">Remind me when I have WiFi</string>
+    <string name="errcode_success">send success</string>
+    <string name="errcode_cancel">send canceled</string>
+    <string name="errcode_deny">sending rejected</string>
+    <string name="errcode_unknown">send back</string>
+    <string name="not_install_wx">weixin not install in your phone</string>
+
+    <string name="wx_ver_not_supported">unsupported weixin version</string>
+	<string name="select">select</string>
+	<string name="research_detail_read_1">该篇论文尚未下载</string>
+	<string name="research_detail_read_2">该篇论文尚未下载完成</string>
+
+	<string name="research_paper_available">Paper available</string>
+	<string name="research_download_fulltext">Download Full text</string>
+	<string name="research_download_view">View downloaded paper</string>
+	<string name="research_paper_unavailable">Paper not available</string>
+	<string name="research_request_fulltext">Request full text</string>
+	<string name="research_request_info">Request has been sent.You will be notified if the full text become available.</string>
+	<string name="research_download">下载</string>
+	<string name="research_download_info">专辑包尚未下载，是否下载？</string>
+	<string name="research_download_pause">是否停止下载？</string>
+	<string name="research_download_consume">是否继续下载？</string>
+	<string name="research_download_resume">是否重新下载？</string>
+	<string name="interactions_notice_first">Check a group of drugs to see if there are any unsafe interactions.</string>
+	<string name="interactions_notice_second">Great,you added your first drug.Check it again with another drug.</string>
+	<string name="interactions_notice_third">Great,you added your second drug.Check it again with another drug.</string>
+	
+	<string name="wifi_tips">Download Notify</string>
+	<string name="wifi_fulltext">您当前的网络不是wifi，文件较大，是否下载？</string>
+	<string name="wifi_special">您当前的网络不是wifi，文件较大，是否下载？</string>
+	<string name="ln_tips">数据包下载提醒</string>
+	<string name="ln_title">Download Tips:</string>
+	<string name="ln_msg">JiBo has extensive offline usage support, download it now!</string>
+		<string name="survey_share_1">集博付费问卷调查关于</string>
+<string name="survey_share_2">来试一试，下载软件地址</string>
+<string name="cat_words">请输入关键字</string>
+    <string name="add_drug">Add drug</string>
+    <string name="clear_all_drugs">Are you sure to clear all drugs?</string>
+    <string name="clear_drug">Are you sure to delete this drug?</string>
+     <string name="comments">Comments</string>
+          <string name="delete">delete</string>
+     <string name="complete_interaction_details">Complete interaction details</string>
+     <string name="no_ahfs">Please download AHFS data package from in-app Tool Market to check full interaction data.</string>
+     <string name="update">更新</string>
+     <string name="weixin_share">你用过集博医学应用嘛？最全药品信息离线查询，拥有上百种医学公式，最新最前沿的医学文献……点我就全部都是你的咯~~~</string>
+   <string name="over_drug">"Oops, you've hit a limit"</string>
+   
+   <string name="download_success">Downloading Successfully</string>
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright 2011 Sina.
+ *
+ * Licensed under the Apache License and Weibo License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.open.weibo.com
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+<LinearLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@drawable/light_bg"
+	android:id="@+id/li"
+>
+	<LinearLayout 
+		android:id="@+id/rlTitle"
+		android:layout_width="fill_parent"
+		android:layout_height="60dip" 
+		android:background="@drawable/header"
+		android:orientation="vertical"
+
+		>
+		<LinearLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:orientation="horizontal"
+    android:gravity="center"
+         >
+            <ImageButton 
+            android:id="@+id/btnClose" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:background="#00000000" 
+            android:src="@drawable/home_action"></ImageButton>
+            		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+            android:text="@string/share_email"
+			android:layout_centerInParent="true"
+		    android:gravity="center"
+			android:textSize="15sp"
+			android:textColor="#FFF"
+			android:textStyle="bold"/>
+	</LinearLayout>
+	</LinearLayout>
+	<ScrollView
+		android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" >
+	
+			<LinearLayout 
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content" 
+	android:orientation="vertical"
+    android:gravity="center"
+         >
+				
+				<LinearLayout
+					android:id="@+id/ll_text_limit_unit"
+					android:layout_width="wrap_content"
+					android:layout_height="fill_parent"
+					android:focusable="true"
+					android:clickable="true" 
+					android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+					android:orientation="vertical"
+					>
+					
+ <EditText
+ 	android:id="@+id/sendTo"
+ 	android:layout_width="fill_parent"
+ 	android:layout_height="40dp" 
+    android:paddingLeft="2dp"  
+    android:paddingRight="4dp"
+    android:layout_marginTop="2dp"
+	android:textSize="19sp"
+    android:singleLine="true"
+ 	android:background="@drawable/login_input_bg"
+    android:hint="@string/senttoemail"
+    android:layout_gravity="center_horizontal"
+ 	/>
+ 	 <EditText
+ 	android:id="@+id/title"
+ 	android:layout_width="fill_parent"
+ 	android:layout_height="40dp" 
+    android:paddingLeft="2dp"  
+    android:paddingRight="4dp"
+    android:layout_marginTop="2dp"
+	android:textSize="19sp"
+    android:singleLine="true"
+ 	android:background="@drawable/login_input_bg"
+    android:hint="@string/emailTitle"
+    android:layout_gravity="center_horizontal"
+ 	/>
+ 	
+ 	  <include layout="@layout/dialogprogress"
+        android:id = "@+id/dialogprogress"
+        android:layout_marginTop="250px"
+        android:layout_marginLeft="40px"
+        android:layout_gravity ="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+ 	<WebView
+ 		android:id="@+id/webview"
+ 		android:layout_width="wrap_content"
+ 		android:layout_height="fill_parent"
+        android:focusable="true"
+ 		/>
+
+	</LinearLayout>
+
+
+	    <Button
+        android:id="@+id/helpBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"    
+        android:background="@drawable/button_action"
+        android:textColor="@color/white" 
+        android:text="@string/shrout"
+        >
+    </Button>
+   </LinearLayout>
+   	</ScrollView>
+	</LinearLayout>
+
+
+                                   

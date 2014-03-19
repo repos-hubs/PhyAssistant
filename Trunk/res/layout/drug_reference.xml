@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mai"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/mai"
+    android:background="@drawable/light_bg">
+		<LinearLayout 
+	android:id="@+id/header_panel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/header"
+    android:layout_alignParentTop="true" >
+        <include layout="@layout/header" />
+		<include layout="@layout/blank_space" />
+<LinearLayout 
+	android:id="@+id/header_f"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
+    <include layout="@layout/header_title"  />
+	    <Button
+	        android:id="@+id/favoritBtn" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:background="@drawable/btnchg"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:layout_gravity="right"
+	    />
+	    		
+		</LinearLayout>	
+	</LinearLayout>
+<ScrollView 
+        android:id="@+id/ImagescrollView" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:layout_gravity="center_horizontal" 
+        android:layout_weight="1" 
+        android:layout_marginTop="5dp">
+        <LinearLayout 
+            android:id="@+id/DrugReferLayout" 
+            android:orientation="vertical" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:layout_gravity="center_horizontal" 
+            android:paddingLeft="7dp" 
+            android:paddingRight="7dp"
+            android:layout_marginBottom="5dp"
+            >
+      <LinearLayout 
+        android:id="@+id/DescriptionLayout" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" 
+        android:layout_marginLeft="7dp" 
+        android:layout_marginRight="7dp" 
+        android:orientation="vertical"
+       >
+        <!-- android:background="@drawable/stretching_frame" prime 2011-6-14 begin.-->    
+        <include 
+        layout="@layout/dialogprogress"
+        android:id = "@+id/dialogprogress"
+        android:layout_gravity ="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        <!-- prime 2011-6-14 end.-->
+           <LinearLayout 
+               android:id="@+id/DescriptionTextLayout" 
+               android:orientation="vertical" 
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content">
+           <LinearLayout 
+		       android:id="@+id/DescriptionDrugNameLayout" 
+               android:layout_width="fill_parent" 
+               android:layout_height="wrap_content" 
+               android:orientation="horizontal"
+               android:layout_marginTop="7dp">
+             <TextView 
+               android:id="@+id/DescriptionDrugNameCn" 
+               android:layout_width="wrap_content" 
+               android:layout_height="wrap_content" 
+               android:layout_marginLeft="7dp" 
+               android:textSize="17sp" 
+               android:textStyle="bold" 
+               android:textColor="@color/black"></TextView>
+             <TextView 
+               android:id="@+id/DescriptionDrugNameEn" 
+               android:layout_width="wrap_content" 
+               android:layout_height="wrap_content" 
+               android:layout_marginLeft="14dp" 
+               android:textSize="17sp" 
+               android:textStyle="bold" 
+               android:textColor="@color/black"></TextView>
+               </LinearLayout>
+               <ImageView 
+                   android:id="@+id/DescriptionCuttingLine1" 
+                   android:layout_width="fill_parent" 
+                   android:layout_height="wrap_content" 
+                   android:layout_marginTop="5dp" 
+                   android:background="@drawable/cutting_line"></ImageView>
+               <LinearLayout 
+                   android:id="@+id/DescriptionCodeLayout" 
+                   android:layout_width="fill_parent" 
+                   android:layout_height="wrap_content" 
+                   android:layout_marginTop="5dp">
+                   <TextView 
+                       android:id="@+id/DescriptionCodeTitle" 
+                       android:layout_width="wrap_content" 
+                       android:layout_height="wrap_content" 
+                       android:layout_marginLeft="7dp" 
+                       android:textSize="15sp" 
+                       android:textStyle="bold" 
+                       android:textColor="@color/black"></TextView>
+                   <TextView 
+                       android:id="@+id/DescriptionCode" 
+                       android:layout_width="wrap_content" 
+                       android:layout_height="wrap_content" 
+                       android:layout_marginLeft="7dp" 
+                       android:textSize="14sp" 
+                       android:textColor="@color/black"></TextView>
+
+               </LinearLayout>
+               <LinearLayout 
+                   android:id="@+id/DescriptionBrandNameLayout" 
+                   android:layout_width="fill_parent" 
+                   android:layout_height="wrap_content" 
+                   android:layout_marginTop="5dp">
+                   <TextView 
+                       android:id="@+id/DescriptionBrandNameTitle" 
+                       android:layout_width="wrap_content" 
+                       android:layout_height="wrap_content" 
+                       android:layout_marginLeft="7dp" 
+                       android:textStyle="bold" 
+                       android:textSize="15sp" 
+                       android:textColor="@color/black"></TextView>
+                   <TextView 
+                       android:id="@+id/DescriptionBrandNameCn" 
+                       android:layout_width="wrap_content" 
+                       android:layout_height="wrap_content" 
+                       android:layout_marginLeft="5dp" 
+                       android:textSize="14sp" 
+
+                       android:textColor="@color/black"></TextView>
+                       
+                   <TextView 
+                       android:id="@+id/DescriptionBrandNameEn" 
+                       android:layout_width="wrap_content" 
+                       android:layout_height="wrap_content" 
+                       android:layout_marginLeft="7dp" 
+                       android:textSize="14sp" 
+                       android:textColor="@color/black"></TextView>
+
+               </LinearLayout>
+               <LinearLayout 
+                   android:id="@+id/DescriptionFormulationLayout" 
+                   android:layout_width="fill_parent" 
+                   android:layout_height="wrap_content" 
+                   android:layout_marginTop="5dp">
+                   <TextView 
+                       android:id="@+id/DescriptionFormulationTitle" 
+                       android:layout_width="wrap_content" 
+                       android:layout_height="wrap_content" 
+                       android:layout_marginLeft="7dp" 
+                       android:textSize="15sp" 
+                       android:textStyle="bold" 
+                       android:textColor="@color/black"></TextView>
+                   <TextView 
+                       android:id="@+id/DescriptionFormulation" 
+                       android:layout_width="wrap_content" 
+                       android:layout_height="wrap_content" 
+                       android:layout_marginLeft="5dp" 
+                       android:textSize="14dp" 
+                       android:textColor="@color/black"></TextView>
+
+               </LinearLayout>
+               <ImageView 
+                   android:id="@+id/DescriptionCuttingLine2" 
+                   android:layout_width="fill_parent" 
+                   android:layout_height="wrap_content" 
+                   android:layout_marginTop="5dp"
+                   android:background="@drawable/cutting_line"></ImageView>
+    <!-- 
+               <LinearLayout 
+                   android:id="@+id/DescriptionSpecificationLayout" 
+                   android:layout_width="fill_parent" 
+                   android:layout_height="wrap_content" 
+                   android:layout_marginTop="5dp">
+                   <TextView 
+                       android:id="@+id/DescriptionSpecificationTitle" 
+                       android:layout_width="wrap_content" 
+                       android:layout_height="wrap_content" 
+                       android:layout_marginLeft="7dp" 
+                       android:textSize="14dp" 
+                       android:textStyle="bold" 
+                       android:textColor="@color/white"></TextView>
+                   <TextView 
+                       android:id="@+id/DescriptionSpecification" 
+                       android:layout_width="wrap_content" 
+                       android:layout_height="wrap_content" 
+                       android:layout_marginLeft="5dp" 
+                       android:textSize="14dp" 
+                       android:textStyle="bold" 
+                       android:textColor="@color/white"></TextView>
+               </LinearLayout>
+    -->
+           </LinearLayout>
+    </LinearLayout>	
+            <com.jibo.ui.GBAImageButton
+                android:id="@+id/Indication"
+                android:layout_width="fill_parent"    
+                android:layout_height="wrap_content"       
+                android:text="@string/indication"  
+                android:textSize="17sp" 
+                android:textColor="@color/white" 
+                android:gravity="center"
+                android:layout_marginTop="5dp" 
+                android:src="@drawable/right_arrow"/>
+            <include 
+			        layout="@layout/dialogprogress"
+			        android:id = "@+id/indicationProgress"
+			        android:layout_gravity ="center_vertical"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+            		android:visibility="gone"
+			        />
+            <LinearLayout 
+            	android:id="@+id/indicationContent"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:visibility="gone"
+            	/>
+            	
+            <com.jibo.ui.GBAImageButton
+                android:id="@+id/Dosings"
+                android:layout_width="fill_parent"    
+                android:layout_height="wrap_content"    
+                android:text="@string/dosing"  
+                android:textSize="17sp"  
+                android:textColor="@color/white" 
+                android:gravity="center"
+                android:layout_marginTop="5dp" 
+                android:src="@drawable/right_arrow"/>
+                 <include 
+			        layout="@layout/dialogprogress"
+			        android:id = "@+id/dosingProgress"
+			        android:layout_gravity ="center_vertical"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+            		android:visibility="gone"
+			        />
+           	 	<LinearLayout 
+            	android:id="@+id/dosingContent"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:visibility="gone"
+            		/>
+                  
+          <com.jibo.ui.GBAImageButton
+                android:id="@+id/ADRs"
+                android:layout_width="fill_parent"    
+                android:layout_height="wrap_content"       
+                android:text="@string/adrs"  
+                android:textSize="17sp"  
+                android:textColor="@color/white" 
+                android:gravity="center"
+                android:layout_marginTop="5dp" 
+                android:src="@drawable/right_arrow"/>  
+               <include 
+			        layout="@layout/dialogprogress"
+			        android:id = "@+id/adrsProgress"
+			        android:layout_gravity ="center_vertical"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+            		android:visibility="gone"
+			        />
+           	 	<LinearLayout 
+            	android:id="@+id/adrsContent"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:visibility="gone"
+            		/> 
+            		
+            <!-- prime begin. -->
+            <com.jibo.ui.GBAImageButton
+                android:id="@+id/contraindication"
+                android:layout_width="fill_parent"    
+                android:layout_height="wrap_content"       
+                android:text="@string/contraindication"  
+                android:textSize="17sp"  
+                android:textColor="@color/white" 
+                android:gravity="center"
+                android:layout_marginTop="5dp" 
+                android:src="@drawable/right_arrow"/>  
+               <include 
+			        layout="@layout/dialogprogress"
+			        android:id = "@+id/contraindicationProgress"
+			        android:layout_gravity ="center_vertical"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+            		android:visibility="gone"
+			        />
+           	 	<LinearLayout 
+            	android:id="@+id/contraindicationContent"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:visibility="gone"
+            		/>  
+              
+            <com.jibo.ui.GBAImageButton
+                android:id="@+id/Interaction"
+                android:layout_width="fill_parent"     
+                android:layout_height="wrap_content"       
+                android:text="@string/drug_interaction"  
+                android:textSize="17sp"  
+                android:textColor="@color/white" 
+                android:gravity="center"
+                android:layout_marginTop="5dp" 
+                android:src="@drawable/right_arrow"/>  
+               <include 
+			        layout="@layout/dialogprogress"
+			        android:id = "@+id/interactionProgress"
+			        android:layout_gravity ="center_vertical"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+            		android:visibility="gone"
+			        />
+           	 	<LinearLayout 
+            	android:id="@+id/interactionContent"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:visibility="gone"
+            		/>
+            		
+            <com.jibo.ui.GBAImageButton
+                android:id="@+id/specuse"
+                android:layout_width="fill_parent"     
+                android:layout_height="wrap_content"       
+                android:text="@string/specuse"  
+                android:textSize="17sp"  
+                android:textColor="@color/white" 
+                android:gravity="center"
+                android:layout_marginTop="5dp" 
+                android:src="@drawable/right_arrow"/> 
+               <include 
+			        layout="@layout/dialogprogress"
+			        android:id = "@+id/specuseProgress"
+			        android:layout_gravity ="center_vertical"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+            		android:visibility="gone"
+			        />
+           	 	<LinearLayout 
+            	android:id="@+id/specuseContent"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:visibility="gone"
+            		/> 
+            		
+            <com.jibo.ui.GBAImageButton
+                android:id="@+id/EDL"
+                android:layout_width="fill_parent"     
+                android:layout_height="wrap_content"      
+                android:text="@string/edl"  
+                android:textSize="17sp"  
+                android:textColor="@color/white" 
+                android:gravity="center"
+                android:layout_marginTop="5dp" 
+                android:src="@drawable/right_arrow"/>  
+                <include 
+			        layout="@layout/dialogprogress"
+			        android:id = "@+id/edlProgress"
+			        android:layout_gravity ="center_vertical"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+            		android:visibility="gone"
+			        />
+           	 	<LinearLayout 
+            	android:id="@+id/edlContent"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:visibility="gone"
+            		/>  
+               
+            <com.jibo.ui.GBAImageButton
+                android:id="@+id/Reimbursement"
+                android:layout_width="fill_parent"    
+                android:layout_height="wrap_content"       
+                android:text="@string/reimbursement"  
+                android:textSize="17sp"  
+                android:textColor="@color/white" 
+                android:gravity="center"
+                android:layout_marginTop="5dp" 
+                android:src="@drawable/right_arrow"/>  
+                 <include 
+			        layout="@layout/dialogprogress"
+			        android:id = "@+id/reimbursementProgress"
+			        android:layout_gravity ="center_vertical"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+            		android:visibility="gone"
+			        />
+           	 	<LinearLayout 
+            	android:id="@+id/reimbursementContent"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:visibility="gone"
+            		/> 
+            		
+            <com.jibo.ui.GBAImageButton
+                android:id="@+id/ManufacturersPrice"
+                android:layout_width="fill_parent"    
+                android:layout_height="wrap_content"      
+                android:text="@string/manufacturers_price"  
+                android:textSize="17sp"  
+                android:textColor="@color/white" 
+                android:gravity="center"
+                android:layout_marginTop="5dp" 
+                android:src="@drawable/right_arrow"/>  
+                 <include 
+			        layout="@layout/dialogprogress"
+			        android:id = "@+id/manufacturersProgress"
+			        android:layout_gravity ="center_vertical"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+            		android:visibility="gone"
+			        />
+           	 	<LinearLayout 
+            	android:id="@+id/manufacturersContent"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:visibility="gone"
+            		/> 
+            		
+            <com.jibo.ui.GBAImageButton
+                android:id="@+id/AcademicActivity"
+                android:layout_width="fill_parent"    
+                android:layout_height="wrap_content"     
+                android:text="@string/academic_activity"  
+                android:textSize="17sp"  
+                android:textColor="@color/white" 
+                android:gravity="center"
+                android:layout_marginTop="5dp" 
+                android:src="@drawable/right_arrow"/>
+                 <include 
+			        layout="@layout/dialogprogress"
+			        android:id = "@+id/academicProgress"
+			        android:layout_gravity ="center_vertical"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+            		android:visibility="gone"
+			        />
+           	 	<LinearLayout 
+            	android:id="@+id/academicContent"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:visibility="gone"
+            		/> 
+            		
+            <com.jibo.ui.GBAImageButton
+                android:id="@+id/Counterfeit"
+                android:layout_width="fill_parent"    
+                android:layout_height="wrap_content"      
+                android:text="@string/counterfeit"  
+                android:textSize="17sp"  
+                android:textColor="@color/white" 
+                android:gravity="center"
+                android:layout_marginTop="5dp" 
+                android:src="@drawable/right_arrow"
+                android:visibility="gone"/>  
+                 <include 
+			        layout="@layout/dialogprogress"
+			        android:id = "@+id/counterfeitProgress"
+			        android:layout_gravity ="center_vertical"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+            		android:visibility="gone"
+			        />
+           	 	<LinearLayout 
+            	android:id="@+id/counterfeitContent"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:visibility="gone"
+            		/> 
+            		
+            <com.jibo.ui.GBAImageButton
+                android:id="@+id/Lawsuits"
+                android:layout_width="fill_parent"    
+                android:layout_height="wrap_content"    
+                android:text="@string/lawsuits"  
+                android:textSize="17sp"  
+                android:textColor="@color/white"
+                android:gravity="center" 
+                android:layout_marginTop="5dp" 
+                android:src="@drawable/right_arrow"
+                android:visibility="gone"/>  
+                 <include 
+			        layout="@layout/dialogprogress"
+			        android:id = "@+id/lawsuitsProgress"
+			        android:layout_gravity ="center_vertical"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+            		android:visibility="gone"
+			        />
+           	 	<LinearLayout 
+            	android:id="@+id/lawsuitsContent"
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:visibility="gone"
+            		/> 
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+<RelativeLayout 
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+		android:layout_marginTop="390dip"
+		android:layout_marginLeft="30dip"
+    	>
+<ImageView 
+	android:id="@+id/shortcutBtn"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:src="@drawable/shortcut_icon"
+/>
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mai"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/light_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header"
+        android:orientation="vertical" >
+
+        <include layout="@layout/header" />
+
+        <include layout="@layout/blank_space" />
+
+        <include layout="@layout/header_title" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/header_panel"
+        android:orientation="vertical" >
+
+        <com.jibo.v4.view.PagerView
+            android:id="@+id/vPager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="40dip"
+            android:layout_weight="1"
+            android:flipInterval="30"
+            android:background="@drawable/light_bg"
+            android:persistentDrawingCache="animation" />
+
+        <com.jibo.ui.NavigateView
+            android:id="@+id/navigateView"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip" >
+        </com.jibo.ui.NavigateView>
+    </RelativeLayout>
+
+    <com.jibo.util.tips.Mask
+        android:id="@+id/mask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:background="#CC000000"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/closeTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/close_tips"
+        android:clickable="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/left_categoryname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigateView"
+        android:background="@drawable/left"
+        android:paddingBottom="18dip"
+        android:paddingLeft="18dip"
+        android:paddingRight="13dip"
+        android:paddingTop="48dip"
+        android:text="@string/tip_categoryname"
+        android:textColor="#005684"
+        android:textSize="18dip"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/leftArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+         android:layout_marginLeft="30dp"
+        android:src="@drawable/left_arrow"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/rightArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="120dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/right_arrow_tips"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rippleView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/rippleImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/light5" />
+
+        <ImageView
+            android:id="@+id/handImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rippleImage"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/hand" />
+    </RelativeLayout>
+
+</RelativeLayout>

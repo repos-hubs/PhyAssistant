@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+	<Button
+	    android:id="@+id/reduce"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="-"
+	    android:textColor="@color/black"
+	    android:textSize="20sp" />
+
+	<TextView
+	    android:id="@+id/search_key"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:text="@string/abstracts_info"
+	    android:textColor="@color/black"
+	    android:textSize="18sp" />
+
+	<EditText
+	    android:id="@+id/search_value"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:clickable="true"
+	    android:textColor="@color/black"
+	    android:singleLine="true"
+	    android:textSize="18sp" />
+
+</LinearLayout>
+

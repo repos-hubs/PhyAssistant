@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+   	android:background="@drawable/light_bg"
+    android:id="@+id/mai" >
+	<LinearLayout 
+	android:id="@+id/header_panel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/header"
+    android:layout_alignParentTop="true" >
+        <include layout="@layout/header" />
+		<include layout="@layout/blank_space" />
+		<include layout="@layout/header_title" />
+		<TextView android:id="@+id/txt_coauthor"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:textSize="18sp"
+    	android:visibility="gone"
+    	android:autoLink="web"
+    	android:textColor="@color/white"
+    	android:background="@drawable/cc_title_bg"
+    	/>
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:orientation="vertical"	
+	    android:layout_below="@id/header_panel"
+	    android:weightSum="1" >
+	    
+			<include layout="@layout/customize_listview" />
+	</LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#ff000000</color>
+    <color name="blue">#ff0000ff</color>
+    <color name="cyan">#ff00ffff</color>
+    <color name="dkgray">#ff444444</color>
+    <color name="gray">#ff888888</color>
+    <color name="green">#ff00ff00</color>
+    <color name="ltgray">#ffcccccc</color>
+    <color name="magenta">#ffff00ff</color>
+    <color name="red">#ffff0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="yellow">#ffffff00</color>
+    <color name="title">#33597E</color>
+    <color name="darkblue">#27A79B</color>
+    <color name="lightblue">#cc9cd8f4</color>
+    <color name="transparent_background">#A0000000</color>
+    <color name="darkgreen">#005684</color>
+    <!-- 列表分割线 -->
+    <color name="list_divider">#d8d8d8</color>
+    <color name="depth_blue">#004371</color>
+    <color name="mask">#CC000000</color>
+    <color name="graymask">#88000000</color>
+
+</resources>

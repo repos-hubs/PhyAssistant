@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="UMFb_Atom_State_Resending">发送失败,轻触以重发</string>
+    <string name="dlg_sharing_title">选择分享方式</string>
+    <string name="share_email">"邮件分享"</string>
+    <string name="follow_jibo">分享到人人网</string>
+    <string name="linked_companies">相关公司</string>
+    <string name="opreationFaild">操作失败</string>
+    <string name="share_message">短信分享</string>
+    <string name="share_other">其他分享</string>
+    <string name="share_sina">新浪微博分享</string>
+</resources>

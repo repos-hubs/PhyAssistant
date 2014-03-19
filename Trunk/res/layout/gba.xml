@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/gba_login_bg"
+  android:gravity="center_horizontal"
+  android:orientation="vertical"
+  >
+  <ImageView 
+  		android:id="@+id/logo"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_marginTop="30dip"
+  		android:src="@drawable/welcom_icon"
+  		/>
+  		
+  <TextView
+  	android:id="@+id/sologon1"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_marginTop="20dp"
+  	android:layout_below="@id/logo"
+  	android:textColor="@color/white"
+  	android:textSize="17sp"
+  	android:text="@string/slogan1"
+  	android:gravity="center_horizontal"
+  	/>
+  	<TextView
+  	android:id="@+id/sologon2"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_marginTop="7dp"
+  	android:layout_below="@id/sologon1"
+  	android:textColor="@color/white"
+  	android:textSize="17sp"
+  	android:text="@string/slogan2"
+  	android:gravity="center_horizontal"
+  	/>
+  	<TextView
+  	android:id="@+id/sologon3"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:layout_marginTop="7dp"
+  	android:textColor="@color/white"
+  	android:textSize="17sp"
+  	android:text="@string/slogan3"
+  	android:layout_below="@id/sologon2"
+  	android:gravity="center_horizontal"
+  	/>
+   <TextView
+  		android:id="@+id/pretint"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_below="@id/sologon3"
+        android:layout_marginTop="10dp"
+  		android:textColor="@color/white"
+  		android:textSize="11sp"
+  		android:text="@string/checkdbversion"
+  		android:gravity="center_horizontal"
+  	/>
+  	
+  <include 
+  		layout="@layout/initialize_progress_bar"
+        android:id = "@+id/dialogupgrade"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/pretint"
+        android:visibility = "gone"
+        android:gravity="center_horizontal"
+        />
+  
+</RelativeLayout>

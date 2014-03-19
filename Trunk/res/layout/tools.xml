@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:id="@+id/mai"
+    android:background="@drawable/light_bg" >
+	<LinearLayout 
+	android:id="@+id/header_panel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/header"
+    android:layout_alignParentTop="true" >
+        <include layout="@layout/header" />
+		<include layout="@layout/blank_space" />
+		<include layout="@layout/header_title" />
+	</LinearLayout>
+	<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+        android:layout_below="@id/header_panel">
+	<Button 
+	    android:id="@+id/btn_nccn"
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/nccn_disease"
+	    />
+	<Button 
+	    android:id="@+id/btn_ecg"
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/ecg"
+	    />
+	<Button 
+	    android:id="@+id/btn_tnm"
+	    android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:text="@string/tnm"
+	    />
+	</LinearLayout>
+</RelativeLayout>

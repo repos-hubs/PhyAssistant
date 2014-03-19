@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mai"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/light_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/header_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/register_title_back"
+        android:orientation="horizontal" >
+		<TextView
+                android:id="@+id/RegZeroTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:text="@string/registration"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+        <Button
+            android:id="@+id/slip_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:text="@string/jump"
+            android:background="@drawable/survey_payment_btn"
+            android:textColor="#ffffff" 
+            android:textSize="13sp"/>
+
+
+            
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/header_panel"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/register_hospital_prompt"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+		<ScrollView
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:scrollbars="vertical">
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/input_panel"
+            android:orientation="vertical" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:text="@string/region"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/region_spn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gba_spinner" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:text="@string/city"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/city_spn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gba_spinner" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp" >
+
+                <TextView
+                    android:id="@+id/hospital_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:text="@string/hospital"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <AutoCompleteTextView
+                    android:id="@+id/hospital_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:hint="@string/hospital_hint"
+                    android:background="@drawable/login_input_bg"
+                    android:singleLine="true" >
+                </AutoCompleteTextView>
+            </TableRow>
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:text="@string/job"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/job_spn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gba_spinner" />
+            </TableRow>
+                
+                
+                <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:text="@string/proftitle"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/proftitle_spn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gba_spinner" />
+            </TableRow>
+                 
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp" >
+
+                <TextView
+                    android:id="@+id/invitationCode_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/inviteCodeTitle"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/invitationCode_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:hint="@string/invicodePrompt"
+                    android:background="@drawable/login_input_bg"
+                    android:singleLine="true" >
+                </EditText>
+            </TableRow>
+        </TableLayout>
+
+        </ScrollView>
+        <Button
+            android:id="@+id/register_submit"
+            android:layout_width="111dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_btn_bg"
+            android:gravity="center"
+            android:text="@string/ok_yes"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/page_index2" /> -->
+
+</RelativeLayout>

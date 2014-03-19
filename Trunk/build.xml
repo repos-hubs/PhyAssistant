@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- byread Package Utility Author: Jojol Zhou Date: 20100804 -->
+<project name="android" default="release-guarded">
+	<!-- java jdk & android sdk 环境 
+	<property name="sdk-folder" value="E:\sdk" />
+	<property name="jdk-folder" value='C:\Program Files\Java\jdk1.6.0_17' />
+	-->
+	<property file="env.properties"/>
+	<!-- 预定义 -->
+	<property name="channelprefix" value="jibo_website"/>
+	<property name="channelpostfix" value="Jia"/>
+
+	<property name="channel" value="${channelprefix} ${channelpostfix}"/>
+
+	<property name="output" value="output"/>
+	<property name="outdir-bin" value="${output}/${channel}/bin" />
+	<property name="outdir-gen" value="${output}/${channel}/gen" />
+		
+	
+	
+	<!-- 自定义地区  Begin-->
+		<!-- 签名私钥设置 -->
+		<property name="keystore-path" value="gbapp_gba_keys" />
+		<property name="store-alias" value="publish_gba_key" />
+		<property name="store-pass" value="gbishappyapp" />
+		<property name="key-pass" value="gbishappyapp" />
+		<!-- 输出文件名 -->
+		<property name="useragent" value="${output}/${channel}" />
+		<!-- 输出文件夹 -->
+		<property name="package-output" value="GBapp-${channel}" />
+		<!-- 子工程 -->		
+		<property name="project-weibo" value="depend-prjs/com_weibo_android" />
+		<property name="project-flip" value="depend-prjs/FlipLibrary" />
+		<!-- 添加子工程，请一起添加下面三个环节-->
+		<!-- Generating R.java --> 
+		<!-- compile -->
+		<!-- res -->
+		<!-- 增量标记 :"addHere"  -->
+	<!-- End -->
+	<property name="if_avai_dex" value="false"/>
+	
+	<property name="sdk2.2-folder" value="${sdk-folder}\platforms\android-8" />
+	<property name="sdk-tools" value="${sdk-folder}/platform-tools" />
+	<property name="android-tools" value="${sdk-folder}/tools" />
+	<property name="proguardpath" location="${android-tools}/proguard/lib" />
+	
+	<!-- step 1.generate R.java by aapt 2.compile java to class by javac。exe 
+		3.generate classes.dex by dx.bat -->
+	<!-- 4.package resources by aapt 5. package resource and classes.dex by 
+		apkbuilder.bat 6.sign apk by jarsinger -->
+	<!-- Tools -->
+	<property name="aapt" value="${sdk-tools}/aapt.exe" />
+	<property name="dx" value="${sdk-tools}/dx.bat" />
+	<property name="apk-builder" value="${android-tools}/apkbuilder.bat" />
+	<property name="aidl" value="${sdk-tools}/aidl.exe" />
+	<property name="adb" value="${sdk-tools}/adb.exe" />
+	<property name="android-jar" value="${sdk2.2-folder}/android.jar" />
+	<property name="jarsigner" value="${jdk-folder}\bin\jarsigner.exe" />
+	<property name="android-framework" value="${sdk2.2-folder}/framework.aidl" />  
+	<!-- Application Package Name -->
+	<property name="application-package" value="com.lewa.launcher" />
+	<property name="version" value="1.02" />
+	<!-- The intermediates directory -->
+	<!-- Eclipse uses "bin" for its own output, so we do the same. -->
+	<property name="channel-dir" value="channel" />
+	
+	<!-- source directories -->
+
+	<property name="basedir" value="." />
+	<property name="asset-dir" value="assets" />
+	<property name="srcdir" value="src" />
+	<property name="srcdir-ospath" value="${basedir}/${srcdir}" />
+	<property name="external-libs" value="${basedir}/libs" />
+	<property name="external-libs-ospath" value="${external-libs}" />
+	<property name="resource-dir" value="res" />
+	<!-- dest directories -->
+	<property name="des-resource-dir" value="${outdir-bin}/res" />
+	<property name="des-asset-dir" value="${outdir-bin}/assets" />
+	<property name="des-srcdir" value="${outdir-bin}/src" />
+	<property name="des-srcdir-ospath" value="${basedir}/${outdir-bin}/${srcdir}" />
+	<property name="des-external-libs" value="${outdir-bin}/libs" />
+	<property name="des-external-libs-ospath" value="${basedir}/${outdir-bin}/${external-libs}" />
+
+	<!-- Output directories -->
+	<property name="outdir-classes" value="${outdir-bin}/javaclasses" />
+	<property name="outdir-obfuscate-classes" value="${outdir-classes}" />
+	<property name="outdir-obfuscate-classes-ospath" value="${basedir}/${outdir-obfuscate-classes}" />
+
+	<!-- Intermediate files -->
+	<property name="outdir-dex" value="${output}/${channel}/dex" />
+	<property name="dex-file" value="classes.dex" />
+	<property name="intermediate-dex" value="${outdir-dex}/${dex-file}" />
+	<property name="intermediate-dex-ospath" value="${basedir}/${intermediate-dex}" />
+
+	<!-- The final package file to generate -->
+	<property name="resources-package" value="${outdir-bin}/${ant.project.name}" />
+	<property name="resources-package-ospath" value="${basedir}/${resources-package}" />
+	<property name="out-debug-package" value="${outdir-bin}/${ant.project.name}-debug.apk" />
+	<property name="out-debug-package-ospath" value="${basedir}/${out-debug-package}" />
+	<property name="out-unsigned-package" value="${outdir-bin}/${channel}-unsigned.apk" />
+	<property name="out-unsigned-package-ospath" value="${basedir}/${out-unsigned-package}" />
+	<property name="out-signed-package" value="${useragent}\${package-output}.apk" />
+	<property name="out-signed-package-ospath" value="${basedir}\${out-signed-package}" />
+<target name="useragent.check" >
+        <condition property="useragent.exists" value="true">
+            <available file="${useragent}" type="dir"/>
+        </condition>
+        <mkdir dir="${useragent}" />
+    </target>
+
+	<!-- init -->
+	<target name="init" depends="useragent.check">
+		<echo>Creating all output directories </echo>
+		
+		<available file="${intermediate-dex-ospath}" property="if_avai_dex" />
+		<delete dir="${outdir-bin}" />
+		
+		<delete dir="${outdir-classes}" />
+		<delete dir="${outdir-obfuscate-classes}" />
+		<delete dir="${outdir-gen}" />
+		<mkdir dir="${outdir-bin}" />
+		<mkdir dir="${outdir-classes}" />
+		
+		<mkdir dir="${outdir-obfuscate-classes}" />
+		<mkdir dir="${channel-dir}" />
+		<mkdir dir="${outdir-dex}" />
+		<mkdir dir="${outdir-gen}" />
+		<echo>delete res/values/channel.xml</echo>
+		<delete file="${resource-dir}\values\channel.xml"/>
+	</target>
+
+	<!-- copy original strings and modify useragent -->
+	<target name="delete" depends="init">
+<!-- <copy file="strings.xml" 
+			todir="${resource-dir}\values" /> <replace file="${resource-dir}\values\strings.xml" 
+			token="@USERAGENT@" value="${useragent}" encoding="utf-8"/> -->
+	</target>
+
+	<!-- Generate the R.java file for this project's resources. -->
+	<target name="resource-src" depends="init">
+		<echo>Generating R.java / Manifest.java from the resources...</echo>
+		<exec executable="${aapt}" failonerror="true">
+			<arg value="package" />
+			<arg value="-m" />
+			<arg value="-J" />
+			<arg value="${outdir-gen}" />
+			<arg value="-M" />
+			<arg value="AndroidManifest.xml" />
+			<arg value="-S" />
+			<arg value="${resource-dir}" />
+			<!-- addHere --><!-- 
+			<arg value="-S" />
+    		<arg value="${project-weibo}/res" /> -->
+    		<!-- <arg value="-S" />
+    		<arg value="${project-flip}/res" />    		
+  			 --><arg value="-S" />
+    		<arg value="channel/${channel}/res" />
+
+    		<!-- -->
+			<arg value="-I" />
+			<arg value="${android-jar}" /><arg value="--auto-add-overlay" />
+		</exec>
+	</target><!-- 
+<target name="resource-weibo" depends="init">
+		<echo>Generating R.java / Manifest.java from the resources...</echo>
+		<exec executable="${aapt}" failonerror="true">
+			<arg value="package" />
+			<arg value="-m" />
+			<arg value="-J" />
+			<arg value="${outdir-gen}" />
+			<arg value="-M" />
+			<arg value="${project-weibo}/AndroidManifest.xml" />
+			addHere
+			<arg value="-S" />
+    		<arg value="${project-weibo}/res" />
+    		
+			<arg value="-I" />
+			<arg value="${android-jar}" /></exec>
+	</target> -->
+	<!-- Generate java classes from .aidl files. -->
+ 	<target name="aidl" >
+		<echo>Compiling aidl files into Java classes...</echo>
+		<apply executable="${aidl}" failonerror="true">
+			<arg value="-p${android-framework}" />
+			<arg value="-I${srcdir}" />
+			<fileset dir="${srcdir}">
+				<include name="**/*.aidl" />
+			</fileset>
+		</apply>
+	</target>
+
+	<!-- Compile this project's .java files into .class files. -->
+	<target name="compile" depends=" resource-src,aidl">
+		<javac encoding="GBK" target="1.6" debug="true" extdirs="" deprecation="true"  optimize="true"
+			destdir="${outdir-classes}" bootclasspath="frameworks_classes.jar">
+			<src path="src"/>
+			<src path="${outdir-gen}"/>
+			<classpath>
+				<fileset dir="${external-libs}">  
+				<include name="*.jar"/>
+				</fileset> 
+				<!-- addHere --><!-- 
+				<fileset dir="${project-weibo}">  
+				<include name="*.jar"/>
+				</fileset> --><!-- 
+				<fileset dir="${project-flip}">  
+				<include name="*.jar"/>
+				</fileset> -->
+    			<!-- -->
+				<pathelement location="${android-jar}" />
+			</classpath>
+		</javac>
+	</target>
+
+<!-- 	<target name="proguard" depends="compile">
+		<taskdef resource="proguard/ant/task.properties" classpath="${proguardpath}/proguard.jar" />
+		<proguard configuration="${basedir}/proguard.cfg" />
+	</target> -->
+	<target name="proguard" depends="compile">
+		<java jar="${proguardpath}/proguard.jar" fork="true" failonerror="true">
+            <arg value="-libraryjars libs/lewa.os.jar" />
+            <arg value="-libraryjars  libs/umeng_sdk.jar" />
+            <arg value="-libraryjars '${sdk2.2-folder}\android.jar'(!**/Predicate.*,!javax/microedition/khronos/**)" />
+            <arg value="-injars ${outdir-bin}\javaclasses" />
+            <arg value="-outjars ${outdir-bin}\classes-processed.jar" />
+            
+            <arg value="@proguard.cfg" />
+    	</java>
+    </target>
+	<target name="dex-unguarded" depends="compile">
+		<echo>Converting compiled files and external libraries into
+			${outdir}/${dex-file}...</echo>
+		<apply executable="${dx}" failonerror="true" parallel="true">
+			<arg value="--dex" />
+			<arg value="--output=${intermediate-dex-ospath}" />
+			<arg path="${outdir-classes}" />
+			<fileset dir="${external-libs}" includes="*.jar" />
+
+		</apply>
+	</target>
+	<target name="jar" depends= "compile" description="打包成jar"> 
+                <jar   jarfile= "${outdir-bin}\classes-processed.jar"   basedir= "${outdir-bin}\javaclasses"> 
+                </jar> 
+    </target>
+
+	<!-- Convert this project's .class files into .dex files. -->
+	<target name="dex" depends="jar">
+		<echo>Converting compiled files and external libraries into
+			${outdir}/${dex-file}...</echo>
+		<apply executable="${dx}" failonerror="true" parallel="true">
+			<arg value="--dex" />
+			<arg value="--output=${intermediate-dex-ospath}" />
+			<arg path="${outdir-bin}/classes-processed.jar" />
+			<fileset dir="${external-libs}" includes="*.jar" />
+			<!-- <fileset dir="${project-weibo}">  
+				<include name="*.jar"/>
+				</fileset>  --><!-- 
+			<fileset dir="${project-flip}">  
+				<include name="*.jar"/>
+				</fileset>  -->
+		</apply>
+	</target>
+<target name="program" depends="resource-src">   
+        <condition property="if_avai_dex">   
+            <istrue value="true"/>   
+        </condition>   
+        <antcall target="isFalse">   
+        </antcall>   
+    </target>     
+    <target name="isFalse" unless="if_avai_dex">   
+        <antcall target="dex">   
+        </antcall>      
+    </target>
+	<!-- Put the project's resources into the output package file. -->
+	<target name="package-res-and-assets">
+		<echo>Packaging resources and assets...</echo>
+		<exec executable="${aapt}" failonerror="true">
+			<arg value="package" />
+			<arg value="-f" />
+			<arg value="-M" />
+			<arg value="AndroidManifest.xml" />
+			<arg value="-S" />
+			<arg value="${resource-dir}" />
+			<!-- addHere --><!--
+			<arg value="-S" /> 
+			<arg value="${project-weibo}/res" />
+			<arg value="-S" /> --><!-- 
+			<arg value="${project-flip}/res" />-->
+			<arg value="-S" /> 
+			<arg value="channel/${channel}/res" />
+			<!-- -->
+			<arg value="-A" />
+			<arg value="${asset-dir}" />
+			<arg value="-I" />
+			<arg value="${android-jar}" />
+			<arg value="-F" />
+			<arg value="${resources-package}" />
+			<arg value="--auto-add-overlay" />
+		</exec>
+	</target>
+
+	<!-- Same as package-res-and-assets, but without "-A ${asset-dir}" -->
+	<target name="package-res-no-assets">
+		<echo>Packaging resources...</echo>
+		<exec executable="${aapt}" failonerror="true">
+			<arg value="package" />
+			<arg value="-f" />
+			<arg value="-M" />
+			<arg value="AndroidManifest.xml" />
+			<arg value="-S" />
+			<arg value="${resource-dir}" />
+			<!-- No assets directory -->
+			<arg value="-I" />
+			<arg value="${android-jar}" />
+			<arg value="-F" />
+			<arg value="${resources-package}" />
+		</exec>
+	</target>
+
+	<!-- Invoke the proper target depending on whether or not an assets directory 
+		is present. -->
+	<!-- TODO: find a nicer way to include the "-A ${asset-dir}" argument only 
+		when the assets dir exists. -->
+	<target name="package-res">
+		<available file="${asset-dir}" type="dir" property="res-target" value="and-assets" />
+		<property name="res-target" value="no-assets" />
+		<antcall target="package-res-${res-target}" />
+	</target>
+
+	<!-- Package the application and sign it with a debug key. This is the default 
+		target when building. It is used for debug. 
+	<target name="debug" depends="dex, package-res">
+		<echo>Packaging ${out-debug-package}, and signing it with a debug
+			key...</echo>
+		<exec executable="${apk-builder}" failonerror="true">
+			<arg value="${out-debug-package-ospath}" />
+			<arg value="-z" />
+			<arg value="${resources-package-ospath}" />
+			<arg value="-f" />
+			<arg value="${intermediate-dex-ospath}" />
+			<arg value="-rf" />
+			<arg value="${srcdir-ospath}" />
+			<arg value="-rj" />
+			<arg value="${external-libs-ospath}" />
+		</exec>
+	</target>
+	-->
+
+	<!-- Package the application without signing it. This allows for the application 
+		to be signed later with an official publishing key. -->
+	<target name="package" depends="dex, package-res">
+		<echo>Packaging ${out-unsigned-package} for release...</echo>
+		<exec executable="${apk-builder}" failonerror="true">
+			<arg value="${out-unsigned-package-ospath}" />
+			<arg value="-u" />
+			<arg value="-z" />
+			<arg value="${resources-package-ospath}" />
+			<arg value="-f" />
+			<arg value="${intermediate-dex-ospath}" />
+			<arg value="-rf" />
+			<arg value="${srcdir-ospath}" />
+			<arg value="-rj" />
+			<arg value="${external-libs-ospath}" />
+		</exec>
+		<echo>It will need to be signed with jarsigner before being published.
+		</echo>
+	</target>
+
+	<target name="jarsigner" depends="package">
+		<echo>Packaging ${out-signed-package-ospath} for release...</echo>
+		<exec executable="${jarsigner}" failonerror="true">
+			<arg value="-verbose" />
+			<arg value="-keystore" />
+			<!-- 私钥文件路径 -->
+			<arg value="${keystore-path}" />
+			<arg value="-storepass" />
+			<!-- store 密码 -->
+			<arg value="${store-pass}" />
+			<arg value="-keypass" />
+			<!-- key 密码 -->
+			<arg value="${key-pass}" />
+
+			<arg value="-signedjar" />
+			<arg value="${out-signed-package-ospath}" />
+			<arg value="${out-unsigned-package-ospath}" />
+			<!-- alais 别名 -->
+			<arg value="${store-alias}" />
+		</exec>
+	</target>
+	<target name="release-guarded" depends="jarsigner">
+		<delete dir="${outdir-bin}" />
+		<delete dir="${outdir-classes}" />
+		<delete dir="${outdir-obfuscate-classes}" />
+		<delete dir="${outdir-dex}" />
+		<delete dir="${outdir-gen}" />
+		<echo>release for release...</echo>
+	</target>
+<target name="release-unguarded" depends="dex-unguarded, package-res,package,jarsigner">
+		<echo>release for release...</echo>
+	</target>
+
+	<!-- Install the package on the default emulator 
+	<target name="install" depends="debug">
+		<echo>Installing ${out-debug-package} onto default emulator...</echo>
+		<exec executable="${adb}" failonerror="true">
+			<arg value="install" />
+			<arg value="${out-debug-package}" />
+		</exec>
+	</target>-->
+	<!-- 
+	<target name="reinstall" depends="debug">
+		<echo>Installing ${out-debug-package} onto default emulator...</echo>
+		<exec executable="${adb}" failonerror="true">
+			<arg value="install" />
+			<arg value="-r" />
+			<arg value="${out-debug-package}" />
+		</exec>
+	</target>-->
+
+	<!-- Uinstall the package from the default emulator -->
+	<target name="uninstall">
+		<echo>Uninstalling ${application-package} from the default emulator...
+		</echo>
+		<exec executable="${adb}" failonerror="true">
+			<arg value="uninstall" />
+			<arg value="${application-package}" />
+		</exec>
+	</target>
+
+</project>
+

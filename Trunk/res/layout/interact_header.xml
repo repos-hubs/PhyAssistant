@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/subSearchLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/head_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/imgbtn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:src="@drawable/home_action" >
+        </ImageButton>
+        <AutoCompleteTextView
+            android:id="@+id/search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/search_input_bg"
+            android:hint="@string/add_drug"
+            android:paddingLeft="35dip"
+            android:paddingRight="10dip"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/imgbtn_home" 
+            android:layout_toLeftOf="@+id/imgbtn_clear"
+            android:layout_centerInParent="true" />
+
+        <!-- <ImageButton
+            android:id="@+id/imgbtn_searchDropDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_drop_down" /> -->
+
+        <Button
+            android:id="@id/imgbtn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/survey_payment_btn"
+            android:text="@string/clear"
+            android:textColor="#ffffff"
+            android:layout_marginRight="10dp"
+            android:textSize="18sp" 
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/drug_interaction"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:textStyle="bold" 
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/reg" android:background="@drawable/login_bg"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<ImageView android:id="@+id/logo" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_marginTop="10dp"
+		android:layout_gravity="center_horizontal" android:src="@drawable/welcom_icon" />
+	<!-- <TextView android:id="@+id/tv1" android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" android:layout_marginTop="20px" android:text="@string/gbtitle" 
+		android:gravity="center_horizontal" /> <TextView android:id="@+id/tv11" android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" android:layout_marginTop="15px" android:text="@string/gbtitle1" 
+		android:gravity="center_horizontal" /> -->
+
+	<LinearLayout android:id="@+id/inputLayout"
+		android:layout_width="284dp" android:layout_height="220dp"
+		android:layout_marginLeft="15dp" android:layout_marginRight="15dp"
+		android:orientation="vertical" android:layout_gravity="center_horizontal"
+		android:background="@drawable/input_panel">
+		<LinearLayout android:id="@+id/login_name_layout" 
+		android:layout_gravity="center_horizontal" 
+		android:paddingLeft="5dp" 
+		android:background="@drawable/login_input_bg_normal" 
+		android:layout_width="227dp" 
+		android:orientation="horizontal" 
+		android:paddingRight="4dp" 
+		android:layout_marginTop="2dp" 
+		android:layout_height="40dp">
+			<EditText  android:id="@+id/loginname" android:background="@null" android:layout_height="wrap_content" android:hint="@string/username1" android:singleLine="true" android:textSize="19sp" android:layout_width="188dp"></EditText>
+	       <ImageButton 
+            android:id="@+id/img_loginname" 
+            android:layout_width="wrap_content" 
+            android:layout_height="fill_parent" 
+            android:background="@drawable/triangle" 
+            />
+		</LinearLayout>
+		<EditText android:id="@+id/loginpassword"
+			android:layout_width="227dp" android:layout_height="40dp"
+			android:paddingLeft="5dp" android:paddingRight="4dp"
+			android:layout_marginTop="2dp" android:textSize="19sp"
+			android:password="true" android:singleLine="true" android:hint="@string/password1"
+			android:background="@drawable/login_input_bg" android:layout_gravity="center_horizontal" />
+
+		<LinearLayout android:id="@+id/checkboxpanel"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:layout_marginTop="2dp"
+			android:layout_marginLeft="11dp">
+			<LinearLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<CheckBox android:id="@+id/checkbox" android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true" android:button="@drawable/checkbox_bg" />
+				<TextView android:id="@+id/checkboxtext"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="@string/rememberpass" android:textColor="@color/dkgray"
+					android:textSize="13sp" />
+			</LinearLayout>
+			<LinearLayout android:id="@+id/checkboxpane2"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_alignParentRight="true" android:layout_marginLeft="25dp">
+				<CheckBox android:id="@+id/checkbox1" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:button="@drawable/checkbox_bg" />
+				<TextView android:id="@+id/checkboxtext1"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="@string/autologin" android:textColor="@color/dkgray"
+					android:textSize="13sp" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout android:id="@+id/buttonpanel"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:layout_marginTop="2dp"
+			android:layout_gravity="center_horizontal" android:layout_marginLeft="9dp">
+			<Button android:id="@+id/btnlogin" android:layout_width="111dp"
+				android:layout_height="35dp" android:gravity="center"
+				android:layout_alignParentLeft="true" android:text="@string/login"
+				android:textColor="@color/white" android:background="@drawable/login_btn_bg"
+				android:textSize="13sp" />
+			<Button android:id="@+id/btnReg" android:layout_width="111dp"
+				android:layout_height="35dp" android:layout_marginLeft="7dp"
+				android:layout_alignParentRight="true" android:textColor="@color/white"
+				android:text="@string/registration1" android:background="@drawable/register_btn_bg"
+				android:textSize="13sp" />
+		</LinearLayout>
+		
+		<LinearLayout android:id="@+id/buttonpanel"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center_horizontal">
+		<TextView android:id="@+id/tv2" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginTop="5dp"
+			android:text="@string/relief" android:textColor="#27A79B"/>
+		<LinearLayout android:id="@+id/linkReliefLayout"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<TextView android:id="@+id/linkRelief" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:layout_marginTop="5dp"
+			android:text="@string/relief_content" android:textColor="#ff0000ff"/>
+			</LinearLayout>
+	   </LinearLayout>
+	</LinearLayout>
+
+	<TextView android:id="@+id/version" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_marginLeft="197dp"
+		android:textSize="15sp" android:textStyle="bold" android:text="@string/version"
+		android:layout_alignParentBottom="true" android:layout_weight="1" />
+	<!--<ImageView android:id="@+id/img" android:layout_width="fill_parent" 
+		android:layout_height="wrap_content" android:src="@drawable/midline" android:layout_marginTop="15px" 
+		android:layout_gravity="center_horizontal" /> <TextView android:id="@+id/tv2" 
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30px" 
+		android:text="@string/relief" android:gravity="center_horizontal" /> <TextView 
+		android:id="@+id/tv3" android:layout_width="fill_parent" android:layout_height="wrap_content" 
+		android:layout_marginTop="15px" android:text="@string/gbbottext" android:gravity="center_horizontal" 
+		/> --><!--<LinearLayout android:id="@+id/bottompanel" android:layout_width="480px" 
+		android:layout_height="57px" android:orientation="horizontal" android:background="@drawable/login_bot" 
+		android:layout_marginTop="115px" > <TextView android:id="@+id/version" android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" android:layout_marginLeft="275px" android:layout_marginTop 
+		="14px" android:text="@string/version" /> </LinearLayout> -->
+</LinearLayout>

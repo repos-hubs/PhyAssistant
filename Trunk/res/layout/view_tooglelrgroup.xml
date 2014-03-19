@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="45dip"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent" 
+        />
+
+    <ToggleButton
+        android:id="@+id/left"
+        android:layout_width="75dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="30dip" >
+    </ToggleButton>
+
+    <ToggleButton
+        android:id="@+id/right"
+        android:layout_width="75dip"
+        android:layout_height="fill_parent" >
+    </ToggleButton>
+
+    <TextView>
+    </TextView>
+
+</LinearLayout>

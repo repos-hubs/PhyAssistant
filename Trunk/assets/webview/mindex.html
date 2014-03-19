@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<script language="javascript" src="js/jquery.js"></script>
+<script language="javascript" src="js/mJs.js"></script>
+<script language="javascript">
+	$(function(){
+	//var aa=document.getElementById("web_content").clientHeight;	
+//	alert(aa)
+})
+
+</script>
+<link rel="stylesheet" type="text/css" href="css/mcss.css" />
+</head>
+
+<body bgcolor="ECFFFF">
+	<div id="web_container">
+        <p id="paper_title">
+           <b> 
+               {$papertitle}
+           </b>
+        </p>
+        <div id="web_version" class=" noWebkitTextAdjust">
+        	<span>{$journalname}</span> &nbsp;
+            <span>{$journalif}</span>
+        </div>
+        <div class="web_title noWebkitTextAdjust">
+        	<div class="web_left web_word"> {$Abstract_Label}</div>
+        	<div class="web_right web_date" align="right">{$datetime}</div>
+            <div class="clear"></div>
+        </div>
+        <div id="web_abstract" class="radius_6">
+        	<div id="web_content">
+            <!-- Various interventions have been implemented to increase the rate of colon cancer screening. The purpose of this study was to determine if persons who are regular patients of a clinic, ages 50-64 years, and not up-to-date with colon cancer screening will complete the at-home fecal-immunochemical test (FIT) if it is mailed to them. This intervention was designed to have the subject avoid the signing of an informed consent and having to ask for the screening test; and, only one stool specimen was needed. Three hundred and fifty potential subjects were randomly selected from an electronic medical record database after meeting inclusion criteria. Eighty-seven fecal immunochemical tests were returned. Seven of the FIT kit results were positive for occult blood. Each respondent was sent a letter giving them their results. A minimal cue CRC screening intervention, a FIT kit sent in the mail without prerequisite of a signed informed consent, was offered to the study subjects. Twenty-six percent of the eligible persons were screened for colon cancer by this method. A mailed FIT kit or one handed to the patient at an office visit has minimal cost which can be recovered through insurance coverage. Commitment by health care providers is necessary for prevention. This method is one of several that could reach the hard to screen population. -->
+			
+                {$abstract}
+            </div>
+            <div id="web_readmore" class="web_readmore noWebkitTextAdjust gbiclickableelement">
+            	<a href="javascript:void(0)" class=" gbiclickableelement" id="readmord">{$Readmore_Label}</a>
+            </div>
+			<div id="web_fold" class="web_readmore noWebkitTextAdjust gbiclickableelement"  style="display:none">
+            	<a href="javascript:void(0)" class=" gbiclickableelement" id="fold">{$Fold_Label}</a>
+            </div>
+        </div>
+
+		 <div class="web_listoption radius_6 noWebkitTextAdjust">
+            <div class="web_left gbiclickableelement">
+                &nbsp;<img src="img/paper_detail_journal.png" align="absmiddle" class=" gbiclickableelement"/> {$Journal_Label}
+            </div>
+            <div class="web_right gbiclickableelement" align="right">
+            	<img src="img/arrow_folded.png" align="absmiddle" class=" gbiclickableelement"/> &nbsp;
+            </div>
+        </div>
+        
+        <div class="obesity_list radius_6 noWebkitTextAdjust" style="display:none">
+            {$journalInfo}
+            <!--<div onClick = "journalNameClicked();" class=" gbiclickableelement" > JournalNameXXXXXX <span id="subscribe_button" class=" gbiclickableelement" journal_info="pubmed_2013121230"></span></div>
+            <span>Publication Type : Journal Article</span>						
+            <span>Language : English</span>	
+            <span>: dx.doi.org/DOI ID</span>	
+            <span>ID/Unique ID : <a href="http://dfdfdf.com?WanfangID=20120212121212121">20120212121212121</a></span>   -->
+        </div>
+
+        
+        <div class="web_listoption radius_6 noWebkitTextAdjust gbiclickableelement">
+        	<div class="web_left gbiclickableelement">
+                &nbsp;<img src="img/paper_detail_authors.png" align="absmiddle" class=" gbiclickableelement"/> {$Author_Label}
+            </div>
+            <div class="web_right gbiclickableelement" align="right">
+            	<img src="img/arrow_folded.png" align="absmiddle" class=" gbiclickableelement"/> &nbsp;
+            </div>
+        </div>
+        <div class="author_list radius_6 noWebkitTextAdjust" style="display:none">
+            {$author_list}
+            {$affiliations_list}
+        </div>
+        
+        
+        <div class="web_listoption radius_6 noWebkitTextAdjust gbiclickableelement">
+        	<div class="web_left gbiclickableelement">
+                &nbsp;<img src="img/paper_detail_domains.png" align="absmiddle" class=" gbiclickableelement"/> {$Domain_Label}
+            </div>
+            <div class="web_right gbiclickableelement" align="right">
+            	<img src="img/arrow_folded.png" align="absmiddle" class=" gbiclickableelement"/> &nbsp;
+            </div>
+        </div>
+        <div class="domain_list radius_6 noWebkitTextAdjust" style="display:none">
+            {$domain_list}
+            
+        </div>   
+        
+		<div class="web_listoption radius_6 noWebkitTextAdjust gbiclickableelement">
+        	<div class="web_left gbiclickableelement">
+        		 &nbsp;<img src="img/paper_detail_keywords.png" align="absmiddle" class=" gbiclickableelement"/> {$Keywords_Label}
+            </div>
+            <div class="web_right gbiclickableelement" align="right">
+            	<img src="img/arrow_folded.png" align="absmiddle" class=" gbiclickableelement"/> &nbsp;
+            </div>
+        </div>
+        <div class="keywords_list radius_6 noWebkitTextAdjust" style="display:none">
+            {$keywords_list}
+            <!-- 
+        	<div id="MeshID:2012" class="keyword_button gbiclickableelement" > Keyword1</div>
+            <div id="MeshID:2013" class="keyword_button gbiclickableelement" > Keyword1</div>
+            <div id="MeshID:2014" class="keyword_button gbiclickableelement" > Keyword1</div>
+            -->
+        </div>
+
+        <div class="web_listoption radius_6 noWebkitTextAdjust gbiclickableelement">
+        	<div class="web_left gbiclickableelement">
+                &nbsp;<img src="img/paper_detail_durgs.png" align="absmiddle" class=" gbiclickableelement"/> {$Drug_Label}
+            </div>
+            <div class="web_right gbiclickableelement" align="right">
+            	<img src="img/arrow_folded.png" align="absmiddle" class=" gbiclickableelement"/> &nbsp;
+            </div>
+        </div>
+        <div class="drug_list radius_6 noWebkitTextAdjust" style="display:none">
+            {$drug_list}
+            
+        </div> 
+       
+    </div>
+</body>
+</html>

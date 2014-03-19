@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" 
+	android:id="@+id/mai"
+	android:background="@drawable/light_bg">
+	<LinearLayout 
+	android:id="@+id/header_panel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/header"
+    android:layout_alignParentTop="true" >
+        <include layout="@layout/header" />
+		<include layout="@layout/blank_space" />
+        <include layout="@layout/header_title" />
+
+	</LinearLayout>
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:padding="5dp">
+			<LinearLayout android:id="@+id/llt_item"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_weight="0">
+				<RelativeLayout
+					android:id="@+id/rlt_history" android:layout_width="fill_parent"
+					android:layout_weight="1" android:layout_height="fill_parent" />
+				<RelativeLayout 
+				    android:id="@+id/rlt_favorite" android:layout_width="fill_parent"
+					android:layout_weight="1" android:layout_height="fill_parent" />
+			</LinearLayout>
+
+			<FrameLayout android:id="@+id/tabcontent"
+
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:padding="5dp" 
+				android:layout_marginLeft="10px" 
+                android:layout_marginRight="10px" 
+				android:layout_weight="1" />
+
+		</LinearLayout>
+</LinearLayout>

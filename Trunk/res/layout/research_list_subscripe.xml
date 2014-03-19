@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:maxHeight="80.0dip"
+    android:orientation="vertical"
+    android:paddingTop="10dip">
+
+    <TextView   
+        android:id = "@+id/ArticleTitle"  
+        android:layout_width = "wrap_content"   
+        android:layout_height = "wrap_content"  
+        android:textColor="@color/depth_blue"
+        android:textSize="18dip"
+        android:textStyle="bold"
+        android:layout_marginLeft = "10dip"  
+        />
+
+    <TextView   
+        android:id = "@+id/PeriodicalTitle"   
+        android:layout_width = "wrap_content"  
+        android:maxWidth = "220dip"  
+        android:layout_height = "wrap_content" 
+        android:layout_below="@id/ArticleTitle"
+        android:ellipsize="end"
+        android:textColor="#73b7a6"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:maxLines="2"
+        android:layout_marginLeft = "10dip"   
+        />  
+      <TextView   
+        android:id = "@+id/IF"   
+        android:layout_width = "wrap_content"  
+        android:layout_height = "wrap_content" 
+        android:background="@drawable/tag1"
+        android:layout_toRightOf="@id/PeriodicalTitle"
+        android:layout_below="@id/ArticleTitle"
+        android:layout_alignBaseline="@id/PeriodicalTitle"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:paddingLeft="6dp"
+        android:paddingTop="1dp"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft = "10dip"   
+        /> 
+    <TextView   
+        android:id = "@+id/date"   
+        android:layout_width = "wrap_content"  
+        android:layout_height = "wrap_content" 
+        android:layout_below="@id/PeriodicalTitle"
+        android:text="2012/12/23"
+        android:textColor="#808080"
+        android:textSize="13sp"
+        android:layout_marginLeft = "10dip"   
+        /> 
+     <TextView   
+        android:id = "@+id/epub"   
+        android:layout_width = "wrap_content"  
+        android:layout_height = "wrap_content" 
+        android:layout_toRightOf="@id/date"
+        android:layout_alignBottom="@id/date"
+        android:text="[ Epub ]"
+        android:textColor="#808080"
+        android:textSize="13sp"
+        android:visibility="gone"
+        android:layout_marginLeft = "10dip"   
+        /> 
+     <View   
+        android:id = "@+id/download"   
+        android:layout_width = "20dip"  
+        android:layout_height = "20dip" 
+        android:layout_toRightOf="@id/epub"
+        android:layout_alignBottom="@id/date"
+        android:visibility="gone"
+        android:layout_marginLeft = "10dip"
+        android:background="@drawable/paper_list_download_icon"   
+        />
+    <TextView
+        android:id="@+id/Free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/date"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/tag2"
+        android:textColor="#ffffff"
+        android:paddingLeft="25dp"
+        android:paddingTop="3dp"
+        android:textSize="22sp"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+</RelativeLayout>

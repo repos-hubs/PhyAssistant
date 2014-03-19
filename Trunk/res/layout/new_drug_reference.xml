@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/light_bg"
+    android:orientation="vertical" >
+<LinearLayout
+    android:id="@+id/mai"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/light_bg"
+    android:orientation="vertical" >
+
+    <!-- 头部layout -->
+
+    <LinearLayout
+        android:id="@+id/header_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        android:orientation="vertical" >
+
+        <include layout="@layout/header" />
+
+        <include layout="@layout/blank_space" />
+
+        <LinearLayout
+            android:id="@+id/header_f"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <include layout="@layout/header_title" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 药物通用信息 -->
+    
+    
+    <RelativeLayout
+        android:id="@+id/main_lay"
+        android:layout_width="fill_parent"
+        android:layout_weight="1.0"
+        android:layout_height="fill_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pagerGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="40dip"
+            android:flipInterval="30" >
+        </android.support.v4.view.ViewPager>
+
+        <com.jibo.ui.NavigateView
+            android:id="@+id/navigateView"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip" >
+        </com.jibo.ui.NavigateView>
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/counterfeitContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:background="@drawable/bottom_bg" >
+
+        <LinearLayout
+            android:id="@+id/menu_btn_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/menu_backgroud"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_1st"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:background="@drawable/menu_infset_btn" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_btn_layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/menu_backgroud"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ToggleButton
+                android:id="@+id/tgbtn_2nd"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_favorite"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_tgbtn_layout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/menu_backgroud"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ToggleButton
+                android:id="@+id/tgbtn_3rd"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_translate"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_btn_layout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/menu_backgroud"
+            android:clickable="true"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btn_3rd"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:background="@drawable/menu_contact_btn" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_btn_layout4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/menu_backgroud"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_share"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:background="@drawable/menu_share_btn2" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+ 	<com.jibo.util.tips.Mask
+        android:id="@+id/mask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:background="#CC000000"
+        android:visibility="gone" />
+    
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/close_tips"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:id="@+id/closeTips"/>
+
+   <TextView
+       android:id="@+id/left_navigate_one"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/navigateView"
+       android:background="@drawable/left"
+       android:gravity="center_vertical"
+       android:text="@string/tip_navigate_one"
+       android:textColor="#005684"
+       android:textSize="18dip"
+       android:layout_marginLeft="50dip"
+       android:visibility="gone" />
+
+	<TextView
+       android:id="@+id/left_navigate_two"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/navigateView"
+       android:background="@drawable/left"
+       android:gravity="center_vertical"
+       android:text="@string/tip_navigate_two"
+       android:textColor="#005684"
+       android:textSize="18dip"
+       android:visibility="gone" />
+
+	<TextView
+       android:id="@+id/right_navigate_three"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/navigateView"
+       android:background="@drawable/b01"
+       android:gravity="center_vertical"
+       android:text="@string/tip_navigate_three"
+       android:textColor="#005684"
+       android:textSize="18dip"
+       android:visibility="gone" />
+</RelativeLayout>

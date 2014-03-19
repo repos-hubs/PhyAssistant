@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/light_bg"
+    android:orientation="vertical" >
+
+    <!-- <LinearLayout
+        android:id="@+id/header_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        android:orientation="horizontal" >
+
+        <include layout="@layout/interact_header" />
+        
+    </LinearLayout> -->
+        <LinearLayout
+         android:id="@+id/header_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/register_title_back"
+        android:orientation="horizontal" >
+ 		<RelativeLayout
+        android:id="@+id/main_header"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/drug_interaction"
+            android:textColor="#FFF"
+            android:textSize="22sp"
+            android:layout_centerInParent="true"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/imgbtn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:src="@drawable/home_action" 
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+        </ImageButton>
+        </RelativeLayout>
+    </LinearLayout>
+<!--    <ListView 
+	    android:id="@+id/interat_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        /> -->
+        
+    <RelativeLayout
+        android:id="@+id/main_lay"
+        android:layout_width="fill_parent"
+        android:layout_weight="1.0"
+        android:layout_height="fill_parent" >
+	<!-- <include
+        android:id="@+id/dialogprogress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        layout="@layout/dialogprogress" /> -->
+    	<!--  <android.support.v4.view.ViewPager
+            android:id="@+id/pagerGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:flipInterval="30" >
+        </android.support.v4.view.ViewPager> -->
+		<WebView
+		    android:id="@+id/webView"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent" />
+
+    </RelativeLayout>
+    
+     <LinearLayout
+        android:id="@+id/counterfeitContent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:background="@drawable/bottom_bg" >
+
+        <LinearLayout
+            android:id="@+id/menu_btn_layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/menu_backgroud"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_1st"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:background="@drawable/menu_infset_btn" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_btn_layout2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/menu_backgroud"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ToggleButton
+                android:id="@+id/tgbtn_2nd"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:background="@drawable/menu_font"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_tgbtn_layout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/menu_backgroud"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <ToggleButton
+                android:id="@+id/tgbtn_3rd"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_translate"
+                android:textOff=""
+                android:textOn="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_btn_layout3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/menu_backgroud"
+            android:clickable="true"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btn_3rd"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:background="@drawable/menu_contact_btn" >
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu_btn_layout4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/menu_backgroud"
+            android:clickable="true"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_share"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center"
+                android:background="@drawable/menu_share_btn2" >
+            </Button>
+        </LinearLayout>
+   </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:id="@+id/llt_payment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/academic_profile_content" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/survey_payway"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <RadioGroup
+                android:id="@+id/rg_payment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/rbt_alipay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                android:text="@string/survey_payway_zfb"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/rbt_mobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                android:text="@string/survey_payway_mobile"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+
+            <LinearLayout
+                android:id="@+id/llt_payment_input"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dip"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/txt_payment_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_payment_input"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="姓  名"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_userInfo_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="电  话"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_userInfo_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="城  市"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_userInfo_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="医  院"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_userInfo_hospital"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="科  室"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_userInfo_dpt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="职  称"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_userInfo_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            <Button 
+                android:id="@+id/btn_pay_confirm"
+	    		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:background="@drawable/survey_payment_btn"
+                android:gravity="center"
+                />
+        </LinearLayout>
+    </ScrollView>
+	<ImageView 
+	    android:id="@+id/img_isCheck"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+	    android:layout_alignParentRight="true"
+	    android:background="@drawable/unverify"
+	    />
+</RelativeLayout>

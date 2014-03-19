@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/light_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/RegTwoTitleFrame"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_bg_normal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageView
+            android:id="@+id/RegTwoTitleIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/registration_icon" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/RegTwoTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="26dp"
+            android:text="@string/registration"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/RegTwoBodyFrame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical" >
+
+            <!-- prime begin -->
+
+            <LinearLayout
+                android:id="@+id/RegLicenseNbLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp" >
+
+                <TextView
+                    android:id="@+id/RegLicenseNb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/RegLicenseNbEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_input_bg"
+                    android:maxLength="15"
+                    android:numeric="integer|decimal"
+                    android:singleLine="true" >
+                </EditText>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/cutting_line"
+                android:visibility="gone" >
+            </ImageView>
+
+            <TextView
+                android:id="@+id/Birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:visibility="gone" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/cutting_line"
+                android:visibility="gone" >
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/BirthdayLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone" >
+
+                <Spinner
+                    android:id="@+id/SpinnerYear"
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/gba_spinner" >
+                </Spinner>
+
+                <LinearLayout
+                    android:id="@+id/gap1"
+                    android:layout_width="5dp"
+                    android:layout_height="fill_parent" >
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/SpinnerMonth"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/gba_spinner" >
+                </Spinner>
+
+                <LinearLayout
+                    android:id="@+id/gap2"
+                    android:layout_width="5dp"
+                    android:layout_height="fill_parent" >
+                </LinearLayout>
+
+                <Spinner
+                    android:id="@+id/SpinnerDay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/gba_spinner" >
+                </Spinner>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/RegTwoCuttingLine01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/cutting_line" >
+            </ImageView>
+            <!-- prime end -->
+
+            <TextView
+                android:id="@+id/RegTwoSubTitle01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="7dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:id="@+id/RegTwoCuttingLine01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/cutting_line" >
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/MedicalSchoolRegionLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp" >
+
+                <TextView
+                    android:id="@+id/MedicalSchoolRegion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/SpinnerMedicalSchoolRegion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gba_spinner" >
+                </Spinner>
+                <!--
+            <EditText 
+                android:id="@+id/MedicalSchoolRegionEditBox" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="7dp" 
+                android:layout_weight="1" 
+                android:singleLine="true" 
+                android:background="@drawable/gba_input_box"></EditText>
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/MedicalSchoolCityLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/MedicalSchoolCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/MedicalSchoolCityEditBox"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_input_bg"
+                    android:singleLine="true" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/MedicalSchoolLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/MedicalSchoolLayout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/MedicalSchool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/SpinnerMedicalSchool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gba_spinner" >
+                    </Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/MedicalSchoolLayout3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/FillMedicalSchool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fillschoolname"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/MedicalSchoolEditBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/login_input_bg"
+                        android:singleLine="true" >
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/YearOfGraduationLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp" >
+
+                <TextView
+                    android:id="@+id/YearOfGraduation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/MedicalSpinnerYear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gba_spinner" >
+                </Spinner>
+                <!--
+                <EditText 
+                android:id="@+id/YearOfGraduationEditBox" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="7dp" 
+                android:layout_weight="1" 
+                android:singleLine="true" 
+                android:numeric="integer|decimal" 
+                android:maxLength="4" 
+                android:background="@drawable/gba_input_box"></EditText>
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/SpecialtyLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp" >
+
+                <TextView
+                    android:id="@+id/Specialty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/SpinnerSpecialty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gba_spinner" >
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/SubcategoryLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp" >
+
+                <TextView
+                    android:id="@+id/Subcategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <Spinner
+                    android:id="@+id/SpinnerSubcategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/gba_spinner" >
+                </Spinner>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp" >
+
+                <TextView
+                    android:id="@+id/inviteCodeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/inviteCode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_input_bg"
+                    android:gravity="center_vertical"
+                    android:singleLine="true" >
+                </EditText>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/RegTwoButtonLayoutt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="10dp" >
+
+                <ImageButton
+                    android:id="@+id/RegTwoPrevious"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:src="@drawable/gba_previous" >
+                </ImageButton>
+
+                <ImageButton
+                    android:id="@+id/RegTwoNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:src="@drawable/gba_sent" >
+                </ImageButton>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

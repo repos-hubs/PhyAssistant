@@ -1,0 +1,3 @@
+@echo off
+echo ÕýÔÚ±àÒë...
+ant >Log.txt

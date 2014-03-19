@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/header_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gray_bar_bg" >
+
+        <Button
+            android:id="@+id/done_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/btn_right"
+            android:text="@string/ok" 
+            android:layout_width="55dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="6dp"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="55dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="6dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_left1"
+            android:text="@string/cancel"
+            android:textColor="#ffffff"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_panel"
+        android:background="@drawable/wheel_layout_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="10dp" >
+
+            <com.jibo.drugreminder.ui.WheelView
+               android:id="@+id/year"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.jibo.drugreminder.ui.WheelView
+                android:id="@+id/month"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            
+             <com.jibo.drugreminder.ui.WheelView
+                android:id="@+id/day"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>
+    
+    
+    
+    
+    
+    
+    

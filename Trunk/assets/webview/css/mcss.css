@@ -1,0 +1,64 @@
+body{font-size:12px; color:#333; font-family:Arial, Helvetica, sans-serif;}
+
+#web_container p{ padding:0; margin:0; width:100%}
+
+#paper_title{
+    font-size:18px;
+}
+
+#web_version{ padding:5px 0}
+	#web_version span{  color:#03B59A; font-size:17px}
+	#web_version span.sel{ background:#03B59A; color:#fff;padding:3px 8px;}
+.web_title{ height:30px; line-height:30px;}
+	.web_word{ font-size:16px; font-weight:bold}
+	.web_date{ font-size:16px; color:#666}
+#web_abstract{position:relative; border:1px solid #ccc;padding:10px;}
+	#web_content{line-height:150%; overflow:hidden ; font-size:15px;}
+	#web_abstract a{ color:#01406c;  text-decoration:none}
+	.web_readmore{ text-align:right; margin-top:5px; font-weight:bold}
+.web_listoption{ height:40px; line-height:40px; border:1px solid #ccc; position:relative; background:#D5D5D5; margin-top:8px; color:#01406c; font-size:16px; font-weight:bold}
+
+.keywords_list,.author_list,.domain_list,.drug_list,.obesity_list{ padding:5px 10px; font-size:15px;border:1px solid #ccc; margin-top:5px; background:#fff; position:relative}
+.keywords_list div,.author_list div,.domain_list div,.obesity_list div,.obesity_list span{ line-height:150%; padding:3px 0; display:block}
+.obesity_list a{color:#01406c; text-decoration:none}
+
+/*¸¡¶¯¿òÌå*/
+.web_left{float:left}
+.web_right{float:right}
+.web_left{width:65%;display:inline}
+.web_right{width:35%;display:inline}
+/*Ô²½ÇCSS*/
+.radius_6{
+-webkit-border-radius: 6px 6px 6px 6px;
+-moz-border-radius: 6px 6px 6px 6px;
+border-radius: 6px 6px 6px 6px;
+behavior:url(../pie.htc);
+}
+
+.noWebkitTextAdjust{
+    -webkit-text-size-adjust: none;
+}
+
+#subscribe_button{
+    dislpay:block;
+    float:right;
+    
+    width:32px;
+    height:32px;
+    
+    border:1px solid transparent;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    
+    /* background: #ffffff url('../img/paperdetail_subscribe_journal.png') no-repeat ; */
+}
+
+.unsubscribed{
+    background: #ffffff url('../img/paperdetail_unsubscribe_journal.png') no-repeat ;
+}
+
+
+.subscribed{
+    background: #ffffff url('../img/paperdetail_subscribed_journal.png') no-repeat ;
+}

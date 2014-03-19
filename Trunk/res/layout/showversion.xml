@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/verTip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="false"
+    android:gravity="center"
+    android:visibility="gone"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:gravity="center"
+        android:layout_height="fill_parent" >
+        <LinearLayout
+            android:id="@+id/inside"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/tip_dialog_bg"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@drawable/gradient_colorslide"
+                android:text="@string/tip_version_new_version_feature"
+                android:textColor="#094f6e"
+                android:textSize="22dip"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:text="@string/tip_version_para1"
+                android:textColor="#135776"
+                android:textSize="17sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tip_version_para2"
+                android:textColor="#135776"
+                android:textSize="17sp"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tip_version_para3"
+                android:textColor="#135776"
+                android:textSize="17sp"
+                />
+            
+             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tip_version_para4"
+                android:textColor="#135776"
+                android:textSize="17sp"
+                />
+
+            <Button
+                android:id="@+id/switchTip"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@drawable/btn_bg1"
+                android:text="@string/tip_version_button"
+                android:textColor="@android:color/white"
+                android:textSize="18dip" />
+        </LinearLayout>
+        
+        <ImageView
+            android:id="@+id/closeTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/inside"
+            android:layout_alignRight="@+id/inside"
+            android:layout_marginRight="-20dp"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/btn_bg_tip_dialog" >
+        </ImageView>
+        
+    </RelativeLayout>
+
+</LinearLayout>

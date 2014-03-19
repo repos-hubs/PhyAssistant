@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+
+    <!-- Select Dropdown list -->
+    <string-array name="drop_down_list">
+        <item>@string/drug</item>
+        <item>@string/news</item>
+        <item>@string/research</item>
+        <!-- <item>@string/event</item> -->
+        <item>@string/calculator</item>
+    </string-array>
+    <string-array name="research_sub_dialog">
+        <item>@string/title</item>
+        <item>@string/author</item>
+        <item>@string/entity</item>
+        <item>@string/publish_date</item>
+        <item>@string/categoryrea</item>
+        <item>@string/keyword</item>
+    </string-array>
+    <string-array name="event_sub_dialog">
+        <item>@string/title</item>
+        <item>@string/region</item>
+        <item>@string/Organizer</item>
+        <item>@string/category</item>
+    </string-array>
+    <string-array name="tabcalc">
+        <item>@string/cardiovascular_sys</item>
+        <item>@string/endocrine_metabolic_sys</item>
+        <item>@string/blood_sys</item>
+        <item>@string/kidney_sys</item>
+        <item>@string/respiratory_sys</item>
+        <item>@string/musculoskeletal_sys</item>
+        <item>@string/surgery</item>
+        <item>@string/all</item>
+    </string-array>
+    <string-array name="newsCat">
+        <item>@string/newscategory0</item>
+        <item>@string/newscategory1</item>
+        <item>@string/newscategory2</item>
+        <item>@string/newscategory3</item>
+        <item>@string/newscategory4</item>
+        <item>@string/newscategory5</item>
+        <item>@string/newscategory6</item>
+    </string-array>
+    <string-array name="prof_titles">
+        <item>@string/prof_titles0</item>
+        <item>@string/prof_titles1</item>
+        <item>@string/prof_titles2</item>
+        <item>@string/prof_titles3</item>
+        <item>@string/prof_titles4</item>
+        <item>@string/prof_titles5</item>
+    </string-array>
+    <string-array name="yearsOfGraduation">
+        <item>@string/year</item>
+        <item>1977</item>
+        <item>1978</item>
+        <item>1979</item>
+        <item>1980</item>
+        <item>1981</item>
+        <item>1982</item>
+        <item>1983</item>
+        <item>1984</item>
+        <item>1985</item>
+        <item>1986</item>
+        <item>1987</item>
+        <item>1988</item>
+        <item>1989</item>
+        <item>1990</item>
+        <item>1991</item>
+        <item>1992</item>
+        <item>1993</item>
+        <item>1994</item>
+        <item>1995</item>
+        <item>1990</item>
+        <item>1991</item>
+        <item>1992</item>
+        <item>1993</item>
+        <item>1994</item>
+        <item>1995</item>
+        <item>1996</item>
+        <item>1997</item>
+        <item>1998</item>
+        <item>1999</item>
+        <item>2000</item>
+        <item>2001</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+    </string-array>
+    <string-array name="researchid">
+        <item>@string/t01</item>
+        <item>@string/t02</item>
+        <item>@string/t03</item>
+        <item>@string/t04</item>
+        <item>@string/t05</item>
+        <item>@string/t06</item>
+        <item>@string/t07</item>
+        <item>@string/t08</item>
+        <item>@string/t09</item>
+        <item>@string/t10</item>
+        <item>@string/t11</item>
+        <item>@string/t12</item>
+        <item>@string/t13</item>
+        <item>@string/t14</item>
+        <item>@string/t15</item>
+        <item>@string/t16</item>
+        <item>@string/t17</item>
+        <item>@string/t18</item>
+        <item>@string/t19</item>
+        <item>@string/t20</item>
+    </string-array>
+    <string-array name="researchCat">
+        <item>@string/neu</item>
+        <item>@string/pul</item>
+        <item>@string/gas</item>
+        <item>@string/car</item>
+        <item>@string/endo</item>
+        <item>@string/hema</item>
+        <item>@string/theu</item>
+        <item>@string/urol</item>
+        <item>@string/infe</item>
+        <item>@string/onco</item>
+        <item>@string/nutr</item>
+        <item>@string/obst</item>
+        <item>@string/opht</item>
+        <item>@string/otol</item>
+        <item>@string/stom</item>
+        <item>@string/derm</item>
+        <item>@string/anes</item>
+        <item>@string/immu</item>
+        <item>@string/acut</item>
+        <item>@string/diag</item>
+    </string-array>
+    <string-array name="licensecategory">
+        <item>"10"</item>
+        <item>"20"</item>
+        <item>"30"</item>
+        <item>"41"</item>
+        <item>"42"</item>
+        <item>"43"</item>
+        <item>"44"</item>
+        <item>"45"</item>
+    </string-array>
+    <string-array name="drugitemsid">
+        <item>TA001</item>
+        <item>TA002</item>
+        <item>TA003</item>
+        <item>TA004</item>
+        <item>TA005</item>
+        <item>TA006</item>
+        <item>TA007</item>
+        <item>TA008</item>
+        <item>TA009</item>
+        <item>TA010</item>
+        <item>TA011</item>
+        <item>TA012</item>
+        <item>TA013</item>
+        <item>TA014</item>
+        <item>TA015</item>
+        <item>TA016</item>
+        <item>TA017</item>
+        <item>TA018</item>
+        <item>TA019</item>
+        <item>TA020</item>
+        <item>TA000</item>
+    </string-array>
+    <string-array name="drugitems">
+        <item>@string/drug_item2</item>
+        <item>@string/drug_item3</item>
+        <item>@string/drug_item4</item>
+        <item>@string/drug_item5</item>
+        <item>@string/drug_item6</item>
+        <item>@string/drug_item7</item>
+        <item>@string/drug_item8</item>
+        <item>@string/drug_item9</item>
+        <item>@string/drug_item10</item>
+        <item>@string/drug_item11</item>
+        <item>@string/drug_item12</item>
+        <item>@string/drug_item13</item>
+        <item>@string/drug_item14</item>
+        <item>@string/drug_item15</item>
+        <item>@string/drug_item16</item>
+        <item>@string/drug_item17</item>
+        <item>@string/drug_item18</item>
+        <item>@string/drug_item19</item>
+        <item>@string/drug_item20</item>
+        <item>@string/drug_item21</item>
+        <item>@string/drug_item22</item>
+    </string-array>
+    <string-array name="share_1">
+        <item>@string/share_message</item>
+        <item>@string/share_sina</item>
+        <item>@string/share_other</item>
+        <item>@string/follow_jibo</item>
+        <item>@string/share_tx</item>
+    </string-array>
+    <string-array name="share_2">
+        <item>@string/share_message</item>
+        <item>@string/share_sina</item>
+        <item>@string/share_email</item>
+        <item>@string/follow_jibo</item>
+        <item>@string/share_tx</item>
+    </string-array>
+    <string-array name="events">
+        <item>@string/eventnow</item>
+        <item>@string/eventpast</item>
+    </string-array>
+    <string-array name="items">
+        <item>@string/shareitem0</item>
+        <item>@string/shareitem2</item>
+        <item>@string/shareitem1</item>
+        <item>@string/shareitem3</item>
+        <item>@string/share_tx</item>
+    </string-array>
+    <string-array name="items2">
+        <item>@string/shareitem0</item>
+        <item>@string/shareitem4</item>
+        <item>@string/shareitem1</item>
+        <item>@string/share_tx</item> 
+        <item>@string/share_wx</item>
+    </string-array>
+<!--         <item>@string/share_wx</item> -->
+    <string-array name="drug_list">
+        <item>@string/indication</item>
+        <item>@string/dosing</item>
+        <item>@string/specuse</item>
+        <item>@string/adrs</item>
+        <item>@string/contraindication</item>
+        <item>@string/drug_interaction</item>
+        <item>@string/importantNotice</item>
+        <item>@string/overDosage</item>
+        <item>@string/pharmacological</item>
+        <item>@string/pharmacokinetics</item>
+        <item>@string/edl</item>
+        <item>@string/reimbursement</item>
+        <item>@string/manufacturers_price</item>
+        <!-- <item>@string/academic_activity</item> -->
+    </string-array>
+    <string-array name="drug_list_id">
+        <item>Indication</item>
+        <item>Dosing</item>
+        <item>Special Population</item>
+        <item>ADR</item>
+        <item>Contraindication</item>
+        <item>Interaction</item>
+        <item>ImportantNotice</item>
+        <item>OverDosage</item>
+        <item>Pharmacological</item>
+        <item>Pharmacokinetics</item>
+        <item>EDL</item>
+        <item>Reimbursement</item>
+        <item>ManufacturersAndPrice</item>
+        <!-- <item>Academic activity</item> -->
+    </string-array>
+    <string-array name="brand_list">
+        <item>@string/indication</item>
+        <item>@string/dosing</item>
+        <item>@string/adrs</item>
+        <item>@string/contraindication</item>
+        <item>@string/drug_interaction</item>
+        <item>@string/specuse</item>
+        <item>@string/Overdosage</item>
+        <item>@string/edl</item>
+        <item>@string/reimbursement</item>
+        <item>@string/manufacturers_price</item>
+        <!-- <item>@string/academic_activity</item> -->
+    </string-array>
+    <string-array name="markets">
+        <item>Google play</item>
+        <item>APPChina</item>
+        <item>Gfan</item>
+        <item>GoAPK</item>
+        <item>91.com</item>
+    </string-array>
+    <string-array name="ahfs_list">
+        <item>@string/indication</item>
+        <item>@string/dosing</item>
+        <item>@string/adrs</item>
+        <item>@string/contraindication</item>
+        <item>@string/drug_interaction</item>
+        <item>@string/specuse</item>
+        <item>@string/caution</item>
+    </string-array>
+    <string-array name="and_or">
+        <item>@string/filter_and</item>
+        <item>@string/filter_or</item>
+    </string-array>
+    <string-array name="search_keywords">
+        <item>@string/kw_title</item>
+        <item>@string/abstracts_info</item>
+        <!-- <item>@string/kw_magazine_name</item>
+        <item>@string/kw_multiple</item>
+        <item>@string/kw_author</item>
+        <item>@string/kw_medcine</item> -->
+    </string-array>
+    <string-array name="job_arr">
+        <item>@string/job_select</item>
+        <item>@string/job_doctor</item>
+        <item>@string/job_nurse</item>
+        <item>@string/job_pharmacist</item>
+        <item>@string/job_technologist</item>
+        <item>@string/job_teacherOrStudent</item>
+        <item>@string/job_medicalRelated</item>
+        <item>@string/job_nonMedicalRelated</item>
+    </string-array>
+    <!-- 身份选项id -->
+    <string-array name="job_arr_id">
+        <item>job_doctor</item>
+        <item>job_nurse</item>
+        <item>job_pharmacist</item>
+        <item>job_technologist</item>
+        <item>job_teacherOrStudent</item>
+        <item>job_medicalRelated</item>
+        <item>job_nonMedicalRelated</item>
+    </string-array>
+    <!-- 我是医生 -->
+    <string-array name="job_doctor_zh">
+        <item>请选择</item>
+        <item>主任医师</item>
+        <item>副主任医师</item>
+        <item>主治医师</item>
+        <item>医师</item>
+        <item>助理医师</item>
+        <item>医士</item>
+        <item>卫生防疫员</item>
+        <item>住院医师规范化培训生</item>
+    </string-array>
+    <string-array name="job_doctor_en">
+        <item>Pelase select</item>
+        <item>Professor</item>
+        <item>Associate Professor</item>
+        <item>Attending Doctor</item>
+        <item>Resident Doctor</item>
+        <item>Medical Assistant</item>
+        <item>Intern</item>
+    </string-array>
+    <!-- 我是护士 -->
+    <string-array name="job_nurse_zh">
+        <item>请选择</item>
+        <item>主任护师</item>
+        <item>副主任护师</item>
+        <item>主管护师</item>
+        <item>护师</item>
+        <item>护士</item>
+        <item>护理员</item>
+    </string-array>
+    <string-array name="job_nurse_en">
+        <item>Pelase select</item>
+        <item>Professor of Nursing</item>
+        <item>Associate Professor of Nursing</item>
+        <item>Nurse-In-Charge</item>
+        <item>Nurse Practitioner</item>
+        <item>Nurse Aide</item>
+    </string-array>
+    <!-- 我是药剂师 -->
+    <string-array name="job_pharmacist_zh">
+        <item>请选择</item>
+        <item>主任药师</item>
+        <item>副主任药师</item>
+        <item>主管药师</item>
+        <item>药师</item>
+        <item>药士</item>
+        <item>药剂员</item>
+    </string-array>
+    <string-array name="job_pharmacist_en">
+        <item>Pelase select</item>
+        <item>Chief Pharmacist</item>
+        <item>Associate Chief Pharmacist</item>
+        <item>Pharmacist-In-Charge</item>
+        <item>Pharmacist</item>
+        <item>Assistant Pharmacist</item>
+    </string-array>
+
+    <!-- 我是技师 -->
+    <string-array name="job_technologist_zh">
+        <item>请选择</item>
+        <item>主任技师</item>
+        <item>副主任技师</item>
+        <item>主管技师</item>
+        <item>技师</item>
+        <item>技士</item>
+    </string-array>
+    <string-array name="job_technologist_en">
+        <item>Pelase select</item>
+        <item>Senior Technologist</item>
+        <item>Associate Senior Technologist</item>
+        <item>Technologist-In-Charge</item>
+        <item>Technologist</item>
+        <item>Technician</item>
+    </string-array>
+    
+    <!-- 全文下载 -->
+    <string-array name="download_available">
+        <item>@string/research_download_fulltext</item>
+    </string-array>
+     <string-array name="download_available_view">
+        <item>@string/research_download_view</item>
+    </string-array>
+    <string-array name="download_not_available">
+        <item>@string/research_request_fulltext</item>
+    </string-array>
+
+</resources>

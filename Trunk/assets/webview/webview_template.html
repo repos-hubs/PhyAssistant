@@ -1,0 +1,381 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+        
+        <meta name="viewport" content="width=100%; minimum-scale=1.0; maximum-scale=1.0; user-scalable=no">
+        
+        
+        <title>无标题文档</title>
+        <style type="text/css">
+            #newscontentcontainer p{text-indent:2em}
+            body {
+                font-family:'Helvetica';
+                font-size:14px;
+                word-wrap:break-word;
+                line-height:1.5;
+                font-weight:bold;
+                margin:0;
+            }
+            b{font-size:15px;}
+            html,body{
+                
+                height:auto;
+                
+                overflow-x:hidden;
+                /*overflow-y:scroll;*/
+                
+            }
+            
+            *{
+                -webkit-tap-highlight-color: transparent;
+                
+            }
+            
+            .noWebkitTextAdjust{
+                -webkit-text-size-adjust: none;
+            }
+            
+        </style>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+            </script>
+        <script>
+            $(document).ready(function(){
+                              $("button").click(
+                                        function(event){
+                                            event.stopPropagation();
+                                            $(this).siblings("div").each( function(){ $(this).toggle('fast'); } );
+                                        });
+                              
+                              
+                              
+                        });
+        </script>
+        
+    </head>
+    <body style="background-color:transparent; -webkit-tap-highlight-color: #ff0000 ;  " >
+        
+        <div id='uiwebviewcontainer' style="margin:0; -webkit-tap-highlight-color: transparent ; min-height:100%;  "  >
+            <table id="newsheader" width='100%' border='0' cellspacing='0' cellpadding='0' style=' font-size:12px; color:#333; padding:0; margin:0'>
+                <tr>
+                    <td width='0px' bgcolor='#9BD8F4' valign='middle'>
+                        <img id='goleftimg' src='{$newsImagePath}goleft_ico_blue.png' width='0' height='0' border='0' />
+                    </td>
+                    <th style='background:url({$newsImagePath}tit_bg.png) repeat-x #A1D9F3; font-size:16px;'>
+                        <div style="height:6px;"></div>
+                        <p id='news_title' style='padding:0; margin:0; text-align:center ;color:#285785; '>
+                            {$newsTitle}
+                        </p>
+                        <table width='100%' border='0' cellspacing='0' cellpadding='0'>
+                            <tr>
+                                <td width='87'>&nbsp;</td>
+                                <td align='center' style='font-size:14px ; color:#717171'>
+                                    {$newsDate}
+                                </td>
+                                <td width='87'>
+                                    <div id='specialcontainer' style='height:14px;visibility:{$newsSpecialStatusVisibility};'>
+                                        
+                                        <div style="float:right;width:1px;height:14px;background:url({$newsImagePath}{$specialImageName}) no-repeat center right"></div>
+                                        <p style='background:url({$newsImagePath}{$specialImageName}) no-repeat -10 0; font-size:11px ; color:#FFFFFF;text-align:center ;max-width:76; height:14px; overflow:hidden; float:right;margin:0; '>
+                                        {$newsSpecialStatus}
+                                        </p>
+                                        <div style="float:right;width:10px;height:14px;background:url({$newsImagePath}{$specialImageName}) no-repeat center left "></div>
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="height:6px;"></div>
+                    </th>
+                    <td width='0px' bgcolor='#9BD8F4' valign='middle'>
+                        <img id='gorightimg' src='{$newsImagePath}goright_ico_blue.png' width='0' height='0' border='0' />
+                    </td>
+                </tr>
+            </table>
+            <div id="newscontentcontainer" style="padding:10px;  "
+                ongesturestart="gestureStart(event);"
+                ongesturechange="gestureChange(event);"
+                ongestureend="gestureEnd(event);"
+                
+                >
+                <div>
+                    <button class="noWebkitTextAdjust" >Keywords</button>
+                    <div style="display:none">
+                       	<button > Keyword1</button>
+						<button> Keyword1</button>
+						<button> Keyword1</button>
+                    </div>
+                </div>
+				<div>
+                    <button class="noWebkitTextAdjust" >Authors</button>
+                    <div style="display:none">
+                        <button> Authors1 </button>
+						<button> Authors2 </button>
+						<button> Authors3 </button>
+                    </div>
+                </div>
+				<div>
+                    <button class="noWebkitTextAdjust" >Journal</button>
+                    <div style="display:none">
+                        <button onclick = journalNameClicked();> JournalNameXXXXXX </button>
+						<button> IF 6.0 </button>
+						<button> journal URL </button>
+                    </div>
+                </div>
+                
+                
+                <a href="http://www.baidu.com">fadfa</a>
+                
+                    <p>asdfadfasdfasdfasdf</p>
+                
+            </div>
+            <div style="height:10px"></div>
+        </div>
+        </body>
+        <script>
+            
+            //document.body.onclick = function(){alert('click on body');};
+            
+            document.getElementById('uiwebviewcontainer').onclick = function(event){ clicked(event); };
+            
+                    var headimages = document.getElementById('newsheader').getElementsByTagName('img');
+                    for (i = 0; i < headimages.length; i++) {
+                        headimages[i].onerror = function() {
+                            this.style.visibility = 'hidden';
+                        }
+                    }
+                    var images = document.getElementById('newscontentcontainer').getElementsByTagName('img');
+                    for (j = 0; j < images.length; j++) {
+                        images[j].style.maxWidth="300px";
+                        images[j].onerror = function() {
+                            this.style.visibility = 'visiable';
+                        }
+                    }
+            
+            /*
+            var buttons = document.getElementById('newscontentcontainer').getElementsByTagName('button');
+            //alert(links);
+            for (j = 0; j < buttons.length; j++) {
+                
+                buttons[j].onclick = function(event) {
+                    //event.preventDefault();
+                    event.stopPropagation();
+                    //event.stopImmediatePropagation();
+                    alert("button clicked!!!");
+                    
+                    
+                    
+                }
+            }
+            */
+             
+            var links = document.getElementById('newscontentcontainer').getElementsByTagName('a');
+            //alert(links);
+            for (j = 0; j < links.length; j++) {
+                
+                links[j].onclick = function(event) {
+                    
+                    
+                    event.stopPropagation();
+                    //event.stopImmediatePropagation();
+                    //alert("anchor "+ this +" clicked!!!");
+                    
+                    // 
+                    //event.preventDefault();
+                    
+                }
+            }
+            
+            function gestureStart(event){
+                //event.preventDefault();
+                //alert("gesture start!!!");
+                
+                //alert(event.touches);
+                
+            }
+            function gestureChange(event){
+                //event.preventDefault();
+                //alert("gesture change!!!");
+            }
+            function gestureEnd(event){
+                //event.preventDefault();
+                //alert("gesture end!!!");
+            }
+            
+            function clicked(event){
+                
+                event.stopPropagation();
+                
+                //event.preventDefault();
+                
+                //alert("div clicked");
+                
+                document.location = "myweb:clicked";
+                
+                MyApp_HighlightAllOccurencesOfStringForElement('body','asd');
+
+                
+            }
+            
+            /*
+            function boxStart(event){
+            
+            event.preventDefault();
+            
+            origScale = parseInt(document.getElementById('newSize').style.webkitTextSizeAdjust, 10)||1;
+            
+            }
+            
+            function boxChange(event){
+            
+            event.preventDefault();
+            
+            size = origScale * event.scale;
+            
+            document.getElementById('echo').innerHTML = event.scale;
+            
+            if (size < minSize) {
+            
+            document.getElementById('newSize').style.webkitTextSizeAdjust = minSize + '%';
+            
+            } else if (size > maxSize) {
+            
+            document.getElementById('newSize').style.webkitTextSizeAdjust = maxSize + '%';
+            
+            } else {
+            
+            document.getElementById('newSize').style.webkitTextSizeAdjust = size + '%';
+            
+            } 
+            
+            }
+            */
+        </script>
+    
+    <script language="javascript">
+        
+        /*
+        
+        document.ontouchstart=function(event){
+            
+            //event.stopPropagation();
+            
+            var x = event.touches[0].pageX;
+            var y = event.touches[0].pageY;
+            
+            document.location="myweb:touch:start:"+x+":"+y;
+            
+        };
+        
+        document.ontouchend=function(event){
+            
+            //event.stopPropagation();
+            
+            
+            var x ;
+            var y ;
+            
+            if (event.touches && event.touches.length>0) { // iPhone
+                x = event.touches[0].pageX;
+                y = event.touches[0].pageY;
+            } else { // all others
+                x = event.pageX;
+                y = event.pageY;
+            }
+            
+            
+            document.location="myweb:touch:end:"+x+":"+y;
+            
+        };
+        
+        document.ontouchmove=function(event){
+            
+            //event.stopPropagation();
+            
+            var x = event.touches[0].pageX;
+            var y = event.touches[0].pageY;
+            
+            document.location="myweb:touch:move:"+x+":"+y;
+            
+        }
+        */
+    </script>
+    
+    <script>
+        
+        // We're using a global variable to store the number of occurrences
+        var MyApp_SearchResultCount = 0;
+        // helper function, recursively searches in elements and their child nodes
+        function MyApp_HighlightAllOccurencesOfStringForElement(element,keyword) {
+            if (element) {
+                if (element.nodeType == 3) {
+                    // Text node
+                    while (true) {
+                        var value = element.nodeValue;
+                        // Search for keyword in text node
+                        var idx = value.toLowerCase().indexOf(keyword);
+                        if (idx < 0) break;
+                        // not found, abort
+                        var span = document.createElement("span");
+                        var text = document.createTextNode(value.substr(idx,keyword.length));
+                        span.appendChild(text);
+                        span.setAttribute("class","MyAppHighlight");
+                        span.style.backgroundColor="yellow";
+                        span.style.color="black";
+                        text = document.createTextNode(value.substr(idx+keyword.length));
+                        element.deleteData(idx, value.length - idx);
+                        var next = element.nextSibling;
+                        element.parentNode.insertBefore(span, next);
+                        element.parentNode.insertBefore(text, next);
+                        element = text;
+                        MyApp_SearchResultCount++; // update the counter
+                    }
+                } else if (element.nodeType == 1) { // Element node
+                    if (element.style.display != "none" && element.nodeName.toLowerCase() != 'select') {
+                        for (var i=element.childNodes.length-1; i>=0; i--) {
+                            MyApp_HighlightAllOccurencesOfStringForElement(element.childNodes[i],keyword);
+                        }
+                    }
+                }
+            }
+        }  // the main entry point to start the search
+        function MyApp_HighlightAllOccurencesOfString(keyword) {
+            MyApp_RemoveAllHighlights();
+            MyApp_HighlightAllOccurencesOfStringForElement(document.body, keyword.toLowerCase());
+        }  // helper function, recursively removes the highlights in elements and their childs
+        function MyApp_RemoveAllHighlightsForElement(element) {
+            if (element) {
+                if (element.nodeType == 1) {
+                    if (element.getAttribute("class") == "MyAppHighlight") {
+                        var text = element.removeChild(element.firstChild);
+                        element.parentNode.insertBefore(text,element);
+                        element.parentNode.removeChild(element);
+                        return true;
+                    } else {
+                        var normalize = false;
+                        for (var i=element.childNodes.length-1; i>=0; i--) {
+                            if (MyApp_RemoveAllHighlightsForElement(element.childNodes[i])) {
+                                normalize = true;
+                            }
+                        }
+                        if (normalize) {
+                            element.normalize();
+                        }
+                    }
+                }
+            }
+            return false;
+        }  // the main entry point to remove the highlights
+        function MyApp_RemoveAllHighlights() {
+            MyApp_SearchResultCount = 0;
+            MyApp_RemoveAllHighlightsForElement(document.body);
+        }
+        
+        //alert('dfdfdf');
+        
+        MyApp_HighlightAllOccurencesOfString('the');
+        
+    </script>
+    
+    
+</html>

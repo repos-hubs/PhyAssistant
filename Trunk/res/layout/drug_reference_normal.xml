@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jibo="http://schemas.android.com/apk/res/com.api.android.GBApp"
+    android:id="@+id/DescriptionTextLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- 药品名称 -->
+
+    <LinearLayout
+        android:id="@+id/DescriptionDrugNameLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/DescriptionDrugNameCn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:textColor="@color/depth_blue"
+            android:textSize="18sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/DescriptionDrugNameEn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:textColor="@color/depth_blue"
+            android:textSize="18sp" >
+        </TextView>
+    </LinearLayout>
+    <!--
+            <View
+                android:id="@+id/DescriptionCuttingLine1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/cutting_line" />
+    -->
+
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- 给药途径 -->
+            <TextView
+                android:id="@+id/DescriptionAdminRouteInfoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_marginLeft="7dp"
+                android:background="@drawable/drugdetail_info_back"
+                android:textColor="@color/depth_blue"
+                android:textSize="17sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/DescriptionAdminRouteInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:textColor="@color/depth_blue"
+                android:textSize="17sp" >
+            </TextView>
+        </TableRow>
+        
+            
+            <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/DescriptionBrandNameTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:gravity="center"
+                android:background="@drawable/drugdetail_info_back"
+                android:textColor="@color/depth_blue"
+                android:textSize="17sp" >
+            </TextView>
+
+            <com.jibo.ui.ExpandLayout
+                android:id="@+id/BrandNameTextLay"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp" />
+        </TableRow>
+        
+
+            <!-- 商品名 -->
+       
+    </TableLayout>
+
+    <!--
+                                            剂型 
+            <LinearLayout
+                android:id="@+id/DescriptionFormulationLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/DescriptionFormulationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/DescriptionFormulation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" >
+                </TextView>
+            </LinearLayout>
+            
+
+            <ImageView
+                android:id="@+id/DescriptionCuttingLine2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/cutting_line" >
+            </ImageView>
+    -->
+
+</LinearLayout>

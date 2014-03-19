@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mai"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/light_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header"
+        android:orientation="vertical" >
+
+        <include layout="@layout/header" />
+
+        <include layout="@layout/blank_space" />
+
+        <include layout="@layout/header_title" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/main_lay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/header_panel"
+        android:orientation="vertical" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pagerGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="40dip"
+            android:layout_weight="1.0"
+            android:flipInterval="30" >
+        </android.support.v4.view.ViewPager>
+
+        <com.jibo.ui.NavigateView
+            android:id="@+id/navigateView"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip" >
+        </com.jibo.ui.NavigateView>
+        
+    </RelativeLayout>
+
+    <com.jibo.util.tips.Mask
+        android:id="@+id/mask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:background="#CC000000"
+        android:visibility="gone" />
+    
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/close_tips"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:id="@+id/closeTips"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:visibility="visible"
+        >
+
+        <LinearLayout
+            android:id="@+id/header_panel_mask"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+             android:visibility="gone"
+            android:orientation="vertical" >
+
+            <include layout="@layout/header_mask" />
+
+            <include layout="@layout/blank_space" />
+
+            
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header_panel_mask"
+            
+            android:background="@drawable/left"
+           android:gravity="center_vertical"
+            android:text="@string/gossip_drugref_left"
+            android:textColor="#005684"
+            android:textSize="18dip"
+            android:layout_marginLeft="50dip"
+            android:visibility="gone" />
+    </RelativeLayout>
+    
+    <TextView
+            android:id="@+id/left_categoryname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/navigateView"
+            android:background="@drawable/left"
+            android:gravity="center_vertical"
+            android:text="@string/tip_categoryname"
+            android:textColor="#005684"
+            android:textSize="18dip"
+            android:visibility="gone" />
+    
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+         android:layout_marginBottom="120dp"
+         android:layout_marginLeft="30dp"
+         android:layout_alignParentBottom="true"
+        android:id="@+id/leftArrow"
+        android:src="@drawable/left_arrow"
+        />
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+         android:layout_marginBottom="120dp"
+         android:layout_marginRight="30dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+        android:id="@+id/rightArrow"
+        android:src="@drawable/right_arrow_tips"
+        />
+    
+  <RelativeLayout
+        android:id="@+id/rippleView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+    
+	    <ImageView
+	        android:id="@+id/rippleImage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/light5"
+	        android:layout_centerInParent="true" />
+	
+	    <ImageView
+	        android:id="@+id/handImage"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/rippleImage"
+	        android:layout_centerHorizontal="true"
+	        android:background="@drawable/hand" />
+	</RelativeLayout>  
+    
+</RelativeLayout>

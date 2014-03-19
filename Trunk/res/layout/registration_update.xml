@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mai"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/light_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/register_title_back"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/RegThreeTitleFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" >
+
+            <ImageView
+                android:id="@+id/RegThreeTitleIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/registration_icon" />
+
+            <TextView
+                android:id="@+id/RegZeroTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="@string/user_update"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/dialogprogress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_panel"
+        android:layout_centerHorizontal="true"
+        layout="@layout/dialogprogress"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/main_scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header_panel"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_panel"
+                android:orientation="vertical" >
+
+                <TableRow
+                    android:id="@+id/RegNameLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="7dp" >
+
+                    <TextView
+                        android:id="@+id/name_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/name"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/name_edittext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_input_bg"
+                        android:gravity="center_vertical"
+                        android:singleLine="true" />
+
+                    
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:button="@drawable/verified_status_back"
+                        android:clickable="false"
+                        android:visibility="gone"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/RegEmailLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="7dp" >
+
+                    <TextView
+                        android:id="@+id/email_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/email_edittext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_input_bg"
+                        android:gravity="center_vertical"
+                        android:singleLine="true" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:button="@drawable/verified_status_back"
+                        android:clickable="false"
+                        android:visibility="gone"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/RegContactNumberLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="7dp" >
+
+                    <TextView
+                        android:id="@+id/contactNumber_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/phone"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/contactNumber_edittext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_input_bg"
+                        android:gravity="center_vertical"
+                        android:phoneNumber="true"
+                        android:singleLine="true" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:button="@drawable/verified_status_back"
+                        android:clickable="false"
+                        android:visibility="gone"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/input_panel"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/practiceInfo"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TableRow
+                    android:id="@+id/RegLicenseNbLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="7dp">
+
+                    <TextView
+                        android:id="@+id/licenseNumber_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:text="@string/license_number"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/licenseNumber_edittext"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="100"
+                        android:background="@drawable/login_input_bg"
+                        android:hint="@string/licenseNbPrompt"
+                        android:maxLength="15"
+                        android:numeric="integer|decimal"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+                    <CheckBox
+                        android:id="@+id/licNo_verified_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:button="@drawable/verified_status_back"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="7dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:text="@string/region"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/region_spn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gba_spinner" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:button="@drawable/verified_status_back"
+                        android:clickable="false"
+                        android:visibility="gone"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="7dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:text="@string/city"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/city_spn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gba_spinner" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:button="@drawable/verified_status_back"
+                        android:clickable="false"
+                        android:visibility="gone"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/RegHospitalLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="7dp" >
+
+                    <TextView
+                        android:id="@+id/hospital_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:text="@string/hospital"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/hospital_edittext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_input_bg"
+                        android:focusable="false"
+                        android:hint="@string/hospital_hint"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_vertical"
+                        android:longClickable="false"
+                        android:singleLine="true" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:button="@drawable/verified_status_back"
+                        android:clickable="false"
+                        android:visibility="gone"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/RegDepartmentsLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="7dp" >
+
+                    <TextView
+                        android:id="@+id/bigDepartment_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:text="@string/regdepartment"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/bigDepartment_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gba_spinner" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:button="@drawable/verified_status_back"
+                        android:clickable="false"
+                        android:visibility="gone"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/RegSubDepartmentLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="7dp" >
+
+                    <TextView
+                        android:id="@+id/subDepartment_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/regdepartment"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:visibility="invisible" />
+
+                    <Spinner
+                        android:id="@+id/subDepartment_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gba_spinner" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:button="@drawable/verified_status_back"
+                        android:clickable="false"
+                        android:visibility="gone"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:text="@string/job"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/job_spn"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gba_spinner" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:button="@drawable/verified_status_back"
+                        android:clickable="false"
+                        android:visibility="gone"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/RegProfileLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="7dp" >
+
+                    <TextView
+                        android:id="@+id/profile_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:text="@string/prof_title"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/profile_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gba_spinner" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:button="@drawable/verified_status_back"
+                        android:clickable="false"
+                        android:visibility="gone"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/inviteCodeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:text="@string/inviteCodeTitle"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/invitecode_edittext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_input_bg"
+                        android:gravity="center_vertical"
+                        android:hint="@string/invicodePrompt"
+                        android:singleLine="true" />
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:button="@drawable/verified_status_back"
+                        android:clickable="false"
+                        android:visibility="gone"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false" />
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/register_submit"
+                android:layout_width="111dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/login_btn_bg"
+                android:gravity="center"
+                android:text="@string/ok_yes"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

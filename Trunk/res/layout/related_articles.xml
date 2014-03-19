@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mai"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/light_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header"
+        android:orientation="vertical" >
+
+        <include layout="@layout/header" />
+
+        <include layout="@layout/blank_space" />
+
+        <LinearLayout
+            android:id="@+id/header_f"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <include layout="@layout/header_title" />
+            <Button
+                android:id="@+id/favoritBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="10dip"
+                android:background="@drawable/btnchg" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/RelatedArticlesBodyLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:orientation="vertical" >
+
+  <!-- 
+  <include
+            android:id="@+id/dialogprogress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            layout="@layout/dialogprogress"
+             />
+   -->      
+
+        <!-- prime 2011-6-14 end. -->
+
+        <ScrollView
+            android:id="@+id/RelatedArticlesDetailsScrollView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="5dip"
+            android:layout_marginLeft="5dip" >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/ArticleTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:textColor="@color/black"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:textSize="19sp" >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/RelatedArticlesSubTitleCuttingLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dip"
+                    android:layout_below="@id/ArticleTitle"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/cutting_line" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/ArticlesAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="5dip"
+                    android:layout_below="@id/RelatedArticlesSubTitleCuttingLine"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:textSize="17sp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/JournalName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:layout_below="@id/ArticlesAuthor"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dip" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/Entity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:layout_below="@id/JournalName"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dip" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/PublishDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:layout_below="@id/Entity"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="5dip" >
+                </TextView>
+                <LinearLayout
+                    android:id="@+id/VolumeLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/PublishDate"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="5dip" >
+                    <TextView
+                        android:id="@+id/VolumeTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/Volume"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" >
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/Abstract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/VolumeLayout"
+                    android:layout_marginTop="5dip"
+                    android:layout_alignParentLeft="true" >
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/OtherDrugsMentionedLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Abstract"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="7dp" 
+                    >
+
+                    <TextView
+                        android:id="@+id/RelatedDrugsMentionedTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <LinearLayout
+                        android:id="@+id/RelatedDrugsMentionedLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content" >
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/LinkToSourceTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/OtherDrugsMentionedLayout"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="17sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/LinkToSource"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:autoLink="all"
+                    android:textColor="@color/black"
+                    android:textColorLink="@color/black"
+                    android:layout_below="@id/LinkToSourceTitle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:textSize="17sp"
+                    android:textStyle="bold" >
+                </TextView>
+                </RelativeLayout>
+            </ScrollView>
+    </LinearLayout>
+</LinearLayout>

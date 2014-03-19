@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/searcheditlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip" >
+
+        <EditText
+            android:id="@+id/searchBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/reg_input_bg"
+            android:drawableLeft="@drawable/magnifier"
+            android:hint="@string/invite_hint"
+             >
+        </EditText>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/invited"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searcheditlayout"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/invitedbanner"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@android:color/darker_gray" />
+
+            <View
+                android:id="@+id/progInvited"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/number_bar02" />
+            <View
+                android:id="@+id/background_"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ffc000"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:visibility="gone"
+                android:src="@drawable/arrow001" />
+
+            <TextView
+                android:id="@+id/invitedtitle"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_toLeftOf="@id/arrow"
+                android:gravity="center"
+                android:textColor="#32689a"
+                android:textSize="19dip" >
+            </TextView>
+        </RelativeLayout>
+
+        <GridView
+            android:id="@+id/invitedList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:horizontalSpacing="5dip"
+            android:listSelector="#00000000"
+            android:numColumns="4"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="5dip"
+            android:visibility="gone" >
+        </GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/directory_input"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@id/invited"
+        android:background="#ebebeb"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/sdcardPathBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="7dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="7dip"
+            android:layout_weight="20"
+            android:ellipsize="start"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:singleLine="true"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="#343434"
+            android:textSize="18dip" />
+
+        <RelativeLayout
+            android:id="@+id/searchBoxLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/searchlogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dip"
+                android:scaleType="centerInside" />
+
+            <ImageView
+                android:id="@+id/magnifying_glass_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside" />
+
+            <LinearLayout
+                android:id="@+id/searcheditlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_toLeftOf="@id/magnifying_glass_cancel"
+                android:layout_toRightOf="@id/searchlogo"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <!-- <include layout="@layout/cate_h_divider" /> -->
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/h_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/directory_input"
+        layout="@layout/v_cate_seprator" />
+
+    <LinearLayout
+        android:id="@+id/all"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_below="@id/h_line"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/noinvitedtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_01"
+            android:gravity="center|center_vertical"
+            android:text="@string/goinvite"
+            android:textColor="@android:color/white"
+            android:textSize="19dip" >
+        </TextView>
+        <!--
+             <ImageView
+            android:id="@+id/invite_exec"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:gravity="center"
+            android:src="@drawable/bg_btn"
+            >
+        </ImageView>
+
+
+
+
+
+
+
+
+        -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/all"
+        android:background="#ebebeb"
+        android:orientation="vertical"
+        android:weightSum="120" >
+
+        <ListView
+            android:id="@+id/fileListView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_weight="120"
+            android:divider="#1a000000"
+            android:dividerHeight="1px"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="true"
+            android:footerDividersEnabled="true"
+            android:headerDividersEnabled="true" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/v_line"
+        android:layout_alignParentLeft="true"
+        layout="@layout/cate_divider" />
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function show_detail() {
+		document.getElementById("list").style.display = "none";
+		document.getElementById("detail").style.display = "";
+		var jsondata = window.contact.getEachDrugs(); 
+		var contentdesc = document.getElementById("desc");
+		var contentdrug = document.getElementById("drug");
+		if(typeof jsondata == "undefined"){
+			jsondata = "no data!";	
+		}
+		var jsonobjs = eval(jsondata);		
+		var str="";
+		for(var key in jsonobjs){ 
+			if(key == 0){
+				contentdrug.innerHTML = jsonobjs[key].drug_title;		
+			}else{
+				if(jsonobjs[key].drug_content){
+					str += "<div class='drug_content'>"+jsonobjs[key].drug_content+"</div><hr>";
+				}			
+			}
+		} 
+		contentdesc.innerHTML = str;
+	}
+	function show_list() {
+		document.getElementById("list").style.display = "";
+		document.getElementById("detail").style.display = "none";
+		var jsondata = window.contact.getAllDrugs(); 
+		var contentlist = document.getElementById("list");
+		if(typeof jsondata == "undefined"){
+			jsondata = "no data!";	
+		}
+		var jsonobjs = eval(jsondata);	
+		var str="";
+		for(var key in jsonobjs){ 
+			if(jsonobjs[key].drug_title != null && jsonobjs[key].drug_content){
+				str += "<div class='drug_title'>"+jsonobjs[key].drug_title+"</div>";
+				str += "<div class='drug_content'>"+jsonobjs[key].drug_content+"</div><hr>";
+			}			
+		} 
+		contentlist.innerHTML = str;
+	}
+	
+	function doZoom(size){ 
+		document.getElementById('bodyid').style.fontSize=size+'%' 
+	} 
+	function load(){ 
+		var contentlist = document.getElementById("text_css");
+		var str = window.contact.getCompleteInteractionDetails();
+		contentlist.innerHTML = str;
+		var contentlist1 = document.getElementById("text_img");
+		var str1 = "<img src='img/arrow001.png' style='margin:-10% 0 0 90%;'>";
+		contentlist1.innerHTML = str1;
+	} 
+</script>
+<style type="text/css">
+body{font-size:18px;}
+.comments{
+	color:gray;
+}
+.description{
+	color:red;
+}
+.drug_names{
+	font-weight:bold;
+	font-size:22px;
+}
+#drug_names{
+	color:#00B799;
+}
+</style>
+</head>
+<body id="bodyid" onload="load()">
+	<div id='list'>
+		
+	</div>
+	<div id='detail'>
+		<div id='drug'></div>
+		<hr>
+		<div id='desc'>
+			<hr>
+		</div>
+	</div>
+	<div onclick="window.contact.nextPage()">
+	<div id='text_css' class="text_css"></div>
+	<div id='text_img'></div>
+	</div>
+	<hr>
+</body>
+</html>

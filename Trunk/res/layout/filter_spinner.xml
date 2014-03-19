@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+	    android:orientation="horizontal"
+	    >
+
+	    <Spinner
+	        android:id="@+id/spinner1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40dip"
+	        android:layout_weight="1"
+	        android:drawSelectorOnTop="true"
+	        android:prompt="@string/spinner_and_or" />
+
+	    <Spinner
+	        android:id="@+id/spinner2"
+	        android:layout_width="fill_parent"
+	        android:layout_height="40dip"
+	        android:layout_weight="1"
+	        android:drawSelectorOnTop="true"
+	        android:prompt="@string/spinner_filter_kw" />
+	</LinearLayout>
+	
+	<EditText
+	    android:id="@+id/search_keyword"
+	    android:layout_width="fill_parent"
+	    android:layout_height="40dip"
+	    android:clickable="true"
+	    android:textColor="@color/black"
+	    android:textSize="15sp" />
+
+</LinearLayout>
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/subSearchLayout_mask"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="7dip"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" 
+    >
+
+    <ImageButton
+        android:id="@+id/imgbtn_home_mask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:src="@drawable/home_action" 
+        android:visibility="invisible" >
+    </ImageButton>
+
+    <AutoCompleteTextView
+        android:id="@+id/actv_searchEdit_mask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/search_input_action"
+        android:hint="@string/drug"
+        android:maxLength="20"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    <ImageButton
+        android:id="@+id/imgbtn_searchDropDown_mask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_drop_down" />
+    <ImageButton
+        android:id="@+id/imgbtn_search_mask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:background="@drawable/search_action"
+        android:visibility="invisible" >
+    </ImageButton>
+
+</LinearLayout>

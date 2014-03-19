@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/light_bg"
+    android:id="@+id/mai">
+    <LinearLayout 
+	android:id="@+id/header_panel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="@drawable/header">
+        <include layout="@layout/header" />
+		<include layout="@layout/blank_space" />
+		<include layout="@layout/header_title" />
+	</LinearLayout>
+    <LinearLayout 
+			    android:orientation="vertical"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent">
+    
+    <LinearLayout 
+        	android:id="@+id/updatetimelayout"
+     		android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="25dp"
+        	android:layout_marginTop="7dp"
+        	android:layout_gravity="center_horizontal"
+        	android:visibility="gone"
+        >
+        	<TextView 
+        		android:id="@+id/updatetimetitle"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/updatetime"
+        		android:textSize="20sp"
+        		android:textColor="@color/black"
+        	/>
+        
+        	<TextView 
+        		android:id="@+id/updatetime"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:textStyle="bold"
+        		android:textSize="17sp"
+        		android:textColor="@color/darkblue"
+        		android:layout_gravity="center_horizontal"
+        	/>
+   	</LinearLayout>
+    <LinearLayout 
+        	android:id="@+id/versionlayout"
+     		android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="25dp"
+        	android:layout_marginTop="7dp"
+        	android:visibility="gone"
+        	android:layout_gravity="center_horizontal"
+        	>
+        	<TextView 
+        		android:id="@+id/versiontitle"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="@string/versioninfo"
+        		android:textSize="20sp"
+        		android:textColor="@color/black"
+        	/>
+        
+        	<TextView 
+        		android:id="@+id/versioninfo"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_gravity="center_horizontal"
+        		android:textStyle="bold"
+        		android:textColor="@color/darkblue"
+        		android:text="@string/version"
+        		android:textSize="20sp"
+        	/>
+        </LinearLayout>
+
+   <ImageView 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center_horizontal" 
+        android:background="@drawable/cutting_line"
+        android:layout_marginLeft="25dp" 
+        android:layout_marginRight="25dp"/> 
+    <LinearLayout 
+        android:id="@+id/bodyLayout" 
+        android:orientation="vertical" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        >
+        
+        <ListView android:id="@+id/mList"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:paddingLeft="25dp"
+        	android:paddingRight="25dp"
+			android:layout_marginBottom="7dp"
+        	android:cacheColorHint="#00000000"
+        	android:divider="@color/list_divider"
+        	android:dividerHeight="1px"
+        />
+	</LinearLayout>
+	</LinearLayout>
+	
+</LinearLayout>
+<com.jibo.util.tips.Mask
+        android:id="@+id/mask"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/mask"
+        android:visibility="gone" />
+<include layout="@layout/showversion" android:id="@+id/showversion"/>
+</RelativeLayout>

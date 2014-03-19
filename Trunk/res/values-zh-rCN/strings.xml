@@ -1,0 +1,957 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="no_update">您的应用已经是最新版本</string>
+    <string name="app_name">"集博"</string>
+    <string name="version">"集博2.2版"</string>
+    <!-- 条目名称 -->
+    <string name="drug">药品信息</string>
+    <string name="drug_hint">\t药品信息</string>
+    <string name="event">医学会议</string>
+    <string name="research">医学研究</string>
+    <string name="tool">医学工具</string>
+    <string name="news">医学新闻</string>
+    <string name="calculator">医学公式</string>
+    <string name="academic_profile">学术背景</string>
+    <string name="survey">调查问卷</string>
+    <string name="network">我的圈子</string>
+    <string name="drugalert">用药安全</string>
+    <string name="history_favorite">历史收藏</string>
+    <string name="market">工具市场</string>
+    <string name="set_up">系统设置</string>
+    <string name="loading">正在努力加载...</string>
+    <string name="menu">"试试点击菜单键"</string>
+    <string name="loadingin">"正在努力加载中..."</string>
+    <string name="loadn">正在加载后%s条</string>
+    <string name="drug_note">备忘录</string>
+    <string name="market_associate">和您专业方向相关的</string>
+    <string name="market_unassociate">其他用户也在使用的</string>
+    <string name="survey_target_place">目标地区</string>
+    <string name="survey_target_dpt">科室/专业</string>
+    <string name="survey_target_hospital">医院级别</string>
+    <string name="survey_recheck_letter">该调查问卷需要符合其他特定条件，点击确定完成筛选过程</string>
+    <string name="survey_recheck_error">对不起，您不在本次调查的对象范围内，欢迎下次参与，谢谢！</string>
+
+    <!-- 初始化界面 -->
+    <string name="slogan1">"临 床 医 师 每 日 必 备 的 资 源"</string>
+    <string name="slogan2">"带 给 您 最 全 面"</string>
+    <string name="slogan3">"最 准 确 最 前 沿 的 医 疗 信 息"</string>
+    <string name="checkdbversion">"正在检查版本与数据包是否最新..."</string>
+
+    <!-- 头部搜索框 -->
+    <string name="select_dialog">选择项目</string>
+    <string name="title">标题</string>
+    <string name="author">作者</string>
+    <string name="entity">作者单位</string>
+    <string name="publish_date">发行日期</string>
+    <string name="keyword">关键字</string>
+
+    <!-- 医学会议搜索列表 -->
+    <string name="region">省份</string>
+    <string name="Organizer">组织者</string>
+    <string name="category">"类       别"</string>
+    <string name="difference_version">专家版用户可拥有更多额外服务，目前包括美国医院处方服务（AHFS）药品数据的完整版信息，标准版用户目前只提供精简版信息。
+	\n\n注：AHFS数据是由美国卫生系统药师协会 (ASHP) 编写，已有50余年历史，是最稳固可靠循证医学的药品信息来源，由世界顶级的药学专家根据临床数据编写和审核，完全独立于任何制药企业。
+</string>
+    <string name="standard_version">目前您使用的是标准版，输入邀请码升级到专家版。</string>
+    <string name="premium_version">目前您使用的是专家版，您拥有标准版以外的其他服务。</string>
+
+    <!-- 对话框 内容 -->
+    <string name="generalprompt">"提示"</string>
+    <string name="networknotavailable">网络不可用，请连接网络！</string>
+    <string name="waiting">数据获取中,请稍等...</string>
+    <string name="updating">正在更新,请稍候...</string>
+    <string name="losedownload">下载数据失败，请重试！</string>
+    <string name="gbaerror">出错提示</string>
+    <string name="networktitle">网络状态提示</string>
+    <string name="stopdownload">"停止"</string>
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+    <string name="unziping">"正在解压数据包..."</string>
+    <string name="downloadagain">"重新下载"</string>
+    <string name="downloading">"正在下载最新数据包..."</string>
+    <string name="networkNotReachable">网络状态不好，请稍候再试！</string>
+    <string name="selectshortcut">"请选择要查看的条目"</string>
+    <string name="quitprompt">"请选择您要做的下一步操作..."</string>
+    <string name="switchacc">"切换账号"</string>
+    <string name="exit">"退出"</string>
+    <string name="chooseMenu">选择分享方式</string>
+
+    <string name="sdnotready">"SD卡没有准备好,请准备好SD卡后再重新尝试！"</string>
+    <string name="filenotexist">"数据文件不存在，请重新下载！"</string>
+    <string name="canceldownload">"目前正处在下载中，请确认是否取消下载?"</string>
+    <string name="fillLicense">请填写执业证号获取学术资料！</string>
+    <string name="nolicense">"执业证号不存在"</string>
+    <string name="fill">"填写"</string>
+    <string name="no_package_update">没有新的数据包可供下载，您的已经是最新的了！</string>
+    <string name="input_error">请输入有效地数值</string>
+    <string name="need_update">发现有新版本，您是否要更新？</string>
+    <string name="newDataAvailable">"有新的数据包可供下载"</string>
+    <string name="update_dpt">aaaaaaaaaaaaaaaaa</string>
+    <string name="data_update_success">已成功更新数据</string>
+    <string name="data_error">文件损坏，需要重新下载</string>
+    <string name="dpt_title">科室对应工具包</string>
+    <string name="pkg_installed">已安装</string>
+    <string name="pkg_to_install">安装</string>
+    <string name="pkg_to_upgrade">升级</string>
+    <string name="pkg_to_uninstall">卸载</string>
+    <string name="data_update_full">有重要数据需要更新，请下载！</string>
+    <string name="cancel_install">请您升级到最新版本，以免应用不稳定！</string>
+    <string name="install_app">有新的应用需要安装，是否继续？</string>
+    <string name="apk_need_install">数据包损坏，必须升级，请确认。</string>
+    <string name="pckg_installing">正在安装</string>
+    <string name="pckg_install_success">成功</string>
+    <string name="pckg_install_failure">失败</string>
+    <string name="btn_save">保存</string>
+    <string name="survey_submit_success">成功提交答卷，谢谢你的参与！</string>
+    <string name="survey_submit_error">提交答卷失败，可能由于网络等原因，请稍候重试！</string>
+    <string name="survey_submit_submitted">您已经回答过该问卷，不能再参与，谢谢！</string>
+    <string name="survey_submit_full">问卷参与者已超上限，不能再参与，谢谢！</string>
+    <string name="survey_not_complete">答卷不完全，请检查后重新提交。</string>
+    <string name="market_package_uninstalling">正在卸载...</string>
+    <string name="market_no_invite_code">仅供专业版用户，请去输入邀请码！</string>
+    <string name="survey_data_lack">参加有偿调查，您需要补全相关资料（姓名、电话、执业地点及科室），以便后期验证。</string>
+    <string name="survey_data_lack_ok">去完善</string>
+    <string name="survey_data_lack_cancel">取消</string>
+    <string name="tools_goto_install">您还未安装此工具，请到工具市场去下载</string>
+
+    <!-- account mgr -->
+    <string name="jump">跳  过</string>
+    <string name="updatetime">"最后更新："</string>
+    <string name="versioninfo">"版本信息："</string>
+    <string name="checkdataupdate">"检查数据更新"</string>
+    <string name="defaultcategory">"默认关注类别："</string>
+    <string name="notset">"未设定"</string>
+    <string name="set">"设定"</string>
+    <string name="personaltool">"个性化工具包 "</string>
+    <string name="editreginfo">"个人注册信息修改"</string>
+    <string name="editpassword">"修改密码"</string>
+    <string name="cardiovascular_sys">"Cardiovascular system"</string>
+    <string name="endocrine_metabolic_sys">"Endocrine/metabolic system"</string>
+    <string name="blood_sys">Blood system</string>
+    <string name="kidney_sys">Kidney system</string>
+    <string name="respiratory_sys">Respiratory system</string>
+    <string name="musculoskeletal_sys">Musculoskeletal system</string>
+    <string name="surgery">Surgery</string>
+    <string name="all">全部</string>
+    <string name="btn_txt_calculate">"计算"</string>
+    <string name="btn_txt_clear">"清空"</string>
+
+    <!-- Tools -->
+    <string name="nccn_disease">肿瘤临床实践指南</string>
+    <string name="ecg">"典型异常心电图"</string>
+    <string name="tnm">"TNM肿瘤分期工具"</string>
+    <string name="tumorCategory">"临床分期为："</string>
+    <string name="tumorref">"Ref: AJCC Cancer Staging Manual (7th Edition)"</string>
+    <string name="series">"系列"</string>
+    <string name="or">" 或   "</string>
+    <string name="noranklevel">"不存在此分级关系"</string>
+    <string name="nccn_comment">"注释"</string>
+
+    <!-- Account mgr -->
+    <string name="accountmanagement">"系统设置"</string>
+    <string name="datanotset">"您没有下载数据"</string>
+    <string name="accountcheck">"版本更新检查"</string>
+    <string name="accountselect">"选择默认类别"</string>
+    <string name="accounttool">"个性化工具包"</string>
+    <string name="accountregistration">"账号管理"</string>
+    <string name="accountpassword">"修改密码"</string>
+    <string name="notnull">"敬请期待！"</string>
+    <string name="abtus">关于我们</string>
+    <string name="setting">设置</string>
+    <string name="lgout">退出账号</string>
+    <string name="shrout">分享给朋友</string>
+
+    <!-- Academic Profile -->
+    <string name="academic_status">学术活动状态</string>
+    <string name="colon">:</string>
+    <string name="nodata">"暂无信息"</string>
+    <string name="articles_written_by">所著文章</string>
+    <string name="coauthor">合著者</string>
+    <string name="sub_specialty">细分方向</string>
+    <string name="five_key_words">五大关键词</string>
+    <string name="hospital">医院</string>
+    <string name="ca_hsp">院内数量</string>
+    <string name="cao_hsp">其他医院数量</string>
+
+    <!-- Event -->
+    <string name="eventsAttend">我关注此会议</string>
+    <string name="event_name">会议名称</string>
+    <string name="event_date">举行日期</string>
+    <string name="venue">地址</string>
+    <string name="introduction">简介</string>
+    <string name="tel">电话</string>
+    <string name="fax">传真</string>
+    <string name="website_source">主办方主页</string>
+    <string name="mail">邮箱</string>
+
+    <!-- Survey -->
+    <string name="invitenxt">下次尝试</string>
+    <string name="invitefri">邀请好友</string>
+    <string name="surveysave">提交</string>
+    <string name="answerNone">答案不能为空</string>
+    <string name="existMsg">您已参与此调查问卷</string>
+    <string name="submitSuccess">提交成功</string>
+    <string name="fdbacksubmit">提交反馈意见</string>
+    <!--
+         <string name="payment_alipay">支付宝账户</string>
+    <string name="payment_mobile">手机    卡号</string>
+
+
+
+
+    -->
+    <string name="download_count">次 下载</string>
+    <string name="survey_estimateTime">预计时间：</string>
+    <string name="survey_reward">报酬：</string>
+    <string name="survey_personCount">参与人数：</string>
+    <string name="survey_endTime">截止时间：</string>
+    <string name="survey_source">调查来源：</string>
+    <string name="survey_question_intro">介绍：</string>
+    <string name="survey_title_list">问卷调查</string>
+    <string name="survey_title_history">我的问卷</string>
+    <string name="survey_title_setup">调查设置</string>
+    <string name="survey_title_intro">付费调查介绍及反馈</string>
+    <string name="survey_payway">调查收款方式二选一</string>
+    <string name="survey_payway_zfb">支付宝收款</string>
+    <string name="survey_payway_mobile">手机号收款</string>
+    <string name="survey_status_change">状态变更时间：</string>
+    <string name="survey_status_memo">状态备注：</string>
+    <string name="survey_no_history">完成问卷后，查看该次调查的后续状态！</string>
+
+    <!-- Network -->
+    <string name="channels">分类</string>
+
+    <!-- Research -->
+    <string name="journal_name">期刊名</string>
+    <string name="data_and_volume">发行日期和期数</string>
+    <string name="abstracts">摘要</string>
+    <string name="other_drugs_mentioned">其他涉及药物</string>
+    <string name="webSearch">"搜索 PubMed"</string>
+    <string name="articles_by_specialty">文章分类</string>
+    <string name="categoryrea">类别</string>
+    <string name="according">按</string>
+    <string name="linked_papers">相关文章</string>
+    <string name="neu">"神经与精神疾病"</string>
+    <string name="pul">"呼吸系统疾病"</string>
+    <string name="gas">"消化系统疾病"</string>
+    <string name="car">"心血管系统疾病"</string>
+    <string name="endo">"内分泌代谢疾病"</string>
+    <string name="hema">"血液系统疾病"</string>
+    <string name="theu">"风湿免疫与骨科疾病"</string>
+    <string name="urol">"泌尿系统疾病"</string>
+    <string name="infe">"感染疾病"</string>
+    <string name="onco">"肿瘤"</string>
+    <string name="nutr">"肠外肠内营养与调节水、电解质、酸碱平衡药"</string>
+    <string name="obst">"妇产科疾病"</string>
+    <string name="opht">"眼科疾病"</string>
+    <string name="otol">"耳、鼻、咽喉科疾病"</string>
+    <string name="stom">"口腔科疾病"</string>
+    <string name="derm">"皮肤科疾病"</string>
+    <string name="anes">"麻醉"</string>
+    <string name="immu">"免疫制剂与疫苗"</string>
+    <string name="acut">"急性中毒救治"</string>
+    <string name="diag">"诊断"</string>
+    <string name="search_tips">搜索内容为：搜索药品中英文通用名、商品名、拼音首字母</string>
+    <!-- menu -->
+    <string name="mygbi">我的集博</string>
+    <string name="myhelp">帮助</string>
+    <string name="myhisfav">历史收藏</string>
+    <string name="myinfset">意见反馈</string>
+    <string name="aboutus">关于我们</string>
+    <string name="syncc">同步</string>
+    <string name="senttoemail">收件人邮箱</string>
+    <string name="emailTitle">主题</string>
+
+    <!-- about -->
+    <string name="helpmsg">使用帮助</string>
+    <string name="aboutuscontent2">网页地址:</string>
+
+    <!-- History And Favorite -->
+    <string name="his">历史</string>
+    <string name="fav">收藏</string>
+    <string name="vh_today">今天</string>
+    <string name="vh_yesterday">昨天</string>
+    <string name="vh_week">一周内</string>
+    <string name="vh_month">一个月内</string>
+    <string name="vh_older">更早</string>
+    <string name="synchronize_title">正在同步中...</string>
+    <string name="synchronize_message">请稍候...</string>
+    <string name="my_history">我的历史</string>
+    <string name="cancelFav">取消收藏成功</string>
+    <string name="favorite">收藏成功</string>
+    <string name="favfail">收藏失败，请等待页面加载...</string>
+    <string name="my_favorite">我的收藏</string>
+    <string name="base">基础</string>
+    <string name="local_home">本科室</string>
+    <string name="study_range">研究范围</string>
+    <string name="pubmed">PubMed</string>
+    <string name="wanfang">万方</string>
+    <string name="from">来源</string>
+
+    <!-- help -->
+    <string name="ui_main">界面使用帮助</string>
+    <string name="col_research_assistant">研究助手</string>
+    <string name="col_profile_network">学术网络</string>
+    <string name="col_tools">医学工具</string>
+    <string name="col_news">医学新闻</string>
+    <string name="col_favorite">我的收藏</string>
+    <string name="col_calculator">医学计算器</string>
+    <string name="col_drug">药品信息</string>
+    <string name="col_clinical_path">临床路径</string>
+    <string name="clinical">临床</string>
+    <string name="clinical_about">临床相关</string>
+    <string name="col_director">诊疗指南</string>
+    <string name="col_events">医学会议</string>
+    <string name="col_research">医学研究</string>
+    <string name="col_ecg">心电图</string>
+    <string name="feedback">您的建议是我们前进的动力，让我们一起让集博变得更美好！请输入您的反馈意见。</string>
+    <string name="drghelp">	提供国内常用的处方药2000多种通用名、7000多种商品名以及OTC药品和中成药的基本信息查询</string>
+
+    <string name="drghelpdtl">    1、药品信息包括： 适应症、药物相互作用、用法用量、禁忌症、不良反应报告、医保目录、剂型、规格、生产厂家等。
+    \n2、可通过商品名、通用名、拼音的首字母等迅速找到目标药。
+    \n3、按您的专业领域检索药物(包括:神经与精神疾病、呼吸系统疾病、消化系统疾病、心血管系统疾病、内分泌代谢疾病、肿瘤... ...20个治疗领域)。
+    \n4、可将您常用的药物添加到收藏夹列表，供以后重复查询。
+    \n5、无需网络连接，随时随地访问。
+</string>
+    <string name="calhelp">协助您做出临床决策的有用医学计算器
+    \n包括80个临床实践中有用的医学计算器。
+</string>
+    <string name="calhelpdtl">    1、可依据治疗领域查找计算公式，包括：心血管系统、内分泌代谢系统、血液系统、泌尿系统、呼吸系统、肌肉骨骼系统和外科，7个治疗领域的常用公式。
+    \n2、可将您常用的计算器添加到收藏夹列表，供以后快速访问。
+    \n3、无需网络连接，随时随地访问。   
+</string>
+    <string name="newshelp">阅读最新的医学新闻报道，内容每日更新，触及多种主题
+   \n新闻报道均来源于国内外有影响力的期刊、报纸及网站, 例如Medscape、首席医学网等。
+</string>
+    <string name="newshelpdtl">   1、新闻报道均来源于国内外有影响力的期刊、报纸及网站, 例如Medscape、首席医学网等。
+   \n2、最新动态为您带来最新行业新闻报道，内容每日更新。
+   \n3、选择您关注的主题浏览所有新闻，内容包括：内科、外科、临床专科、辅助科室、临床相关医学和行业动态（例如，政府医疗改革，政策和法规，医院管理... ...）。
+   \n4、可将您关注的新闻报道添加到收藏夹列表，供以后查阅。
+   \n5、通过微博、短信、邮件与人分享精彩的新闻报道。  
+</string>
+    <string name="toolhelp">    临床实践中必不可少的工具，协助您诊断、治疗或判断预后
+</string>
+    <string name="toolhelpdtl">    1、肿瘤临床实践指南： 肿瘤领域临床决策的标准，按类似决策树的路线图进行组织，便于临床医师方便快捷地找到正确的治疗路线。
+    \n2、TNM肿瘤分期工具： 采用TNM肿瘤分期系统，为各种肿瘤进行临床分期，指导治疗计划的制定。
+    \n3、典型异常心电图：收集了常见的异常心电图，35例优质的心电图实例加上详细的文字注解,是临床医师不可多得的学习工具。  
+</string>
+    <string name="acahelp">    一个专属您自己的学术成就展示平台
+   \n在我们超过300万篇文章和30万医生的数据库中为您建立个人学术档案，包括您发表的文章， 主要研究方向等。
+</string>
+    <string name="acahelpdtl">    1、在我们超过300万篇文章和30万医生的数据库中为您建立个人学术档案，包括您发表的文章， 主要研究方向等。
+    \n2、在档案中轻松浏览您及您的合著者发表文章概况，并提供链接到文章摘要或整篇文章（如果可以在Web 上免费浏览全文）。    
+</string>
+    <string name="reshelp">    即时显示搜索结果，保存和分享搜索的文章，更多......
+</string>
+    <string name="reshelpdtl">   1、提供多种检索方式，输入文章标题、发布日期、作者姓名、医院名称或文章关键词均可搜索文章，并提供链接到摘要或整篇文章（如果可以在Web 上免费浏览全文）。
+   \n2、选择您关注的治疗领域浏览文章(包括:神经与精神疾病、呼吸系统疾病、消化系统疾病、心血管系统疾病、内分泌代谢疾病、肿瘤... ... 20个领域)。
+   \n3、迅速显示搜索结果，全部结果以逆时间顺序排列（最新的文章排在最前面）。
+   \n4、提供PubMed数据库链接，点击进入PubMed数据检索系统。
+   \n5、可将您关注的文章添加到收藏夹列表，供以后重复查阅。
+   \n6、通过微博、短信、邮件与人分享有价值的文章。   
+</string>
+    <string name="eventhelp">   提供国内外医学类相关学术会议的基本资料
+</string>
+    <string name="eventhelpdtl">  1、囊括超过1,600个国际和国内医学医学类相关学术会议资料（2008年1月 - 10月2012年）。
+  \n2、所有会议被划分为即将发生的和往期的，以便查询。
+  \n3、可将您关注的会议添加到收藏夹列表。
+  \n4、通过微博、短信、邮件与人分享重要会议。
+</string>
+    <string name="surveyhelp">  每月参与简单的调查，将有积分或者礼品回馈。
+</string>
+    <string name="surveyhelpdtl"> 例如：
+  \n1、集博是否为您日常医务工作带来方便？
+        \n A.是
+        \n B.一般
+        \n C.否
+
+  \n2、您现在正在使用的医疗类应用软件是？
+      \n A.Epocrates
+      \n B.Medscape
+      \n C.MD
+      \n D.CalcultorRX
+      \n E.其它
+</string>
+    <string name="netwrkhelp">  查找业内伙伴并追踪他们的学术成果
+</string>
+    <string name="netwrkhelpdtl">  \n1、在我们超过300万篇文章和30万医生的数据库中查找您合著者的基本情况。
+  \n2、查找合著者已发表文章的概况，并提供链接到文章摘要或整篇文章（如果可以在Web 上免费浏览全文）。 
+</string>
+    <string name="hisfavhelp">  您的"历史记录列表"
+  \n您的"收藏夹"
+</string>
+    <string name="hisfavhelpdtl">    历史记录列表让您可以重新查阅最近查看过的主题，并按日期（今天，昨天，本周...)排列这些主题. 
+  \n收藏夹包含了您已保存，供以后参考的主题，并自动将其分类为：
+  \n 1.药品信息
+  \n 2.医学公式
+  \n 3.行业新闻
+  \n 4.医学研究和学术背景  
+  \n 5.医学会议 
+</string>
+    <string name="ui_indro">界面的一些常见控件、按钮、图标的介绍</string>
+    <string name="menuhelp">点击安卓手机上的"menu"按钮,可以看到弹出的菜单如上图示
+  \n1、主界面菜单选项包括:账户设置、关于我们（使用帮助）、注销与切换账户、分享功能
+  \n2、二级界面菜单(1)包括:药品列表、计算机器列表、新闻列表、工具列表、文章列表、会议列表 \n菜单选项包括:注销与切换账户、我的"集博"、历史收藏、使用帮助
+  \n3、二级界面菜单(2)包括:我的主页、合著者列表、我的圈子 \n菜单选项包括:信息反馈、注销与切换账户、账户设置、使用帮助
+  \n4、三级界面菜单包括:药品详细、计算机器详细、新闻详细、文具详细、文章详细、会议详细 \n菜单选项包括:信息反馈、分享、账户设置、历史收藏  
+</string>
+    <string name="spinnerhelp">    如上图标是可点击的下拉列表,用于选择所属分类
+  \n药品信息、医学公司、医学新闻、医学研究、医学会议中均有此下拉列表
+</string>
+    <string name="favhelp">    如上图是可点击的收藏图标,收藏内容可以通过查看历史收藏获得
+</string>
+    <string name="newscategory0">"最新动态"</string>
+    <string name="newscategory1">"内科"</string>
+    <string name="newscategory2">"外科"</string>
+    <string name="newscategory3">"临床专科"</string>
+    <string name="newscategory4">"临床相关医学"</string>
+    <string name="newscategory5">"辅助科室"</string>
+    <string name="newscategory6">"行业动态"</string>
+    <string name="search_results">搜索结果</string>
+    <string name="link_to_source">原文链接</string>
+    <string name="whole_body">内容</string>
+    <string name="registration">注册</string>
+    <string name="emailhint">"填入邮箱获取通知"</string>
+    <string name="accounthint">"邮箱可设为用户名"</string>
+    <string name="att2">"密码长度至少六位"</string>
+    <string name="departmenthint">"填入科室，获得个性化服务"</string>
+    <string name="filladvanceinfohint">"填入详细信息，成为专业会员。我们需要验证您是否为医生，需要您提供姓名、医院等，或者手机号码，方便联系验证。"</string>
+    <string name="note">"注意事项"</string>
+    <string name="directreg">"简 易 注 册"</string>
+    <string name="advancereg">"详 细 信 息 "</string>
+    <string name="practiceinfo">"执业信息"</string>
+    <string name="modify">"修改"</string>
+    <string name="editsuccess">"修改密码成功"</string>
+    <string name="userinfo">"用户信息"</string>
+    <string name="account">"账       户"</string>
+    <string name="password2">"密       码"</string>
+    <string name="oldpassword">"旧  密  码"</string>
+    <string name="confirmnewpassword">"确认密码"</string>
+    <string name="retrypassword">"确认密码"</string>
+    <string name="e_mail">"邮       箱"</string>
+    <string name="departments">"科       室"</string>
+    <string name="send">"发  送"</string>
+    <string name="sending">"正在发送,请稍候..."</string>
+    <string name="empty">为空</string>
+    <string name="check_email_address">请输入正确的email地址!</string>
+    <string name="username">"账        号"</string>
+    <string name="password">"密        码"</string>
+    <string name="passwordlen">"长度最少应为6位"</string>
+    <string name="verifypasserror">"旧密码错误, 请重新填写！"</string>
+    <string name="newpassnot">"新密码不一致，请重新填写！"</string>
+    <string name="passwordnot">"密码不一致！"</string>
+    <string name="regerror">"该用户名已被注册，请更换用户名。"</string>
+    <string name="netexception">"网络异常"</string>
+    <string name="regerror_failed">"注册未成功，可能是网络连接原因，您可以尝试稍候重新注册或者转至 www.jibo.cn 注册！"</string>
+    <string name="regprompt">"您的账户已开通，请尽早激活验证邮件，以获得更多服务。"</string>
+    <string name="updatePasswordSuccess">"密码修改成功，请重新登陆"</string>
+    <string name="update_info_success">"内容修改成功"</string>
+    <string name="username1">"账号"</string>
+    <string name="password1">"密码"</string>
+    <string name="rememberpass">"记住密码"</string>
+    <string name="autologin">"自动登录"</string>
+    <string name="login">"登  录"</string>
+    <string name="registration1">"注  册"</string>
+    <string name="relief">"请您确认阅读过"</string>
+    <string name="relief_content">"免责声明"</string>
+    <string name="autologining">自动登录中...</string>
+    <string name="logining">"正在登录中..."</string>
+    <string name="errortint">出错提示</string>
+    <string name="preting">"用户名或密码错误，请重试"</string>
+    <string name="accountrule">账号输入了非法字符</string>
+    <string name="city">城市</string>
+    <string name="star">"<html><font color="red">*</font></html>"</string>
+    <string name="number">"电话号码"</string>
+    <string name="reg_name">姓       名</string>
+    <string name="regdepartment">"科室"</string>
+    <string name="proftitle">"职称"</string>
+    <string name="inviteCodeTitle">"邀请码"</string>
+    <string name="att1">"带*号标志的为必填项"</string>
+    <string name="prof_titles0">"职称"</string>
+    <string name="prof_titles1">"实习医生"</string>
+    <string name="prof_titles2">"住院医师"</string>
+    <string name="prof_titles3">"主治医师"</string>
+    <string name="prof_titles4">"副主任医师"</string>
+    <string name="prof_titles5">"主任医师"</string>
+    <string name="prof_title">职称</string>
+    <string name="name">姓名</string>
+    <string name="fillschoolname">"填写校名:"</string>
+    <string name="license_number">执业证号</string>
+    <string name="date_of_birth">出生日期</string>
+    <string name="specialty1">专业</string>
+    <string name="subcategory">细分专业</string>
+    <string name="medical_school">医学院</string>
+    <string name="information">信息</string>
+    <string name="year_of_graduation">毕业年份</string>
+    <string name="reg2_region">省        份</string>
+    <string name="reg2_city">城        市</string>
+    <string name="reg2_specialty">专       业</string>
+    <string name="reg2_medical_school">医  学  院</string>
+    <string name="licensehint">"执业证号必须为15位"</string>
+    <string name="other">"其他"</string>
+    <string name="gradyear">"1998"</string>
+    <string name="must_be_15">必须为15位</string>
+    <string name="year">年</string>
+    <string name="checkUsername">正在检查用户名..</string>
+    <string name="news_turnto_drug_alert">不良反应通告</string>
+    <string name="share_dialog_title_sina">分享到新浪微博</string>
+    <string name="share_dialog_title_qq">分享到腾讯微博</string>
+    <string name="sendSuccess">分享成功</string>
+    <string name="shareitem0">"短信分享"</string>
+    <string name="shareitem1">"新浪微博分享"</string>
+    <string name="shareitem2">"其他分享"</string>
+    <string name="shareitem3">"人人网分享"</string>
+    <string name="shareitem4">"邮件分享"</string>
+    <string name="friendshipjibo">关注成功</string>
+    <string name="isNotPhoneNumber">"电话号码格式不正确"</string>
+    <string name="sendSuccessful">"发送成功"</string>
+    <string name="sendFailed">"发送失败"</string>
+    <string name="deleteUser">"清除账号"</string>
+    <string name="isDeleteUser_Sure">"确认删除账号"</string>
+
+    <!-- drug -->
+    <string name="drug_reference">药品信息</string>
+    <string name="drug_item1">"药品信息(A-Z)"</string>
+    <string name="drug_item2">"神经与精神疾病"</string>
+    <string name="drug_item3">"呼吸系统疾病"</string>
+    <string name="drug_item4">"消化系统疾病"</string>
+    <string name="drug_item5">"心血管系统疾病"</string>
+    <string name="drug_item6">"内分泌代谢疾病"</string>
+    <string name="drug_item7">"血液系统疾病"</string>
+    <string name="drug_item8">"风湿免疫与骨科疾病"</string>
+    <string name="drug_item9">"泌尿系统疾病"</string>
+    <string name="drug_item10">"感染系统"</string>
+    <string name="drug_item11">"肿瘤"</string>
+    <string name="drug_item12">"肠外肠内营养与调节水、电解质、酸碱平衡药"</string>
+    <string name="drug_item13">"妇产科疾病</string>
+    <string name="drug_item14">"眼科疾病"</string>
+    <string name="drug_item15">"耳、鼻、咽喉科疾病"</string>
+    <string name="drug_item16">"口腔科疾病"</string>
+    <string name="drug_item17">"皮肤科疾病"</string>
+    <string name="drug_item18">"麻醉"</string>
+    <string name="drug_item19">"免疫制剂与疫苗"</string>
+    <string name="drug_item20">"急性中毒救治"</string>
+    <string name="drug_item21">"诊断"</string>
+    <string name="drug_item22">"其他"</string>
+    <string name="indication">"适应症"</string>
+    <string name="dosing">用法用量</string>
+    <string name="interaction">相互作用</string>
+    <string name="importantNotice">注意事项</string>
+    <string name="overDosage">药物过量</string>
+    <string name="pharmacological">药物作用机理</string>
+    <string name="pharmacokinetics">药代动力学</string>
+    <string name="adrs">不良反应</string>
+    <string name="edl">基本药物目录</string>
+    <string name="reimbursement">医保目录</string>
+    <string name="manufacturers_price">定价信息/生产厂家</string>
+    <string name="academic_activity">学术活动</string>
+    <string name="counterfeit">假药信息</string>
+    <string name="specuse">"特殊人群提示"</string>
+    <string name="contraindication">"禁忌症"</string>
+    <string name="lawsuits">案件纠纷</string>
+
+    <string name="date">日期</string>
+    <string name="act_code_and_description">分类</string>
+    <string name="associated_brand_names">品牌</string>
+    <string name="specification">规格</string>
+    <string name="otc">OTC药物</string>
+    <string name="formulation">剂型</string>
+    <string name="disease">疾病</string>
+    <string name="adr_symptom">ADR症状</string>
+    <string name="result_of_adr">ADR结果</string>
+    <string name="action_taken">采取措施</string>
+    <string name="effect_of_action">措施效果</string>
+    <string name="adr_source">ADR信息来源</string>
+    <string name="plaintiff">控方</string>
+    <string name="defendant">辩方</string>
+    <string name="judgementDate">判决日期</string>
+    <string name="manufacturers">药品生产厂商</string>
+    <string name="brand_drug">品牌药</string>
+    <string name="pediatric_use">"儿童注意事项："</string>
+    <string name="geriatric_use">"老人注意事项："</string>
+    <string name="pregnancydesc">"妊娠与哺乳期注意事项："</string>
+    <string name="fda">"FDA妊娠分级："</string>
+    <string name="fdaa">"A级：在有对照组的研究中，在妊娠3个月的妇女未见到对胎儿危害的迹象（并且也没有对其后6个月的危害性的证据），可能对胎儿的影响甚微。\n\n"</string>
+    <string name="fdab">"B级：在动物繁殖性研究中（并未进行孕妇的对照研究），未见到对胎儿的影响。在动物繁殖性研究中表现有副作用，这些副作用并未在妊娠3个月的妇女得到证实（也没有对其后6个月的危害性的证据）。\n\n"</string>
+    <string name="fdac">"C级：在动物的研究证明它有对胎儿的副作用（致畸或杀死胚胎）但并未在对照组的妇女进行研究，或没有在妇女和动物并行地进行研究。本类药物只有在权衡了对妇女的好处大于对胎儿的危害之后，方可应用。\n\n"</string>
+    <string name="fdad">"D级：有对胎儿的危害性的明确证据，尽管有危害性，但孕妇用药后有绝对的好处（例如孕妇受到死亡的威胁或患有严重的疾病，因此需用它，如应用其他药物虽然安全但无效）。\n\n"</string>
+    <string name="fdax">"X级：在动物或人的研究表明它可使胎儿异常。或根据经验认为在人，或在人及在在动物，是有危害性的。在孕妇应用这类药物显然是无益的。本类药物禁用于妊娠或将妊娠的患者。\n"</string>
+    <string name="tumorarea">"肿瘤部位"</string>
+    <string name="national">国家层次</string>
+    <string name="allandpart">"全部/部分"</string>
+    <string name="part">部分</string>
+    <string name="regional">地方层次</string>
+    <string name="category_of_use">使用范围</string>
+    <string name="edl_source">EDL信息来源</string>
+    <string name="nodatainfo">"暂无本地区信息"</string>
+    <string name="rate">报销费率</string>
+    <string name="reimbursement_type">医保类型</string>
+    <string name="pediatric_specific">使用限制</string>
+    <string name="reimbursement_source">此处医保目录报销费率并非医院水平. 医保信息根据政策</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="generic">通用药</string>
+    <string name="eventnow">"最新会议"</string>
+    <string name="eventpast">"往期会议"</string>
+    <string name="alreadyfollowed">已经关注此用户</string>
+
+    <string name="disclaimer_title">"免责声明"</string>
+    <string name="disclaimer_prompt">"请仔细阅读以下声明:"</string>
+    <string name="disclaimer_content">"集博及内容提供商已经尽量合理地关注了产品相关信息的搜集和报告，有理由且有相关信息说明这些信息的可靠性。对于因信息的不断变化，以及任何错误、遗漏和不确切之处所引起的后果，集博及代理人概不承担任何责任。\n系统内信息仅供医学、药学相关专业人士使用，所发布的信息只作为参考和补充，并不能替代临床诊断，也并不能作为临床诊断治疗的唯一依据。所列的其他国家或地区的药物信息仅供用户参考，并不能作为当地用药信息的标准，反映的药品价格也不是具体要出售或购买的价格。特定药物或药物组合，如缺乏警告，不应该被理解成这种药物或药物组合对任何病人都是安全、有效或适当。\n集博发布原始信息，并不提供任何形式的担保（明确的或暗示的），包括软件和网站的使用，信息的准确与完整性，以及产品或网站的相关服务（相关法规也未要求任何网站提供这类担保）。集博及其信息提供者概不承担任何据称因使用本网站而遭受的损失，如果有人因使用了本软件所登载的信息或药物后出现不良反应、损伤、死亡或其他不良后果，无论是直接或间接引起的，我们概不负责。\n以上条款受中国相关法律的保护和制约，如有任何争议，您同意中国法庭对争议拥有专属的决断权。如果使用条款中的任何部分经有效法庭断定为无效、非法或不能强制执行，那么该内容以外的部分在法律允许范围以内仍将最大程度地发挥其效力和作用。\n    您使用集博应用程序就表明您同意以上声明，如果您不同意本责任限制的，我们将不会提供您服务或内容。"</string>
+    <string name="yuan">元</string>
+    <string name="newstitleMenu">集博移动[医学新闻频道]</string>
+    <string name="eventstitleMenu">集博移动[医学会议频道]</string>
+    <string name="regist_notify">请完善您的注册信息。</string>
+    <string name="contactMufacture">联系厂商</string>
+    <string name="productName">专员姓名:</string>
+    <string name="productTitle">专员英文名:</string>
+    <string name="phone">电话</string>
+    <string name="email">邮箱</string>
+    <string name="bandname">商品名</string>
+    <string name="manufucturename">制造厂商:</string>
+    <string name="info">专员简介:</string>
+    <string name="special">详细信息</string>
+    <string name="drugdtl">查看说明书</string>
+    <string name="phonecontent">13814801641</string>
+    <string name="emailcontent">kongjingjie89@126.com</string>
+    <string name="workingtime">工作时间:</string>
+    <string name="place">负责地区:</string>
+    <string name="telm">办公室电话:</string>
+    <string name="spepos">专员职位:</string>
+    <string name="drug_choose_brand_title1">请选择 (</string>
+    <string name="drug_choose_brand_title2">) 的通用药版用药参考，或者品牌药厂方提供的用药说明。</string>
+    <string name="inviteCode_is_error">邀请码填写不正确</string>
+    <string name="Overdosage">药物过量</string>
+    <string name="introduce">说明书</string>
+    <string name="contact">联系厂商</string>
+    <string name="createfriend_success">关注成功</string>
+    <string name="createfriend_failed">关注失败</string>
+    <string name="repeat_content">请勿重复提交相同信息</string>
+    <string name="emailerror">请先手动设置好您的邮箱账户</string>
+    <string name="contactproduct">联系产品专员</string>
+    <string name="late">稍候</string>
+    <string name="share_tx">腾讯微博分享</string>
+    <string name="share_wx">微信分享</string>
+    <string name="notification_text">您正在使用集博移动医学应用</string>
+    <string name="drugchoose1">根据字母顺序浏览</string>
+    <string name="drugchoose2">根据医疗领域浏览</string>
+    <string name="evaluate">给应用评下分吧！</string>
+    <string name="gotonow">现在就去</string>
+    <string name="chooseMarket">请选择市场</string>
+    <string name="practiceInfo">执业信息</string>
+    <string name="magazine_to_source">期刊来源:</string>
+    <string name="accounthint_new">"常用邮箱"</string>
+    <string name="check_email_address_new">用户名必须为邮箱格式</string>
+    <string name="hospital_is_illegal">医院信息中包含非法字符</string>
+    <string name="jump_to">"正在跳转..."</string>
+    <string name="update_userinfo_success">修改用户信息成功</string>
+    <string name="generic_cn">"普通说明书"</string>
+    <string name="generic_us">"美国药师协会"</string>
+    <string name="brand">"厂方说明书"</string>
+    <string name="give_me_a_evaluate_title">亲，给个评价吧。</string>
+    <string name="give_me_a_evaluate_content">如果您觉得我们的应用还不错，请给个评价吧。您的认可是我们前进的最大动力，感谢您的支持。</string>
+    <string name="ok_yes">确定</string>
+    <string name="forgotpwdtext">忘记密码?</string>
+    <string name="forgot_account_hint">输入账号名</string>
+    <string name="findpwdPrompt">一封包含您密码重置信息的邮件将发到你邮箱，请注意查收</string>
+    <string name="thirdlogin">第三方登录</string>
+    <string name="register_hospital_prompt">提供你的医院信息，可以使我们更好的为您提供与地址相关的服务。</string>
+    <string name="licenseNbPrompt">执业医师证号为15位数字</string>
+    <string name="share_prompt">在我的微博上分享我使用集博的信息</string>
+    <string name="set1">设置</string>
+    <string name="setdepartment_prompt">填入科室获得个性化服务,自动匹配科室，提供您感兴趣的信息</string>
+    <string name="agree">同意</string>
+    <string name="disclaimer">使用提示</string>
+    <string name="caution">注意事项</string>
+    <string name="weibocannotupdatepassword">"微博账号暂不能修改密码"</string>
+    <string name="updatePwdSuccess">密码修改成功</string>
+    <string name="updatePwdFailed">密码修改失败</string>
+    <string name="usernamerule">姓名输入了非法字符</string>
+    <string name="invicodePrompt">专业版本专用</string>
+    <string name="invite_notify">升级标准版到专业版，输入邀请码，查看最详细的AHFS数据。</string>
+    <string name="invite_notify_image">升级标准版到专业版</string>
+    <string name="hasnotnetworkcannotuse">没有网络无法使用该功能</string>
+    <string name="emailIsNull">该用户邮箱为空</string>
+    <string name="accountIsNull">账号不存在</string>
+    <string name="errorlicense">"当前未能找到您的证号，我们将确认并更新！"</string>
+    <string name="popular">常用</string>
+    <string name="specialtys">分类</string>
+    <string name="favorites">收藏</string>
+    <string name="the_latest">新闻动态</string>
+    <string name="specialty">专业相关</string>
+    <string name="industry_info">行业资讯</string>
+    <string name="set_up_version">邀请码管理</string>
+    <string name="ver_feature">新版本特性</string>
+    <string name="get_name_by_email">邮件获取</string>
+    <string name="get_name_by_sms">短信获取</string>
+    <string name="hospital_hint">输入您医院的名称</string>
+    <string name="favorite_hint">查看具体药品时,\n您可以点击\n\"星形\"收藏按钮,\n加入您的收藏</string>
+    <string name="calculator_hint">使用计算器时,\n您可以点击\n\"星形\"收藏按钮,\n加入您的收藏</string>
+    <string name="survey_no_data">目前并没有适合您的问卷调查。\n\n请点击问号按钮查看具体规则。\n\n您也可以查看您的历史问卷记录和相应支付情况。</string>
+    <string name="ahfs_title">美国医院处方服务（AHFS）药品信息</string>
+    <string name="ahfs_info">由美国卫生系统药师协会编写的《AHFS 药品信息2012》（AHFS Drug Information 2012），是综合性最强的基于循证医学的药品信息，由超过500位药学专家总结，包括治疗指南和适应症外使用。美国国会唯一指定的专业书籍，也是非营利性科学学会出版的唯一参考出版物。美国卫生系统药师协会 American Society of Health-System Pharmacists 成立于1942年，是美国唯一的医院和卫生系统药剂师的国家级组织。集博是ASHP在华的唯一一个合作伙伴。</string>
+    <string name="adminRouteInfo_title">给药途径</string>
+    <string name="gossip_home_left">点击快速返回\n主页面</string>
+    <string name="gossip_home_right">进入邀请码\n管理</string>
+    <string name="close_tips">关闭提示</string>
+    <string name="drag_switching">拖拽切换主界面区块</string>
+    <string name="tip_version_new_version_feature">新版本特性</string>
+    <string name="tip_version_para1">1. 跟踪PubMed和万方的最新论文</string>
+    <string name="tip_version_para2">2. 添加医师专业身份验证功能</string>
+    <string name="tip_version_para3">3. 添加推送消息开关</string>
+    <string name="tip_version_para4">4. 注册环节增加多种身份选项</string>
+    <string name="tip_version_button">开启提示系统</string>
+    <string name="gossip_drugref_left">支持中英文通用名,商品\n名以及拼音首字母。如阿\n拉伯糖可用AKBT,acar-\nbose，拜糖平等搜索，显\n示历史搜索。</string>
+    <string name="gossip_market_left">按照科室信息推荐合适工具。点击已安装的工具，可以直接进入使用 。</string>
+    <string name="tip_categoryname">支持显示默认科室，点击\n灰色条目返回上层目录</string>
+    <string name="tip_formula_search">支持关键词搜索，如脑、\n肺、肾</string>
+    <string name="tip_formula_category_name">支持显示默认科室，点击\n灰色条返回上层目录</string>
+    <string name="tip_navigate_one">用药信息来自公共来\n源采集的药品说明书</string>
+    <string name="tip_navigate_two">授权引入美国医院处方\n服务(AHFS)药品信\n息，来自美国医生系统\n药师协会，详情介绍见\n工具市场。</string>
+    <string name="tip_navigate_three">药品生产商提供并确认\n的最新原版说明书信息\n，灰色表示暂无。</string>
+    <string name="tip_news_drag">左右拖拽可以切换到\n前后一条新闻</string>
+    <string name="tip_tel">点击直接联系产品专员</string>
+    <string name="tip_questionnaire">根据您的科室、医院和地区信息\n，列示了合适的调查问卷，您也\n可以继续完成未完成的问卷</string>
+    <string name="tip_question">付费调查规则</string>
+    <string name="tip_gathering">设置收款方式</string>
+    <string name="tip_state">以往调查状态</string>
+    <string name="tip_si">默认国际单位（SI）\n，可切换至美制单\n位(US)</string>
+    <string name="sure">确定</string>
+    <string name="colleagues_invited">已邀请的同事</string>
+    <string name="goinvite">去邀请同事吧 </string>
+    <string name="invite_success">邀请成功</string>
+    <string name="invite_hint">输入名字,电话或email</string>
+    <string name="search_hint">输入药品</string>
+    <string name="progress_wait_title">正在加载</string>
+    <string name="progress_wait">请稍等</string>
+    <string name="showversion">您的集博专业版邀请码: </string>
+    <string name="duedate">专业版截止时间: </string>
+    <string name="survey_tip">根据您的科室，医院和地区信息，列示了适合调查问卷。您也可以继续完成未完成的问卷。</string>
+    <string name="survey_tip_getmoney">设置收款方式</string>
+    <string name="empty_survey">目前没有适合您的问卷\n调查。请查看具体规则\n，确保您的相关信息准\n确。您也可以查看您的\n历史问卷记录和相应支\n付情况。</string>
+    <string name="empty_market_mine">您可在行医百宝箱选择安\n装，在本页管理升级和卸\n载。</string>
+    <string name="invite_tip_word">2. 邀请10位同事使用集博，免费使用6个月</string>
+    <string name="invite_collegues">邀请同事们</string>
+    <string name="invite_whats_new_pro">专业版有什么?</string>
+    <string name="invite_fill_code">1. 填入邀请码</string>
+    <string name="invite_two_ways_get">两种方式获取</string>
+    <string name="invite_u_r_using_std">恭喜您!\n您正在使用专业版!</string>
+    <string name="invite_u_r_using_std1">您正在使用集博标准版!</string>
+    <string name="invite_comeon">专业版更加给力，试一下!</string>
+    <string name="continue_invite">你还可以邀请您的同事体验集博</string>
+    <string name="associated_brand_names1">商品名</string>
+    <string name="jibo_professional">专业版有什么?</string>
+    <string name="fillnameBeforeSent">将以您的名义发送邀请给您的同事，请完善注册信息中的姓名。</string>
+    <string name="send_with_ur_name">将以您的名义\"%s\"发送邀请给您的同事，如信息不符请修改注册信息中的姓名。</string>
+    <string name="sendInstantly">立即发送</string>
+    <string name="modifyInfo">修改信息</string>
+    <string name="addInfo">完善信息</string>
+    <string name="later">稍候再说</string>
+    <string name="special_jibotest">集博测试专用</string>
+    <string name="update_ahfs">更新时间</string>
+    <string name="download_app">正在下载....</string>
+    <string name="download_app_success">下载完成,点击安装</string>
+    <string name="download_app_faild">下载失败,请重试</string>
+    <string name="background_downlowd">程序正在后台下载中，完成后点击安装</string>
+    <string name="app_need_install">老版本已经不能使用，请升级到最新版本</string>
+    <string name="tanslatefaild">暂无翻译内容</string>
+    <string name="prepage">上一页</string>
+    <string name="nextpage">下一页</string>
+    <string name="invitecode_title">专业版管理</string>
+    <string name="user_update">账号管理</string>
+    <string name="save">保存</string>
+    <string name="normal_invite">目前你使用的是标准版,输入邀请码升级到专家版。\n\n</string>
+    <string name="professional_invite">目前你使用的是专家版,您拥有标准版以外的其他服务。\n\n</string>
+    <string name="pediatricUse_msg">儿童注意事项</string>
+    <string name="geriatricUse_msg">老年人注意事项</string>
+    <string name="pregnancy_msg">妊娠与哺乳期注意事项</string>
+    <string name="translate_head">以下翻译来自</string>
+    <string name="translate_foot">仅供参考！</string>
+    <string name="translate_original">原文如下:</string>
+    <string name="go_to_install">去下载</string>
+    <string name="update_version_dlg">请输入邀请码</string>
+    <string name="update_version_fail">更新邀请码失败，注册码无效或者已被使用</string>
+    <string name="update_version_success">更新邀请码成功</string>
+    <string name="lastest">最新</string>
+    <string name="browse">浏览</string>
+    <string name="collection">其他</string>
+    <string name="back">返回</string>
+    <string name="select">挑选</string>
+    <string name="search">搜索</string>
+    <string name="loadingPeople">加载联系人ing...</string>
+    <string name="install_tip">正在更新数据包，请稍等!</string>
+    <string name="install_done">完成</string>
+    <string name="browse_dept">医院科室</string>
+    <string name="dept">科      室</string>
+    <string name="journal">期      刊</string>
+    <string name="drugname">药      品</string>
+    <string name="meshterm">关键字</string>
+    <string name="clc">中国图书馆分类法</string>
+    <string name="references">请确认阅读并同意相关免责申明</string>
+    <string name="accountisnotemail">用户名格式不正确,请输入正确的邮箱格式</string>
+    <string name="isAgree">请阅读并勾选免责申明</string>
+    <string name="job">我是</string>
+    <string name="job_select">请选择</string>
+    <string name="job_doctor">医生</string>
+    <string name="job_nurse">护士</string>
+    <string name="job_pharmacist">药剂师</string>
+    <string name="job_technologist">技师</string>
+    <string name="job_teacherOrStudent">在校教师或学生</string>
+    <string name="job_medicalRelated">医疗相关领域工作人员</string>
+    <string name="job_nonMedicalRelated">非医疗相关领域工作人员</string>
+    <string name="check_status">验证状态</string>
+    <!-- 编辑图片按钮点击后字符 -->
+    <string name="select_picture">选取照片</string>
+    <string name="camera_picture">拍照</string>
+    <string name="take_photo_rule_title">规则说明：</string>
+    <string name="take_photo_rule">1.上传执业医师证照片，验证专业身份，参与特定活动，如可收取调查费用\n2.通过后，将以核实的证号绑定您的账号\n3.关于该信息的修改，将导致重启身份验证</string>
+    <string name="take_photo_explain">\n\t\t尽管我们会需要您注册关于您的医生身份的识别信息，不会要求您提供某些个人识别信息，例如您社会保险号码、信用卡号码等，但请注意，为了方便您获取我们提供的一些功能、参与活动以及使用我们的产品或服务，在本网站和软件的特定区域内，需要您提供某些个人资料，如个人联系方式等。\n
+\t\t个人资料和其它用户信息的收集：集博网站和软件仅会在进行一项或多项要求的功能或活动时，或为方便您使用我们的产品和服务，才会以自愿形式收集个人资料。我们收集信息将只采取合法和公正的方式。\n
+\t\t个人资料的转移：不是以任何上述“个人资料的使用与披露”部分中指明的内容为目的，集博网站和软件不会将您提供的个人资料转移（日常维护除外）给第三方；除非是：(a)有您的同意；(b)法律要求或法庭命令；或者(c)本公司确信其符合法律，受规划与合同的约束，支持公平处置与妥善保护个人资料的原则。\n
+\t\t安全性：虽然集博网站和软件无法杜绝非授权接入情况的发生，但请放心，集博网站和软件会采取有效措施，通过使用相应技术及内部手段，维护您个人资料的安全并防止非授权接入。 \n
+\t\t联络信息：如果您对我们所持个人资料或相关政策存有任何问题，请发电子邮件与我们联系。
+</string>
+    <string name="take_photo_explain_title">用户隐私信息说明</string>
+    <string name="validateSuccess">已验证</string>
+    <string name="notvalidate">未通过</string>
+    <string name="waitvalidate">待验证</string>
+    <string name="waitsubmit">待提交</string>
+    <string name="feedback1">反馈</string>
+    <string name="evaluate1">评价</string>
+    <string name="push_lock_title">推送消息管理</string>
+    <string name="push_lock_msg">集博将根据您的资料和喜好，不定期地推送和您相关的消息，比如关心的论文更新、合适的有偿调查。</string>
+    <string name="zh_cn_journal">中文期刊</string>
+    <string name="en_journal">外文期刊</string>
+    <string name="none_page">暂时无法提供该篇免费全文，敬请期待！</string>
+    <string name="empty_result">抱歉，暂时无法提供该分类信息，敬请期待。</string>
+    <string name="care">关注</string>
+
+    <!-- research collection -->
+    <string name="collection_favourit">收藏的文章</string>
+    <string name="collection_download">下载的文章</string>
+    <string name="collection_subscibe">订阅的期刊</string>
+    <string name="download_state_pending">等待中</string>
+    <string name="download_state_requesting">请求中</string>
+    <string name="download_state_ready">可下载</string>
+    <string name="download_state_downloading">下载中</string>
+    <string name="download_state_read">可阅读</string>
+    <string name="paper_delete_title">删除</string>
+    <string name="paper_delete_content">确定要删除该条论文下载吗？</string>
+    <string name="paper_no_download">暂时无法提供该篇免费全文，敬请期待！</string>
+    <string name="paper_downloading">下载PDF格式全文中，成功后请去“下载的文章”中查看。</string>
+    <string name="paper_abstract">摘要</string>
+    <string name="paper_read_more">更多</string>
+    <string name="paper_fold">收起</string>
+    <string name="paper_keywords">关键字</string>
+    <string name="paper_author">作者</string>
+    <string name="paper_domain">医院科室</string>
+    <string name="paper_drug">相关药品</string>
+    <string name="paper_journal">期刊信息</string>
+    <string name="paper_channel">频道</string>
+    <string name="paper_interlinking">链接：</string>
+    <string name="journal_subscribe">恭喜你订阅成功</string>
+    <string name="journal_un_subscribe">取消订阅成功</string>
+    <string name="paper_share_url">http://www.jibo.cn/ot/d.asp</string>
+    <string name="paper_detail_journal">期刊名称</string>
+    <string name="paper_detail_publication_type">文章类型</string>
+    <string name="paper_detail_language">语言</string>
+    <string name="paper_detail_empty">抱歉，目前暂无该项数据</string>
+    <string name="empty_search">搜索结果为空，请您检查搜索条件</string>
+
+    <!-- filter -->
+    <string name="source">来源</string>
+    <string name="source_all">全部</string>
+    <string name="source_cnki">中文</string>
+    <string name="source_pubmed">外文</string>
+    <string name="research_scope">研究范围</string>
+    <string name="research_all">全部</string>
+    <string name="research_self">本科室</string>
+    <string name="clinical_interrelation">临床相关</string>
+    <string name="clinical_all">全部</string>
+    <string name="clinical_basic">基础</string>
+    <string name="clinical_aim">临床</string>
+    <string name="filter_if">影响因子 > </string>
+    <string name="filter_done">确认</string>
+    <string name="free_full_text">免费期刊：</string>
+    <string name="free_yes">是</string>
+    <string name="free_no">否</string>
+    <string name="abstracts_info">摘要</string>
+    <string name="abstract_yes">是</string>
+    <string name="abstract_no">否</string>
+    <string name="publication_date">出版日期：</string>
+    <string name="spinner_and_or">选择或者或并且</string>
+    <string name="spinner_filter_kw">选择搜索类型</string>
+    <string name="kw_title">标题</string>
+    <string name="kw_id">ID</string>
+    <string name="kw_magazine_name">具体期刊名</string>
+    <string name="kw_multiple">综合关键字</string>
+    <string name="kw_author">作者名</string>
+    <string name="kw_medcine">药品名</string>
+    <string name="kw_no_null">查询关键字不能为空！</string>
+    <string name="filter_and">与</string>
+    <string name="filter_or">或</string>
+    <string name="filter_save">保存</string>
+    <!-- 2.2 will -->
+    <string name="homepage_welcome">感谢您使用集博应用！</string>
+    <string name="wifi_content">下载集博10M数据包后可支持离线使用。您目前是非WiFi连接，我们建议您通过WiFi环境下载此数据包。 </string>
+    <string name="wifi_ok">现在下载</string>
+    <string name="wifi_later">有WiFi时提醒我</string>
+	<string name="loading_for_you">正在为您加载...</string>
+	<string name="favorite_empty">阅读论文时，您可以点击“星型”收藏按钮，加入您的收藏</string>
+	<string name="download_empty">部分论文可下载免费全文，点击下载按钮离线查看全文</string>
+	<string name="subscription_empty">阅读论文时，您可以点击期刊信息中的订阅按钮，关注您的期刊</string>
+	<string name="seach_empty">搜索或筛选结果为空，请您检查搜索或筛选条件.</string>
+	<string name="office_empty">科室里的提示：抱歉，暂时无法提供该分类信息，敬请期待!</string>
+	<string name="retryweb">网络超时,马上为您重试</string>
+	<string name="clear">清除</string>
+	<string name="drug_interaction">药物相互作用</string>
+	<string name="no_interations">未发现药物相互作用</string>
+	<string name="yes_interations">所有药物相互作用</string>
+	<string name="wifi_down">你的图片较大，在2G网络下可能需要较长时间，建议您在wifi下上传</string>	<string name="errcode_success">发送成功</string>
+	<string name="errcode_cancel">发送取消</string>
+	<string name="errcode_deny">发送被拒绝</string>
+	<string name="errcode_unknown">发送返回</string>
+	<string name="not_install_wx">weixin not install in your phone</string>
+    <string name="wx_ver_not_supported">unsupported weixin version</string>
+    
+    <string name="research_paper_available">论文可下载</string>
+	<string name="research_download_fulltext">下载论文</string>
+	<string name="research_download_view">查看论文</string>
+	<string name="research_paper_unavailable">论文不可下载</string>
+	<string name="research_request_fulltext">请求下载论文</string>
+    <string name="research_request_info">请求已经发出，论文可下载时我们会通知您。</string>
+    <string name="research_download">下载</string>
+	<string name="research_download_info">专辑包尚未下载，是否下载？</string>
+	<string name="research_download_pause">是否停止下载？</string>
+	<string name="research_download_consume">是否继续下载？</string>
+	<string name="research_download_resume">是否重新下载？</string>
+	<string name="interactions_notice_first">查询一组药物同时使用时是否有相互作用.</string>
+	<string name="interactions_notice_second">好了，您已添加了一个药，请继续添加以查询.</string>
+	<string name="interactions_notice_third">好了，您已添加了两个药，请继续添加以查询.</string>
+	<string name="research_detail_read_1">该篇论文尚未下载</string>
+	<string name="research_detail_read_2">该篇论文尚未下载完成</string>
+	<string name="survey_share_1">集博付费问卷调查关于</string>
+<string name="survey_share_2">来试一试，下载软件地址</string>
+<string name="cat_words">请输入关键字</string>
+
+	<string name="wifi_tips">下载提醒</string>
+	<string name="wifi_fulltext">您当前的网络不是wifi，文件较大，是否下载？</string>
+	<string name="wifi_special">您当前的网络不是wifi，文件较大，是否下载？</string>
+	<string name="ln_tips">数据包下载提醒</string>
+	<string name="ln_title">下载提示：</string>
+	<string name="ln_msg">数据包支持离线使用，赶紧下载吧！</string>
+    <string name="add_drug">添加药物</string>
+    <string name="clear_all_drugs">你确定清除所有药物吗?</string>
+    <string name="clear_drug">你确定要删除该药吗？</string>
+     <string name="comments">说明</string>
+    <string name="delete">删除</string>
+     <string name="complete_interaction_details">查看完整相互作用</string>
+     <string name="no_ahfs">查看完整药物相互作用数据，请至工具市场下载AHFS数据包。</string>
+     <string name="update">更新</string>
+     <string name="weixin_share">你用过集博医学应用嘛？最全药品信息离线查询，拥有上百种医学公式，最新最前沿的医学文献……点我就全部都是你的咯~~~</string>
+     <string name="over_drug"> 亲，加药量超过上限</string>
+     
+     <string name="download_success">下载完成</string>
+
+     </resources>

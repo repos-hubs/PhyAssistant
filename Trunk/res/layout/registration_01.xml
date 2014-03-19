@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/light_bg"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/RegOneTitleFrame"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_bg_normal"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+
+                <ImageView
+                    android:id="@+id/RegOneTitleIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="41dp"
+                    android:src="@drawable/registration_icon" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/RegOneTitle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="27dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/registration"
+                    android:textColor="@color/white"
+                    android:textSize="23sp"
+                    android:textStyle="bold" >
+                </TextView>
+            </LinearLayout>
+            <!-- prime 2011-6-14 begin. -->
+
+            <include
+                android:id="@+id/dialogprogress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                layout="@layout/dialogprogress"
+                android:visibility="gone" />
+            <!-- prime 2011-6-14 end. -->
+
+            <LinearLayout
+                android:id="@+id/RegOneBodyFrame"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginTop="7dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/RegNameLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="7dp" >
+
+                    <TextView
+                        android:id="@+id/RegName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/RegNameEditBox"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_input_bg"
+                        android:gravity="center_vertical"
+                        android:singleLine="true" >
+                    </EditText>
+                </LinearLayout>
+                <!-- prime begin -->
+
+                <LinearLayout
+                    android:id="@+id/RegEmailLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="7dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/EMail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/EditEMail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:background="@drawable/login_input_bg"
+                        android:gravity="center_vertical"
+                        android:singleLine="true" >
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/RegNameLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="7dp" >
+
+                    <TextView
+                        android:id="@+id/ContactNb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <EditText
+                        android:id="@+id/EditContactNb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/login_input_bg"
+                        android:gravity="center_vertical"
+                        android:phoneNumber="true"
+                        android:singleLine="true" >
+                    </EditText>
+                </LinearLayout>
+                <!-- prime end -->
+
+                <ImageView
+                    android:id="@+id/RegOneCuttingLine02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/cutting_line" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/RegOneSubTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/practiceinfo"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:textStyle="bold" >
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/RegOneCuttingLine03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/cutting_line" >
+                </ImageView>
+
+                <LinearLayout
+                    android:id="@+id/HospitalRegionLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="10dp" >
+
+                    <TextView
+                        android:id="@+id/HospitalRegion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/SpinnerHospitalRegion"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gba_spinner" >
+                    </Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/HospitalCityLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="7dp" >
+
+                    <TextView
+                        android:id="@+id/HospitalCity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/SpinnerHospitalCity"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gba_spinner" >
+                    </Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/HospitalLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="7dp" >
+
+                    <TextView
+                        android:id="@+id/Hospital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/SpinnerHospital"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gba_spinner" >
+                    </Spinner>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/DepartmentsLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="7dp"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/Departments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/SpinnerBigDepartment"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gba_spinner" >
+                    </Spinner>
+
+                    <LinearLayout
+                        android:id="@+id/gap1"
+                        android:layout_width="5dp"
+                        android:layout_height="fill_parent" >
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/SpinnerSubDepartment"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/gba_spinner" >
+                    </Spinner>
+                    <!--
+            <EditText 
+                android:id="@+id/DepartmentsEditBox" 
+                android:layout_width="fill_parent" 
+                android:layout_height="wrap_content" 
+                android:layout_marginLeft="7dp" 
+                android:layout_weight="1" 
+                android:singleLine="true" 
+                android:background="@drawable/gba_input_box"></EditText>
+                    -->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/profileLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="7dp" >
+
+                    <TextView
+                        android:id="@+id/profiletitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="17sp"
+                        android:textStyle="bold" >
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/profile"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/gba_spinner" >
+                    </Spinner>
+                </LinearLayout>
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="11dp"
+                    android:src="@drawable/cutting_line" />
+
+                <LinearLayout
+                    android:id="@+id/attentionLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical" />
+
+                <RelativeLayout
+                    android:id="@+id/RegOneButtonLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_marginTop="10dp" >
+
+                    <ImageButton
+                        android:id="@+id/RegOnePrevious"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:clickable="false"
+                        android:src="@drawable/gba_previous" >
+                    </ImageButton>
+
+                    <ImageButton
+                        android:id="@+id/RegOneNext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="#00000000"
+                        android:src="@drawable/gba_next" >
+                    </ImageButton>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

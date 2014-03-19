@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/li"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/light_bg"
+    android:paddingLeft="30dip"
+    android:paddingRight="30dip"
+    android:orientation="horizontal" >
+    
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txt_survey_title_panel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/survey_title_panel"
+    />
+</LinearLayout>

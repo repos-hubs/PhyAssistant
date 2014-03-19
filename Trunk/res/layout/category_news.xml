@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:id="@+id/mai"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header"
+        android:orientation="vertical" >
+        <include layout="@layout/header" />
+        <include layout="@layout/blank_space" />
+        <include layout="@layout/header_title" />
+    </LinearLayout>
+
+<!--  
+    <LinearLayout
+        android:id="@+id/PageControlsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="2dip"
+        android:layout_marginTop="5dip" >
+        <Button
+            android:id="@+id/Previous"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:text="@string/previous" 
+            android:textColor="@color/white"
+            android:background="@drawable/login_btn_bg"
+            />
+        <Button
+            android:id="@+id/Next"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:text="@string/next"
+            android:textColor="@color/white"
+            android:background="@drawable/register_btn_bg" />
+        <TextView
+            android:id="@+id/TotalPageNum"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="4dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <EditText
+            android:id="@+id/PageNum"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:layout_weight="1"
+            android:numeric="integer|signed|decimal"
+            android:singleLine="true"
+            android:background="@drawable/input_bg"
+             />
+        <Button
+            android:id="@+id/Go"
+            android:layout_width="60dip"
+            android:layout_height="45dip"
+            android:layout_marginLeft="4dip"
+            android:text="@string/go" 
+            android:textColor="@color/white"
+            android:background="@drawable/btn_bg"
+            />
+    </LinearLayout>
+    
+    -->
+
+    <LinearLayout
+        android:id="@+id/llt_lst_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/header_panel"
+        android:orientation="vertical"
+        android:weightSum="1" >
+        <include 
+        		android:id="@+id/dialogprogress" 
+        		layout="@layout/dialogprogress" 
+        		android:visibility="gone"
+        	/>
+        <include layout="@layout/customize_listview" />
+    </LinearLayout>
+
+</RelativeLayout>
